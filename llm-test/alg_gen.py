@@ -12,12 +12,16 @@ class Solution:
     
     def run(self, input: Path) -> str:
         print('Running tests...')
-        res = subprocess.run(
-                [self.path.absolute(), '<', input.absolute()],
+        with open(input, 'r') as fin:
+            res = subprocess.run(
+                ['python3', str(self.path)],
+                stdin=fin,
+                capture_output=True,
+                text=True,
                 timeout=60,
                 check=True,
             )
-        return str(res.stdout)
+        return res.stdout
 
     def text(self) -> str:
         with open(self.path, 'r') as f:
@@ -25,8 +29,9 @@ class Solution:
 
     @staticmethod
     def fromtext(text: str, path: Path, description: str | None = None):
-        with open(path, '+w') as f:
-            f.writelines(text)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with open(path, 'w') as f:
+            f.write(text)
         return Solution(path, description)
 
 class Test:
@@ -77,17 +82,18 @@ class Agent:
 
     @property
     def best_solution(self) -> Solution:
-        if self.best_solution is None:
+        if self._best_solution is None:
             raise
-        return self.best_solution
+        return self._best_solution
 
     def ask_model(self, prompt: str) -> str:
+        t0 = time.perf_counter()
         response = chat(
-        model= self.model,
-            messages=[
-                {'role': 'user', 'content': prompt}
-            ],
+            model=self.model,
+            messages=[{'role': 'user', 'content': prompt}],
         )
+        t1 = time.perf_counter()
+        print(f"LLM generation took {t1 - t0:.2f}s")
         return response.message.content
 
     def choose_ancestors(self, num: int) -> list[Solution]:
