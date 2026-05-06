@@ -16,7 +16,21 @@ def is_degenerate_code(text: str) -> bool:
     if stripped.replace("`", "").strip() == "":
         return True
 
-    extracted = Solution._extract_python_code(text).strip()
+    # bad_markers = [
+    #     "### Candidate solution",
+    #     "### Instruction",
+    #     "### Output requirements",
+    #     "### Task",
+    # ]
+    # if any(marker in stripped for marker in bad_markers):
+    #     return True
+
+    # lines = [line.strip() for line in stripped.splitlines() if line.strip()]
+    # if lines:
+    #     if any(line.startswith("###") or line.startswith("```") for line in lines[:3]):
+    #         return True
+
+    extracted = Solution.extract_code(text).strip()
     if not extracted:
         return True
 

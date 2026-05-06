@@ -21,7 +21,7 @@ class OllamaClient:
         top_p: float = 0.9,
         keep_alive: str = "30m",
         think: bool = False,
-        raw: bool = True,
+        raw: bool = False,
         max_attempts: int = 10,
         debug_writer: tp.Callable[[str, str, str], Path] | None = None,
         logger: tp.Callable[[str], None] | None = None,
@@ -50,10 +50,10 @@ class OllamaClient:
             self._log(f"Saved debug artifact to {path}")
 
     def generate(self, prompt: str) -> ModelResponse:
-        # max_attempts = 10
+        max_attempts = self.max_attempts
         last_error: Exception | None = None
 
-        for attempt in range(1, self.max_attempts + 1):
+        for attempt in range(1, max_attempts + 1):
             started_at = time.perf_counter()
             raw_text = ""
 
@@ -72,15 +72,15 @@ class OllamaClient:
                             "num_predict": self.num_predict,
                             "temperature": self.temperature,
                             "top_p": self.top_p,
-                            "stop": ["```", "```python", "~~~"],
+                            # "stop": ["```", "### Candidate solution", "### Instruction", "### Output requirements"],
                         },
                     },
                     timeout=self.timeout,
                 )
 
                 raw_text = response.text
-                self._log(f"[ollama attempt {attempt}/{self.max_attempts}] status={response.status_code}")
-                self._log(f"[ollama attempt {attempt}/{self.max_attempts}] raw head={raw_text[:300]!r}")
+                self._log(f"[ollama attempt {attempt}/{max_attempts}] status={response.status_code}")
+                self._log(f"[ollama attempt {attempt}/{max_attempts}] raw head={raw_text[:300]!r}")
 
                 response.raise_for_status()
                 data = response.json()
@@ -102,7 +102,6 @@ class OllamaClient:
                     "prompt_eval_count",
                     "prompt_eval_duration",
                     "eval_count",
-                    "eval_duration",
                 ]
                 missing = [key for key in required_keys if key not in data]
                 if missing:
@@ -114,6 +113,25 @@ class OllamaClient:
                 self._log(f"prompt_tokens={data['prompt_eval_count']}")
                 self._log(f"gen_tokens={data['eval_count']}")
 
+                prompt_eval_duration = data.get("prompt_eval_duration")
+                if isinstance(prompt_eval_duration, (int, float)) and prompt_eval_duration > 0:
+                    prompt_tps = data["prompt_eval_count"] / (prompt_eval_duration / 1e9)
+                    self._log(f"prompt_tps={prompt_tps:.2f}")
+                else:
+                    self._log("prompt_tps unavailable: missing or zero prompt_eval_duration")
+
+                eval_duration = data.get("eval_duration")
+                if isinstance(eval_duration, (int, float)) and eval_duration > 0:
+                    gen_tps = data["eval_count"] / (eval_duration / 1e9)
+                    self._log(f"gen_tps={gen_tps:.2f}")
+                else:
+                    self._log("gen_tps unavailable: missing or zero eval_duration")
+                    self._dump(
+                        f"ollama_attempt_{attempt}_missing_eval_duration",
+                        raw_text,
+                        ".json",
+                    )
+
                 return ModelResponse(
                     text=data["response"],
                     wall_time_sec=elapsed,
@@ -122,10 +140,10 @@ class OllamaClient:
 
             except Exception as exc:
                 last_error = exc
-                self._log(f"[ollama attempt {attempt}/{self.max_attempts}] failed: {exc}")
+                self._log(f"[ollama attempt {attempt}/{max_attempts}] failed: {exc}")
                 if raw_text:
                     self._dump(f"ollama_attempt_{attempt}_raw", raw_text, ".txt")
-                if attempt < self.max_attempts:
+                if attempt < max_attempts:
                     time.sleep(1.5 * attempt)
 
-        raise RuntimeError(f"Ollama generate failed after {self.max_attempts} attempts: {last_error}")
+        raise RuntimeError(f"Ollama generate failed after {max_attempts} attempts: {last_error}")

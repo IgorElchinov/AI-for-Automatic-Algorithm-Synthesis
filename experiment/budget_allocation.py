@@ -101,13 +101,17 @@ Requirements:
 
 def main():
     client = OllamaClient(
-        model = "qwen2.5-coder:7b",
+        model = "qwen2.5-coder:14b",
+        think=False,
+        num_ctx = 8192,
+        num_predict = 768,
+        temperature = 0.15,
     )
     agent = Agent(
         problem=BudgetAllocationAdapter(problem_text=problem_text),
-        model_client=client
+        model_client=client,
     )
-    best_solution = agent.run(1)
+    best_solution = agent.run(10)
     print(f'Best solution: {best_solution.path} with score {best_solution.score} and time {best_solution.test_time_sec}')
 
 if __name__ == '__main__':

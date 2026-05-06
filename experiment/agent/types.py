@@ -20,10 +20,10 @@ class Solution:
         return self.path.read_text(encoding="utf-8")
 
     @staticmethod
-    def extract_code(text: str) -> str:
+    def extract_code(text: str, language: str = "python") -> str:
         import re
 
-        match = re.search(r"```(?:python)?\s*(.*?)```", text, flags=re.DOTALL | re.IGNORECASE)
+        match = re.search(rf"```(?:{language})?\s*(.*?)```", text, flags=re.DOTALL | re.IGNORECASE)
         if match:
             return match.group(1).strip() + "\n"
         return text.strip() + "\n"
