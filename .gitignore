@@ -1,0 +1,6 @@
+# Temporary directories
+*/solutions/*
+*/debug/*
+
+# Pycaches
+*.pyc

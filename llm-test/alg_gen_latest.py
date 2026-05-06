@@ -700,7 +700,7 @@ if __name__ == "__main__":
     agent = Agent(
         task=task,
         initial_solutions=[],
-        model="qwen2.5-coder:3b",
+        model="qwen2.5-coder:7b",
         k=3,
         timeout_per_test=20,
         debug_dir="debug",
