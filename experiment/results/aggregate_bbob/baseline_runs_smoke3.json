@@ -1,0 +1,38 @@
+[
+  {
+    "run_name": "base_exp1",
+    "run_dir": "results/baselines_bbob/base_exp1",
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20,
+    "n_tests": 480,
+    "available_algorithms": "pso,de,gwo,sa"
+  },
+  {
+    "run_name": "smoke2_base",
+    "run_dir": "results/baselines_bbob/smoke2_base",
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20,
+    "n_tests": 480,
+    "available_algorithms": "pso"
+  },
+  {
+    "run_name": "smoke3_base",
+    "run_dir": "results/baselines_bbob/smoke3_base",
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20,
+    "n_tests": 480,
+    "available_algorithms": "pso"
+  },
+  {
+    "run_name": "smoke_base",
+    "run_dir": "results/baselines_bbob/smoke_base",
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20,
+    "n_tests": 480,
+    "available_algorithms": "pso"
+  }
+]

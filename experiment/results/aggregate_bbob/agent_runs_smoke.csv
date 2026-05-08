@@ -1,0 +1,2 @@
+run_name,run_dir,status,completed_iterations,best_solution_path,best_score_total_inner_loop,best_score_mean_inner_loop,n_inner_loop_tests,final_holdout_total_score,final_holdout_mean_score,n_final_holdout_tests,best_solution_test_time_sec,model,temperature,top_p,num_ctx,num_predict,budget_multiplier
+smoke_agent,results/agent_bbob/smoke_agent,completed,2,results/agent_bbob/smoke_agent/solutions/solution_0008.py,28.408462240903493,0.5918429633521561,48,-417.81561767192824,-0.8704492034831838,480,64.2462678060001,qwen2.5-coder:14b,0.15,0.9,8192,768,20

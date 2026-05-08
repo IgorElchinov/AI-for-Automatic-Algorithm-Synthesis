@@ -1,0 +1,2 @@
+run_name,algorithm,n_runs,mean_score,median_score,std_score,success_rate,mean_used_evaluations,test_set,seed,budget_multiplier
+smoke_base,pso,480,0.3202423854373483,0.562359623868268,3.8293426797623904,1.0,100.0,final,42,20

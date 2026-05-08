@@ -1,0 +1,12 @@
+[test 1] runtime failure for solution_0023.py
+returncode=1
+stdout:
+2026-05-08 08:38:28,723 - opytimizer.spaces.search — INFO — Overriding class: Space -> SearchSpace.
+2026-05-08 08:38:28,732 - opytimizer.core.space — DEBUG — Agents: 30 | Size: (2, 1) | Objectives: 1 | Lower Bound: [-5. -5.] | Upper Bound: [5. 5.] | Mapping: ['x0', 'x1'] | Built: True.
+2026-05-08 08:38:28,732 - opytimizer.spaces.search — INFO — Class overrided.
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0023.py", line 42, in <module>
+    optimizer = PSO(search_space, algorithm_params={"n_particles": 30})
+TypeError: PSO.__init__() got an unexpected keyword argument 'algorithm_params'

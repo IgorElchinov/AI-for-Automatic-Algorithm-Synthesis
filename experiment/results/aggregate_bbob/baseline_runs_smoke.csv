@@ -1,0 +1,2 @@
+run_name,run_dir,test_set,seed,budget_multiplier,n_tests,available_algorithms
+smoke_base,results/baselines_bbob/smoke_base,final,42,20,480,pso

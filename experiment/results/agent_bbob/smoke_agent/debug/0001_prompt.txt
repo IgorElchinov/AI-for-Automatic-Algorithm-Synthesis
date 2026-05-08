@@ -1,0 +1,58 @@
+/no_think
+Return only valid Python 3 code.
+No explanations.
+Do not output triple backticks.
+Do not output markdown.
+If you cannot solve the task, still output a valid Python program.
+
+### Instruction
+You are writing a Python program for an optimization problem.
+Generate a complete solution from scratch.
+
+### Output requirements
+Return only valid Python 3 code.
+Do not include markdown fences.
+The program must read from stdin and print to stdout using the format from the task.
+A simple fast heuristic is acceptable.
+
+### Task
+Write a complete Python 3 program.
+
+The program reads from stdin exactly 6 lines:
+1) suite name (always "bbob")
+2) function index (integer)
+3) dimension (integer)
+4) instance (integer)
+5) evaluation budget (integer)
+6) random seed (integer)
+
+The program must:
+- import cocoex
+- reconstruct exactly the requested COCO BBOB problem
+- optimize the black-box function under the given evaluation budget
+- print exactly `dimension` floating-point numbers separated by spaces:
+  these numbers are the final candidate solution vector x
+
+Important requirements:
+- output only the numbers, nothing else
+- do not print explanations
+- do not print markdown
+- the code must be executable Python 3
+- you may use any Python approach and any installed libraries
+- you are NOT required to use Opytimizer, but you MAY use it if you want
+- you may also use numpy, scipy, random search, evolution strategies, hill climbing, etc.
+
+Helpful hints:
+- use:
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=suite_instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+      )
+  and then take the first problem from the suite
+- the problem object is callable: value = problem(x)
+- use problem.lower_bounds and problem.upper_bounds when available
+- respect the evaluation budget
+- a simple but robust optimizer is better than a fancy broken one
+
+Your answer must be only Python code.

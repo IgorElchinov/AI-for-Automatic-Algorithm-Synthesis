@@ -1,0 +1,211 @@
+/no_think
+Return only valid Python 3 code.
+No explanations.
+Do not output triple backticks.
+Do not output markdown.
+If you cannot solve the task, still output a valid Python program.
+
+### Instruction
+You are given a problem and one candidate solution which is incorrect.
+Fix the solution while keeping it correct and reasonably fast.
+Return only valid Python 3 code.
+
+### Output requirements
+Return only valid Python 3 code.
+Do not include markdown fences.
+The program must read from stdin and print to stdout using the format from the task.
+A simple fast heuristic is acceptable.
+
+### Task
+Write a complete Python 3 program.
+
+The program reads from stdin exactly 6 lines:
+1) suite name (always "bbob")
+2) function index (integer)
+3) dimension (integer)
+4) instance index (integer)
+5) evaluation budget (integer)
+6) random seed (integer)
+
+The program must:
+- import cocoex
+- reconstruct exactly the requested COCO BBOB problem
+- optimize the black-box function under the given evaluation budget
+- print exactly `dimension` floating-point numbers separated by spaces:
+  these numbers are the final candidate solution vector x
+
+Important API details:
+- suite_instance is a fixed string: "year: 2009"
+- instance is an integer index and must be used only inside suite_options
+- DO NOT pass the integer instance as suite_instance
+- reconstruct the problem exactly like this:
+
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance="year: 2009",
+        suite_options=(
+            f"function_indices: {function_index} "
+            f"instance_indices: {instance} "
+            f"dimensions: {dimension}"
+        ),
+    )
+    problem = next(iter(suite))
+
+Library restrictions:
+- you may use Python standard library
+- you may use cocoex to access the benchmark problem
+- for the optimization algorithm itself, use Opytimizer
+- do NOT rely on arbitrary third-party optimization libraries such as scipy, nevergrad, pymoo, etc.
+- the point of the task is to build the optimizer using Opytimizer components
+
+Opytimizer API memo
+
+Use only the current Opytimizer API.
+
+Verified core imports:
+from opytimizer import Opytimizer
+from opytimizer.core import Function
+from opytimizer.spaces import SearchSpace
+
+Verified optimizer import example:
+from opytimizer.optimizers.single_objective.swarm import PSO
+
+Current package structure:
+- opytimizer.optimizers.single_objective.evolutionary
+- opytimizer.optimizers.single_objective.misc
+- opytimizer.optimizers.single_objective.population
+- opytimizer.optimizers.single_objective.science
+- opytimizer.optimizers.single_objective.social
+- opytimizer.optimizers.single_objective.swarm
+
+Do not use old import paths such as:
+- from opytimizer.optimizers.swarm import PSO
+
+Typical usage pattern:
+1. Define objective function and wrap it with Function(...)
+2. Build SearchSpace(...)
+3. Instantiate optimizer, e.g. PSO()
+4. Build Opytimizer(space, optimizer, function)
+5. Run opt.start(n_iterations=...)
+
+Reference pattern:
+space = SearchSpace(
+    n_agents=n_agents,
+    n_variables=dimension,
+    n_objectives=1,
+    lower_bound=lower_bound,
+    upper_bound=upper_bound,
+)
+optimizer = PSO()
+function = Function(objective_fn)
+opt = Opytimizer(space, optimizer, function)
+opt.start(n_iterations=n_iterations)
+
+Important:
+- Do not invent module paths.
+- Do not invent class names.
+- If unsure, use only the verified PSO pattern above.
+
+Output requirements:
+- output only the numbers, nothing else
+- do not print explanations
+- do not print markdown
+- the code must be executable Python 3
+- respect the evaluation budget
+- a simple robust optimizer built with Opytimizer is better than a fancy broken one
+
+Your answer must be only Python code.
+
+### Candidate solution
+import sys
+import cocoex
+from opytimizer import Opytimizer
+from opytimizer.core import Function
+from opytimizer.spaces import SearchSpace
+from opytimizer.optimizers.single_objective.swarm import PSO
+
+# Read input from stdin
+suite_name = sys.stdin.readline().strip()
+function_index = int(sys.stdin.readline().strip())
+dimension = int(sys.stdin.readline().strip())
+instance = int(sys.stdin.readline().strip())
+evaluation_budget = int(sys.stdin.readline().strip())
+random_seed = int(sys.stdin.readline().strip())
+
+# Reconstruct the COCO BBOB problem
+suite = cocoex.Suite(
+    suite_name=suite_name,
+    suite_instance="year: 2009",
+    suite_options=(
+        f"function_indices: {function_index} "
+        f"instance_indices: {instance} "
+        f"dimensions: {dimension}"
+    ),
+)
+problem = next(iter(suite))
+
+# Define the objective function
+def objective_fn(x):
+    return problem(x)
+
+# Build SearchSpace
+space = SearchSpace(
+    n_agents=10,
+    n_variables=dimension,
+    n_objectives=1,
+    lower_bound=[-5.0] * dimension,
+    upper_bound=[5.0] * dimension,
+)
+
+# Instantiate optimizer
+optimizer = PSO()
+
+# Wrap the objective function with Function
+function = Function(objective_fn)
+
+# Build Opytimizer
+opt = Opytimizer(space, optimizer, function)
+
+# Run optimization
+opt.start(n_iterations=evaluation_budget // 10)
+
+# Print the final candidate solution vector x
+print(" ".join(map(str, opt.best_agent.position)))
+
+### Issue
+[test 1] runtime failure for solution_0117.py
+returncode=1
+stdout:
+2026-05-08 10:12:36,166 - opytimizer.spaces.search — INFO — Overriding class: Space -> SearchSpace.
+2026-05-08 10:12:36,174 - opytimizer.core.space — DEBUG — Agents: 10 | Size: (2, 1) | Objectives: 1 | Lower Bound: [-5. -5.] | Upper Bound: [5. 5.] | Mapping: ['x0', 'x1'] | Built: True.
+2026-05-08 10:12:36,174 - opytimizer.spaces.search — INFO — Class overrided.
+2026-05-08 10:12:36,174 - opytimizer.optimizers.single_objective.swarm.pso — INFO — Overriding class: Optimizer -> PSO.
+2026-05-08 10:12:36,175 - opytimizer.core.optimizer — DEBUG — Algorithm: PSO | Custom Parameters: None | Built: True.
+2026-05-08 10:12:36,175 - opytimizer.optimizers.single_objective.swarm.pso — INFO — Class overrided.
+2026-05-08 10:12:36,175 - opytimizer.core.function — INFO — Creating class: Function.
+2026-05-08 10:12:36,175 - opytimizer.core.function — DEBUG — Function: objective_fn | Built: True.
+2026-05-08 10:12:36,175 - opytimizer.core.function — INFO — Class created.
+2026-05-08 10:12:36,175 - opytimizer.opytimizer — INFO — Creating class: Opytimizer.
+2026-05-08 10:12:36,175 - opytimizer.opytimizer — DEBUG — Space: <opytimizer.spaces.search.SearchSpace object at 0x7f2daeee3380> | Optimizer: <opytimizer.optimizers.single_objective.swarm.pso.PSO object at 0x7f2daed992b0>| Function: <opytimizer.core.function.Function object at 0x7f2daed99550>.
+2026-05-08 10:12:36,175 - opytimizer.opytimizer — INFO — Class created.
+2026-05-08 10:12:36,175 - opytimizer.opytimizer — INFO — Starting optimization task.
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke3_agent/solutions/solution_0117.py", line 51, in <module>
+    opt.start(n_iterations=evaluation_budget // 10)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/opytimizer.py", line 227, in start
+    self.evaluate(callbacks)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/opytimizer.py", line 185, in evaluate
+    self.optimizer.evaluate(*self.evaluate_args)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/optimizers/single_objective/swarm/pso.py", line 150, in evaluate
+    fit = function(agent.position)
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/core/function.py", line 57, in __call__
+    result = self.pointer(x)
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke3_agent/solutions/solution_0117.py", line 30, in objective_fn
+    return problem(x)
+  File "cocoex/interface.pyx", line 841, in cocoex.interface.Problem.__call__
+ValueError: Buffer has wrong number of dimensions (expected 1, got 2)

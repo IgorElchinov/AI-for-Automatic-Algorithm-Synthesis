@@ -1,0 +1,11 @@
+[
+  {
+    "run_name": "smoke_base",
+    "run_dir": "results/baselines_bbob/smoke_base",
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20,
+    "n_tests": 480,
+    "available_algorithms": "pso"
+  }
+]

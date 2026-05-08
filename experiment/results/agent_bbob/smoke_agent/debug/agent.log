@@ -1,0 +1,703 @@
+[2026-05-07 11:26:01] Agent initialized
+[2026-05-07 11:26:01] Prompt saved to results/agent_bbob/smoke_agent/debug/0001_prompt.txt
+[2026-05-07 11:26:21] [ollama attempt 1/10] status=200
+[2026-05-07 11:26:21] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-07T11:26:21.020078745Z","response":"```python\\nimport sys\\nimport random\\nimport numpy as np\\nimport cocoex\\n\\n# Read input from stdin\\nsuite_name = sys.stdin.readline().strip()\\nfunction_index = int(sys.stdin.readline().strip())\\ndimension = int(sy'
+[2026-05-07 11:26:21] wall=19.95s
+[2026-05-07 11:26:21] prompt_tokens=458
+[2026-05-07 11:26:21] gen_tokens=297
+[2026-05-07 11:26:21] prompt_tps=568.48
+[2026-05-07 11:26:21] gen_tps=19.44
+[2026-05-07 11:26:21] [generate_candidate] solution_0000.py validation=ok ok=True
+[2026-05-07 11:26:21] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0000.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:26:21] Saved test failure details to results/agent_bbob/smoke_agent/debug/0002_test_failure_solution_0000.txt
+[2026-05-07 11:26:21] [runtime fix attempt 1] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0000.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:26:21] Prompt saved to results/agent_bbob/smoke_agent/debug/0003_prompt.txt
+[2026-05-07 11:26:39] [ollama attempt 1/10] status=200
+[2026-05-07 11:26:39] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-07T11:26:39.256442942Z","response":"```python\\nimport sys\\nimport random\\nimport numpy as np\\nimport cocoex\\n\\n# Read input from stdin\\nsuite_name = sys.stdin.readline().strip()\\nfunction_index = int(sys.stdin.readline().strip())\\ndimension = int(sy'
+[2026-05-07 11:26:39] wall=18.05s
+[2026-05-07 11:26:39] prompt_tokens=956
+[2026-05-07 11:26:39] gen_tokens=297
+[2026-05-07 11:26:39] prompt_tps=646.77
+[2026-05-07 11:26:39] gen_tps=18.61
+[2026-05-07 11:26:39] [generate_candidate] solution_0001.py validation=ok ok=True
+[2026-05-07 11:26:39] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
+    problem = suite.get_problem()
+TypeError: Suite.get_problem() missing 1 required positional argument: 'id'
+
+[2026-05-07 11:26:39] Saved test failure details to results/agent_bbob/smoke_agent/debug/0004_test_failure_solution_0001.txt
+[2026-05-07 11:26:39] [runtime fix attempt 2] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
+    problem = suite.get_problem()
+TypeError: Suite.get_problem() missing 1 required positional argument: 'id'
+
+[2026-05-07 11:26:39] Prompt saved to results/agent_bbob/smoke_agent/debug/0005_prompt.txt
+[2026-05-07 11:26:57] [ollama attempt 1/10] status=200
+[2026-05-07 11:26:57] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-07T11:26:57.454311309Z","response":"```python\\nimport sys\\nimport random\\nimport numpy as np\\nimport cocoex\\n\\n# Read input from stdin\\nsuite_name = sys.stdin.readline().strip()\\nfunction_index = int(sys.stdin.readline().strip())\\ndimension = int(sy'
+[2026-05-07 11:26:57] wall=18.01s
+[2026-05-07 11:26:57] prompt_tokens=932
+[2026-05-07 11:26:57] gen_tokens=306
+[2026-05-07 11:26:57] prompt_tps=1607.81
+[2026-05-07 11:26:57] gen_tps=18.15
+[2026-05-07 11:26:57] [generate_candidate] solution_0002.py validation=ok ok=True
+[2026-05-07 11:26:57] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0002.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:26:57] Saved test failure details to results/agent_bbob/smoke_agent/debug/0006_test_failure_solution_0002.txt
+[2026-05-07 11:27:02] Agent initialized
+[2026-05-07 11:27:02] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0000.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:27:02] Saved test failure details to results/agent_bbob/smoke_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-07 11:27:02] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
+    problem = suite.get_problem()
+TypeError: Suite.get_problem() missing 1 required positional argument: 'id'
+
+[2026-05-07 11:27:02] Saved test failure details to results/agent_bbob/smoke_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-07 11:27:03] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0002.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:27:03] Saved test failure details to results/agent_bbob/smoke_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-07 11:27:03] Agent initialized
+[2026-05-07 11:27:03] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0000.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:27:03] Saved test failure details to results/agent_bbob/smoke_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-07 11:27:03] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
+    problem = suite.get_problem()
+TypeError: Suite.get_problem() missing 1 required positional argument: 'id'
+
+[2026-05-07 11:27:03] Saved test failure details to results/agent_bbob/smoke_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-07 11:27:03] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0002.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:27:03] Saved test failure details to results/agent_bbob/smoke_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-07 11:27:03] === Iteration 1/1 ===
+[2026-05-07 11:27:03] Prompt saved to results/agent_bbob/smoke_agent/debug/0004_prompt.txt
+[2026-05-07 11:27:21] [ollama attempt 1/10] status=200
+[2026-05-07 11:27:21] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-07T11:27:21.970006661Z","response":"```python\\nimport sys\\nimport random\\nimport numpy as np\\nimport cocoex\\n\\n# Read input from stdin\\nsuite_name = sys.stdin.readline().strip()\\nfunction_index = int(sys.stdin.readline().strip())\\ndimension = int(sy'
+[2026-05-07 11:27:21] wall=18.34s
+[2026-05-07 11:27:21] prompt_tokens=458
+[2026-05-07 11:27:21] gen_tokens=301
+[2026-05-07 11:27:21] prompt_tps=533.66
+[2026-05-07 11:27:21] gen_tps=17.85
+[2026-05-07 11:27:22] [generate_candidate] solution_0003.py validation=ok ok=True
+[2026-05-07 11:27:22] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0003.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:27:22] Saved test failure details to results/agent_bbob/smoke_agent/debug/0005_test_failure_solution_0003.txt
+[2026-05-07 11:27:22] [runtime fix attempt 1] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0003.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:27:22] Prompt saved to results/agent_bbob/smoke_agent/debug/0006_prompt.txt
+[2026-05-07 11:27:42] [ollama attempt 1/10] status=200
+[2026-05-07 11:27:42] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-07T11:27:42.019883079Z","response":"```python\\nimport sys\\nimport random\\nimport numpy as np\\nimport cocoex\\n\\n# Read input from stdin\\nsuite_name = sys.stdin.readline().strip()\\nfunction_index = int(sys.stdin.readline().strip())\\ndimension = int(sy'
+[2026-05-07 11:27:42] wall=19.86s
+[2026-05-07 11:27:42] prompt_tokens=960
+[2026-05-07 11:27:42] gen_tokens=301
+[2026-05-07 11:27:42] prompt_tps=621.16
+[2026-05-07 11:27:42] gen_tps=16.96
+[2026-05-07 11:27:42] [generate_candidate] solution_0004.py validation=ok ok=True
+[2026-05-07 11:27:42] [tests] solution_0004.py score=-0.156879 time=0.31s issue=OK
+[2026-05-07 11:27:49] [tests] solution_0004.py score=22.318551 time=7.50s issue=OK
+[2026-05-07 11:27:49] Agent initialized
+[2026-05-07 11:27:50] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0000.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:27:50] Saved test failure details to results/agent_bbob/smoke_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-07 11:27:50] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
+    problem = suite.get_problem()
+TypeError: Suite.get_problem() missing 1 required positional argument: 'id'
+
+[2026-05-07 11:27:50] Saved test failure details to results/agent_bbob/smoke_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-07 11:27:50] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0002.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:27:50] Saved test failure details to results/agent_bbob/smoke_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-07 11:27:50] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0003.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:27:50] Saved test failure details to results/agent_bbob/smoke_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-07 11:27:58] [tests] solution_0004.py score=22.318551 time=7.51s issue=OK
+[2026-05-07 11:27:58] === Iteration 1/1 ===
+[2026-05-07 11:27:58] Prompt saved to results/agent_bbob/smoke_agent/debug/0005_prompt.txt
+[2026-05-07 11:28:17] [ollama attempt 1/10] status=200
+[2026-05-07 11:28:17] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-07T11:28:17.674097499Z","response":"```python\\nimport sys\\nimport random\\nimport numpy as np\\nimport cocoex\\n\\n# Read input from stdin\\nsuite_name = sys.stdin.readline().strip()\\nfunction_index = int(sys.stdin.readline().strip())\\ndimension = int(sy'
+[2026-05-07 11:28:17] wall=19.65s
+[2026-05-07 11:28:17] prompt_tokens=759
+[2026-05-07 11:28:17] gen_tokens=301
+[2026-05-07 11:28:17] prompt_tps=581.12
+[2026-05-07 11:28:17] gen_tps=16.98
+[2026-05-07 11:28:17] [generate_candidate] solution_0005.py validation=ok ok=True
+[2026-05-07 11:28:17] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0005.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:28:17] Saved test failure details to results/agent_bbob/smoke_agent/debug/0006_test_failure_solution_0005.txt
+[2026-05-07 11:28:17] [runtime fix attempt 1] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0005.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:28:17] Prompt saved to results/agent_bbob/smoke_agent/debug/0007_prompt.txt
+[2026-05-07 11:28:37] [ollama attempt 1/10] status=200
+[2026-05-07 11:28:37] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-07T11:28:37.799603742Z","response":"```python\\nimport sys\\nimport random\\nimport numpy as np\\nimport cocoex\\n\\n# Read input from stdin\\nsuite_name = sys.stdin.readline().strip()\\nfunction_index = int(sys.stdin.readline().strip())\\ndimension = int(sy'
+[2026-05-07 11:28:37] wall=19.93s
+[2026-05-07 11:28:37] prompt_tokens=960
+[2026-05-07 11:28:37] gen_tokens=301
+[2026-05-07 11:28:37] prompt_tps=620.18
+[2026-05-07 11:28:37] gen_tps=16.89
+[2026-05-07 11:28:37] [generate_candidate] solution_0006.py validation=ok ok=True
+[2026-05-07 11:28:38] [tests] solution_0006.py score=-0.156879 time=0.31s issue=OK
+[2026-05-07 11:28:45] [tests] solution_0006.py score=22.318551 time=7.48s issue=OK
+[2026-05-07 11:28:45] Prompt saved to results/agent_bbob/smoke_agent/debug/0008_prompt.txt
+[2026-05-07 11:29:15] [ollama attempt 1/10] status=200
+[2026-05-07 11:29:15] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-07T11:29:15.761007923Z","response":"```python\\nimport sys\\nimport random\\nimport numpy as np\\nimport cocoex\\n\\n# Read input from stdin\\nsuite_name = sys.stdin.readline().strip()\\nfunction_index = int(sys.stdin.readline().strip())\\ndimension = int(sy'
+[2026-05-07 11:29:15] wall=30.13s
+[2026-05-07 11:29:15] prompt_tokens=762
+[2026-05-07 11:29:15] gen_tokens=469
+[2026-05-07 11:29:15] prompt_tps=576.62
+[2026-05-07 11:29:15] gen_tps=16.78
+[2026-05-07 11:29:15] [generate_candidate] solution_0007.py validation=ok ok=True
+[2026-05-07 11:29:15] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0007.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:29:15] Saved test failure details to results/agent_bbob/smoke_agent/debug/0009_test_failure_solution_0007.txt
+[2026-05-07 11:29:15] [runtime fix attempt 1] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0007.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:29:15] Prompt saved to results/agent_bbob/smoke_agent/debug/0010_prompt.txt
+[2026-05-07 11:29:47] [ollama attempt 1/10] status=200
+[2026-05-07 11:29:47] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-07T11:29:47.986095736Z","response":"```python\\nimport sys\\nimport random\\nimport numpy as np\\nimport cocoex\\n\\n# Read input from stdin\\nsuite_name = sys.stdin.readline().strip()\\nfunction_index = int(sys.stdin.readline().strip())\\ndimension = int(sy'
+[2026-05-07 11:29:47] wall=32.03s
+[2026-05-07 11:29:47] prompt_tokens=1128
+[2026-05-07 11:29:47] gen_tokens=469
+[2026-05-07 11:29:47] prompt_tps=588.05
+[2026-05-07 11:29:47] gen_tps=15.98
+[2026-05-07 11:29:48] [generate_candidate] solution_0008.py validation=ok ok=True
+[2026-05-07 11:29:48] [tests] solution_0008.py score=0.013126 time=0.31s issue=OK
+[2026-05-07 11:29:55] [tests] solution_0008.py score=28.408462 time=7.53s issue=OK
+[2026-05-07 11:29:55] [best] solution_0008.py score=28.408462
+[2026-05-07 11:29:55] Agent initialized
+[2026-05-07 11:29:56] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0000.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:29:56] Saved test failure details to results/agent_bbob/smoke_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-07 11:29:56] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
+    problem = suite.get_problem()
+TypeError: Suite.get_problem() missing 1 required positional argument: 'id'
+
+[2026-05-07 11:29:56] Saved test failure details to results/agent_bbob/smoke_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-07 11:29:56] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0002.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:29:56] Saved test failure details to results/agent_bbob/smoke_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-07 11:29:56] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0003.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:29:56] Saved test failure details to results/agent_bbob/smoke_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-07 11:30:04] [tests] solution_0004.py score=22.318551 time=7.56s issue=OK
+[2026-05-07 11:30:04] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0005.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:30:04] Saved test failure details to results/agent_bbob/smoke_agent/debug/0005_test_failure_solution_0005.txt
+[2026-05-07 11:30:11] [tests] solution_0006.py score=22.318551 time=7.41s issue=OK
+[2026-05-07 11:30:11] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0007.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-07 11:30:11] Saved test failure details to results/agent_bbob/smoke_agent/debug/0006_test_failure_solution_0007.txt
+[2026-05-07 11:30:19] [tests] solution_0008.py score=28.408462 time=7.44s issue=OK
+[2026-05-07 11:31:34] [tests] solution_0008.py score=-417.815618 time=74.93s issue=OK
+[2026-05-08 07:02:19] Agent initialized
+[2026-05-08 07:02:19] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0000.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-08 07:02:19] Saved test failure details to results/agent_bbob/smoke_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 07:02:19] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
+    problem = suite.get_problem()
+TypeError: Suite.get_problem() missing 1 required positional argument: 'id'
+
+[2026-05-08 07:02:19] Saved test failure details to results/agent_bbob/smoke_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 07:02:19] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0002.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-08 07:02:19] Saved test failure details to results/agent_bbob/smoke_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 07:02:19] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0003.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-08 07:02:19] Saved test failure details to results/agent_bbob/smoke_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-08 07:02:26] [tests] solution_0004.py score=22.318551 time=6.46s issue=OK
+[2026-05-08 07:02:26] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0005.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-08 07:02:26] Saved test failure details to results/agent_bbob/smoke_agent/debug/0005_test_failure_solution_0005.txt
+[2026-05-08 07:02:32] [tests] solution_0006.py score=22.318551 time=6.49s issue=OK
+[2026-05-08 07:02:32] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0007.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>
+
+[2026-05-08 07:02:32] Saved test failure details to results/agent_bbob/smoke_agent/debug/0006_test_failure_solution_0007.txt
+[2026-05-08 07:02:39] [tests] solution_0008.py score=28.408462 time=6.47s issue=OK
+[2026-05-08 07:03:43] [tests] solution_0008.py score=-417.815618 time=64.25s issue=OK

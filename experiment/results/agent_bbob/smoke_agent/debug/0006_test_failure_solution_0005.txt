@@ -1,0 +1,15 @@
+[test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0005.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>

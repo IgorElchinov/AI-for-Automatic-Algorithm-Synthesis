@@ -1,0 +1,19 @@
+{
+  "run_name": "smoke_agent",
+  "status": "completed",
+  "initialized": true,
+  "completed_iterations": 2,
+  "consecutive_failures": 0,
+  "total_failures": 1,
+  "pause_cycles": 0,
+  "best_solution_path": "results/agent_bbob/smoke_agent/solutions/solution_0008.py",
+  "best_score": 28.408462240903493,
+  "last_error": null,
+  "final_holdout_score": -417.81561767192824,
+  "final_holdout_issue": "OK",
+  "last_update_ts": 1778223823.7087858,
+  "best_score_total_inner_loop": 28.408462240903493,
+  "best_score_mean_inner_loop": 0.5918429633521561,
+  "final_holdout_total_score": -417.81561767192824,
+  "final_holdout_mean_score": -0.8704492034831838
+}

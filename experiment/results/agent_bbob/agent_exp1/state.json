@@ -1,0 +1,17 @@
+{
+  "run_name": "agent_exp1",
+  "status": "paused_retrying",
+  "initialized": true,
+  "completed_iterations": 0,
+  "consecutive_failures": 20,
+  "total_failures": 41,
+  "pause_cycles": 2,
+  "best_solution_path": "results/agent_bbob/agent_exp1/solutions/solution_0000.py",
+  "best_score_total_inner_loop": -1e+18,
+  "best_score_mean_inner_loop": null,
+  "last_error": "Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0122.py\nreturncode=1\nstdout:\n\nstderr:\nTraceback (most recent call last):\n  File \"/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0122.py\", line 4, in <module>\n    from opytimizer.optimizers.swarm import PSO\nModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'\n",
+  "final_holdout_total_score": null,
+  "final_holdout_mean_score": null,
+  "final_holdout_issue": null,
+  "last_update_ts": 1778228102.8732033
+}

@@ -1,0 +1,21 @@
+[test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+COCO WARNING: coco_suite(): Some keys in suite instance were ignored:
+ 1
+Valid keys for suite instance are:
+ year
+ instances
+
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
+    problem = suite.get_problem()
+TypeError: Suite.get_problem() missing 1 required positional argument: 'id'

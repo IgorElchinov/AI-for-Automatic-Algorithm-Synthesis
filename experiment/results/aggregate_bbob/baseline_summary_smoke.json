@@ -1,0 +1,32 @@
+{
+  "n_algorithm_entries": 1,
+  "algorithms": {
+    "pso": {
+      "n_runs": 1,
+      "mean_score_summary": {
+        "count": 1,
+        "mean": 0.3202423854373483,
+        "median": 0.3202423854373483,
+        "std": 0.0,
+        "min": 0.3202423854373483,
+        "max": 0.3202423854373483
+      },
+      "median_score_summary": {
+        "count": 1,
+        "mean": 0.562359623868268,
+        "median": 0.562359623868268,
+        "std": 0.0,
+        "min": 0.562359623868268,
+        "max": 0.562359623868268
+      },
+      "success_rate_summary": {
+        "count": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    }
+  }
+}

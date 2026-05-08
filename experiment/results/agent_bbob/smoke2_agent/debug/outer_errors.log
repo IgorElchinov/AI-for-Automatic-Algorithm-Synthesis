@@ -1,0 +1,260 @@
+
+================================================================================
+ts=1778228952.9364178
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 278, in main
+    agent.run(0)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+
+
+================================================================================
+ts=1778229027.1405947
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+
+
+================================================================================
+ts=1778229101.6382315
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0008.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+
+
+================================================================================
+ts=1778229178.0062768
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0011.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+
+
+================================================================================
+ts=1778229256.5797863
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0014.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0014.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+
+
+================================================================================
+ts=1778229337.2384207
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0017.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0017.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+
+
+================================================================================
+ts=1778229417.6942763
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0020.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0020.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_dimensions'
+
+
+
+================================================================================
+ts=1778229508.770245
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0023.py
+returncode=1
+stdout:
+2026-05-08 08:38:28,723 - opytimizer.spaces.search — INFO — Overriding class: Space -> SearchSpace.
+2026-05-08 08:38:28,732 - opytimizer.core.space — DEBUG — Agents: 30 | Size: (2, 1) | Objectives: 1 | Lower Bound: [-5. -5.] | Upper Bound: [5. 5.] | Mapping: ['x0', 'x1'] | Built: True.
+2026-05-08 08:38:28,732 - opytimizer.spaces.search — INFO — Class overrided.
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0023.py", line 42, in <module>
+    optimizer = PSO(search_space, algorithm_params={"n_particles": 30})
+TypeError: PSO.__init__() got an unexpected keyword argument 'algorithm_params'
+
+
+
+================================================================================
+ts=1778229590.6804788
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0026.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0026.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+

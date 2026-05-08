@@ -1,0 +1,55 @@
+{
+  "n_agent_runs": 3,
+  "inner_loop_total_score_summary": {
+    "count": 3,
+    "mean": -6.666666666666666e+17,
+    "median": -1e+18,
+    "std": 4.714045207910317e+17,
+    "min": -1e+18,
+    "max": 28.408462240903493
+  },
+  "inner_loop_mean_score_summary": {
+    "count": 1,
+    "mean": 0.5918429633521561,
+    "median": 0.5918429633521561,
+    "std": 0.0,
+    "min": 0.5918429633521561,
+    "max": 0.5918429633521561
+  },
+  "final_holdout_total_score_summary": {
+    "count": 1,
+    "mean": -417.81561767192824,
+    "median": -417.81561767192824,
+    "std": 0.0,
+    "min": -417.81561767192824,
+    "max": -417.81561767192824
+  },
+  "final_holdout_mean_score_summary": {
+    "count": 1,
+    "mean": -0.8704492034831838,
+    "median": -0.8704492034831838,
+    "std": 0.0,
+    "min": -0.8704492034831838,
+    "max": -0.8704492034831838
+  },
+  "best_run_by_holdout_mean_score": {
+    "run_name": "smoke_agent",
+    "run_dir": "results/agent_bbob/smoke_agent",
+    "status": "completed",
+    "completed_iterations": 2,
+    "best_solution_path": "results/agent_bbob/smoke_agent/solutions/solution_0008.py",
+    "best_score_total_inner_loop": 28.408462240903493,
+    "best_score_mean_inner_loop": 0.5918429633521561,
+    "n_inner_loop_tests": 48,
+    "final_holdout_total_score": -417.81561767192824,
+    "final_holdout_mean_score": -0.8704492034831838,
+    "n_final_holdout_tests": 480,
+    "best_solution_test_time_sec": 64.2462678060001,
+    "model": "qwen2.5-coder:14b",
+    "temperature": 0.15,
+    "top_p": 0.9,
+    "num_ctx": 8192,
+    "num_predict": 768,
+    "budget_multiplier": 20
+  }
+}

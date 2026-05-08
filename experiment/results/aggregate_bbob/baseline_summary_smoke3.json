@@ -1,0 +1,113 @@
+{
+  "n_algorithm_entries": 7,
+  "algorithms": {
+    "pso": {
+      "n_runs": 4,
+      "mean_score_summary": {
+        "count": 4,
+        "mean": 0.3202423854373483,
+        "median": 0.3202423854373483,
+        "std": 0.0,
+        "min": 0.3202423854373483,
+        "max": 0.3202423854373483
+      },
+      "median_score_summary": {
+        "count": 4,
+        "mean": 0.562359623868268,
+        "median": 0.562359623868268,
+        "std": 0.0,
+        "min": 0.562359623868268,
+        "max": 0.562359623868268
+      },
+      "success_rate_summary": {
+        "count": 4,
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "de": {
+      "n_runs": 1,
+      "mean_score_summary": {
+        "count": 1,
+        "mean": -1.6907817484776217,
+        "median": -1.6907817484776217,
+        "std": 0.0,
+        "min": -1.6907817484776217,
+        "max": -1.6907817484776217
+      },
+      "median_score_summary": {
+        "count": 1,
+        "mean": 0.39042051344959283,
+        "median": 0.39042051344959283,
+        "std": 0.0,
+        "min": 0.39042051344959283,
+        "max": 0.39042051344959283
+      },
+      "success_rate_summary": {
+        "count": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "gwo": {
+      "n_runs": 1,
+      "mean_score_summary": {
+        "count": 1,
+        "mean": 0.4027474755045066,
+        "median": 0.4027474755045066,
+        "std": 0.0,
+        "min": 0.4027474755045066,
+        "max": 0.4027474755045066
+      },
+      "median_score_summary": {
+        "count": 1,
+        "mean": 0.55546491929594,
+        "median": 0.55546491929594,
+        "std": 0.0,
+        "min": 0.55546491929594,
+        "max": 0.55546491929594
+      },
+      "success_rate_summary": {
+        "count": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "sa": {
+      "n_runs": 1,
+      "mean_score_summary": {
+        "count": 1,
+        "mean": -23.04286570965774,
+        "median": -23.04286570965774,
+        "std": 0.0,
+        "min": -23.04286570965774,
+        "max": -23.04286570965774
+      },
+      "median_score_summary": {
+        "count": 1,
+        "mean": -0.09580575475320599,
+        "median": -0.09580575475320599,
+        "std": 0.0,
+        "min": -0.09580575475320599,
+        "max": -0.09580575475320599
+      },
+      "success_rate_summary": {
+        "count": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+[test 1] runtime failure for solution_0047.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0047.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'

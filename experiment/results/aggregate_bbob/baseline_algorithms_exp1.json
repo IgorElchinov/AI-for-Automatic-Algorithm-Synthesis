@@ -1,0 +1,67 @@
+[
+  {
+    "run_name": "base_exp1",
+    "algorithm": "pso",
+    "n_runs": 480,
+    "mean_score": 0.3202423854373483,
+    "median_score": 0.562359623868268,
+    "std_score": 3.8293426797623904,
+    "success_rate": 1.0,
+    "mean_used_evaluations": 100.0,
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20
+  },
+  {
+    "run_name": "base_exp1",
+    "algorithm": "de",
+    "n_runs": 480,
+    "mean_score": -1.6907817484776217,
+    "median_score": 0.39042051344959283,
+    "std_score": 19.273787083965647,
+    "success_rate": 1.0,
+    "mean_used_evaluations": 100.0,
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20
+  },
+  {
+    "run_name": "base_exp1",
+    "algorithm": "gwo",
+    "n_runs": 480,
+    "mean_score": 0.4027474755045066,
+    "median_score": 0.55546491929594,
+    "std_score": 3.650985347729392,
+    "success_rate": 1.0,
+    "mean_used_evaluations": 100.0,
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20
+  },
+  {
+    "run_name": "base_exp1",
+    "algorithm": "sa",
+    "n_runs": 480,
+    "mean_score": -23.04286570965774,
+    "median_score": -0.09580575475320599,
+    "std_score": 190.90465660892113,
+    "success_rate": 1.0,
+    "mean_used_evaluations": 100.0,
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20
+  },
+  {
+    "run_name": "smoke_base",
+    "algorithm": "pso",
+    "n_runs": 480,
+    "mean_score": 0.3202423854373483,
+    "median_score": 0.562359623868268,
+    "std_score": 3.8293426797623904,
+    "success_rate": 1.0,
+    "mean_used_evaluations": 100.0,
+    "test_set": "final",
+    "seed": 42,
+    "budget_multiplier": 20
+  }
+]

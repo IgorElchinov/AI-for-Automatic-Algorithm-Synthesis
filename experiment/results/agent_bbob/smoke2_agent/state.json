@@ -1,0 +1,17 @@
+{
+  "run_name": "smoke2_agent",
+  "status": "running",
+  "initialized": true,
+  "completed_iterations": 0,
+  "consecutive_failures": 8,
+  "total_failures": 9,
+  "pause_cycles": 0,
+  "best_solution_path": "results/agent_bbob/smoke2_agent/solutions/solution_0000.py",
+  "best_score_total_inner_loop": -1e+18,
+  "best_score_mean_inner_loop": null,
+  "last_error": "Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0026.py\nreturncode=1\nstdout:\n\nstderr:\nTraceback (most recent call last):\n  File \"/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0026.py\", line 33, in <module>\n    search_space = SearchSpace(\n        n_variables=dimension,\n    ...<2 lines>...\n        upper_bound=[5.0] * dimension\n    )\nTypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'\n",
+  "final_holdout_total_score": null,
+  "final_holdout_mean_score": null,
+  "final_holdout_issue": null,
+  "last_update_ts": 1778229590.6802316
+}

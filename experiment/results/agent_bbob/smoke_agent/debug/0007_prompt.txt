@@ -1,0 +1,121 @@
+/no_think
+Return only valid Python 3 code.
+No explanations.
+Do not output triple backticks.
+Do not output markdown.
+If you cannot solve the task, still output a valid Python program.
+
+### Instruction
+You are given a problem and one candidate solution which is incorrect.
+Fix the solution while keeping it correct and reasonably fast.
+Return only valid Python 3 code.
+
+### Output requirements
+Return only valid Python 3 code.
+Do not include markdown fences.
+The program must read from stdin and print to stdout using the format from the task.
+A simple fast heuristic is acceptable.
+
+### Task
+Write a complete Python 3 program.
+
+The program reads from stdin exactly 6 lines:
+1) suite name (always "bbob")
+2) function index (integer)
+3) dimension (integer)
+4) instance (integer)
+5) evaluation budget (integer)
+6) random seed (integer)
+
+The program must:
+- import cocoex
+- reconstruct exactly the requested COCO BBOB problem
+- optimize the black-box function under the given evaluation budget
+- print exactly `dimension` floating-point numbers separated by spaces:
+  these numbers are the final candidate solution vector x
+
+Important requirements:
+- output only the numbers, nothing else
+- do not print explanations
+- do not print markdown
+- the code must be executable Python 3
+- you may use any Python approach and any installed libraries
+- you are NOT required to use Opytimizer, but you MAY use it if you want
+- you may also use numpy, scipy, random search, evolution strategies, hill climbing, etc.
+
+Helpful hints:
+- use:
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=suite_instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+      )
+  and then take the first problem from the suite
+- the problem object is callable: value = problem(x)
+- use problem.lower_bounds and problem.upper_bounds when available
+- respect the evaluation budget
+- a simple but robust optimizer is better than a fancy broken one
+
+Your answer must be only Python code.
+
+### Candidate solution
+import sys
+import random
+import numpy as np
+import cocoex
+
+# Read input from stdin
+suite_name = sys.stdin.readline().strip()
+function_index = int(sys.stdin.readline().strip())
+dimension = int(sys.stdin.readline().strip())
+instance = int(sys.stdin.readline().strip())
+evaluation_budget = int(sys.stdin.readline().strip())
+random_seed = int(sys.stdin.readline().strip())
+
+# Set the random seed for reproducibility
+random.seed(random_seed)
+np.random.seed(random_seed)
+
+# Create the COCO BBOB problem
+suite = cocoex.Suite(
+    suite_name=suite_name,
+    suite_instance=instance,
+    suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+)
+problem = next(iter(suite))
+
+# Initialize the candidate solution vector x
+x = np.random.uniform(problem.lower_bounds, problem.upper_bounds)
+
+# Simple random search optimizer
+for _ in range(evaluation_budget - 1):
+    # Generate a new candidate solution vector x_new
+    x_new = np.random.uniform(problem.lower_bounds, problem.upper_bounds)
+    
+    # Evaluate the current and new solutions
+    f_x = problem(x)
+    f_x_new = problem(x_new)
+    
+    # Update the candidate solution if the new one is better
+    if f_x_new < f_x:
+        x = x_new
+
+# Print the final candidate solution vector x
+print(" ".join(map(str, x)))
+
+### Issue
+[test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0005.py", line 19, in <module>
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance=instance,
+        suite_options=f"function_indices: {function_index} instance_indices: {instance} dimensions: {dimension}"
+    )
+  File "cocoex/interface.pyx", line 125, in cocoex.interface.Suite.__cinit__
+  File "cocoex/interface.pyx", line 93, in cocoex.interface._bstring
+TypeError: expect a string, got <class 'int'>

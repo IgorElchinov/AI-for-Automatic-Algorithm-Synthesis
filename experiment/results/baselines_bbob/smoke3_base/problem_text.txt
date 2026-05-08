@@ -1,0 +1,98 @@
+Write a complete Python 3 program.
+
+The program reads from stdin exactly 6 lines:
+1) suite name (always "bbob")
+2) function index (integer)
+3) dimension (integer)
+4) instance index (integer)
+5) evaluation budget (integer)
+6) random seed (integer)
+
+The program must:
+- import cocoex
+- reconstruct exactly the requested COCO BBOB problem
+- optimize the black-box function under the given evaluation budget
+- print exactly `dimension` floating-point numbers separated by spaces:
+  these numbers are the final candidate solution vector x
+
+Important API details:
+- suite_instance is a fixed string: "year: 2009"
+- instance is an integer index and must be used only inside suite_options
+- DO NOT pass the integer instance as suite_instance
+- reconstruct the problem exactly like this:
+
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance="year: 2009",
+        suite_options=(
+            f"function_indices: {function_index} "
+            f"instance_indices: {instance} "
+            f"dimensions: {dimension}"
+        ),
+    )
+    problem = next(iter(suite))
+
+Library restrictions:
+- you may use Python standard library
+- you may use cocoex to access the benchmark problem
+- for the optimization algorithm itself, use Opytimizer
+- do NOT rely on arbitrary third-party optimization libraries such as scipy, nevergrad, pymoo, etc.
+- the point of the task is to build the optimizer using Opytimizer components
+
+Opytimizer API memo
+
+Use only the current Opytimizer API.
+
+Verified core imports:
+from opytimizer import Opytimizer
+from opytimizer.core import Function
+from opytimizer.spaces import SearchSpace
+
+Verified optimizer import example:
+from opytimizer.optimizers.single_objective.swarm import PSO
+
+Current package structure:
+- opytimizer.optimizers.single_objective.evolutionary
+- opytimizer.optimizers.single_objective.misc
+- opytimizer.optimizers.single_objective.population
+- opytimizer.optimizers.single_objective.science
+- opytimizer.optimizers.single_objective.social
+- opytimizer.optimizers.single_objective.swarm
+
+Do not use old import paths such as:
+- from opytimizer.optimizers.swarm import PSO
+
+Typical usage pattern:
+1. Define objective function and wrap it with Function(...)
+2. Build SearchSpace(...)
+3. Instantiate optimizer, e.g. PSO()
+4. Build Opytimizer(space, optimizer, function)
+5. Run opt.start(n_iterations=...)
+
+Reference pattern:
+space = SearchSpace(
+    n_agents=n_agents,
+    n_variables=dimension,
+    n_objectives=1,
+    lower_bound=lower_bound,
+    upper_bound=upper_bound,
+)
+optimizer = PSO()
+function = Function(objective_fn)
+opt = Opytimizer(space, optimizer, function)
+opt.start(n_iterations=n_iterations)
+
+Important:
+- Do not invent module paths.
+- Do not invent class names.
+- If unsure, use only the verified PSO pattern above.
+
+Output requirements:
+- output only the numbers, nothing else
+- do not print explanations
+- do not print markdown
+- the code must be executable Python 3
+- respect the evaluation budget
+- a simple robust optimizer built with Opytimizer is better than a fancy broken one
+
+Your answer must be only Python code.

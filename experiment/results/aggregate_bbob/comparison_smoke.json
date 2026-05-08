@@ -1,0 +1,13 @@
+{
+  "agent_vs_baselines": [
+    {
+      "algorithm": "pso",
+      "baseline_mean_score": 0.3202423854373483,
+      "baseline_best_score": 0.3202423854373483,
+      "agent_mean_holdout_score": -0.8704492034831838,
+      "agent_best_holdout_score": -0.8704492034831838,
+      "mean_delta_agent_minus_baseline": -1.190691588920532,
+      "best_delta_agent_minus_baseline": -1.190691588920532
+    }
+  ]
+}

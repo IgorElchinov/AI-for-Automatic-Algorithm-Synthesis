@@ -1,0 +1,40 @@
+{
+  "agent_vs_baselines": [
+    {
+      "algorithm": "de",
+      "baseline_mean_score": -1.6907817484776217,
+      "baseline_best_score": -1.6907817484776217,
+      "agent_mean_holdout_score": -0.8704492034831838,
+      "agent_best_holdout_score": -0.8704492034831838,
+      "mean_delta_agent_minus_baseline": 0.820332544994438,
+      "best_delta_agent_minus_baseline": 0.820332544994438
+    },
+    {
+      "algorithm": "gwo",
+      "baseline_mean_score": 0.4027474755045066,
+      "baseline_best_score": 0.4027474755045066,
+      "agent_mean_holdout_score": -0.8704492034831838,
+      "agent_best_holdout_score": -0.8704492034831838,
+      "mean_delta_agent_minus_baseline": -1.2731966789876905,
+      "best_delta_agent_minus_baseline": -1.2731966789876905
+    },
+    {
+      "algorithm": "pso",
+      "baseline_mean_score": 0.3202423854373483,
+      "baseline_best_score": 0.3202423854373483,
+      "agent_mean_holdout_score": -0.8704492034831838,
+      "agent_best_holdout_score": -0.8704492034831838,
+      "mean_delta_agent_minus_baseline": -1.190691588920532,
+      "best_delta_agent_minus_baseline": -1.190691588920532
+    },
+    {
+      "algorithm": "sa",
+      "baseline_mean_score": -23.04286570965774,
+      "baseline_best_score": -23.04286570965774,
+      "agent_mean_holdout_score": -0.8704492034831838,
+      "agent_best_holdout_score": -0.8704492034831838,
+      "mean_delta_agent_minus_baseline": 22.172416506174557,
+      "best_delta_agent_minus_baseline": 22.172416506174557
+    }
+  ]
+}

@@ -1,0 +1,2988 @@
+[2026-05-08 08:28:10] Agent initialized
+[2026-05-08 08:28:10] Prompt saved to results/agent_bbob/smoke2_agent/debug/0001_prompt.txt
+[2026-05-08 08:28:28] [ollama attempt 1/10] status=200
+[2026-05-08 08:28:28] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:28:28.937228416Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:28:28] wall=18.93s
+[2026-05-08 08:28:28] prompt_tokens=648
+[2026-05-08 08:28:28] gen_tokens=322
+[2026-05-08 08:28:28] prompt_tps=608.13
+[2026-05-08 08:28:28] gen_tps=18.64
+[2026-05-08 08:28:28] [generate_candidate] solution_0000.py validation=ok ok=True
+[2026-05-08 08:28:29] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:28:29] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0000.txt
+[2026-05-08 08:28:29] [runtime fix attempt 1] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:28:29] Prompt saved to results/agent_bbob/smoke2_agent/debug/0003_prompt.txt
+[2026-05-08 08:28:51] [ollama attempt 1/10] status=200
+[2026-05-08 08:28:51] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:28:51.93350485Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read '
+[2026-05-08 08:28:51] wall=22.69s
+[2026-05-08 08:28:51] prompt_tokens=1127
+[2026-05-08 08:28:51] gen_tokens=344
+[2026-05-08 08:28:51] prompt_tps=608.40
+[2026-05-08 08:28:51] gen_tps=17.00
+[2026-05-08 08:28:51] [generate_candidate] solution_0001.py validation=ok ok=True
+[2026-05-08 08:28:52] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:28:52] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0004_test_failure_solution_0001.txt
+[2026-05-08 08:28:52] [runtime fix attempt 2] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:28:52] Prompt saved to results/agent_bbob/smoke2_agent/debug/0005_prompt.txt
+[2026-05-08 08:29:12] [ollama attempt 1/10] status=200
+[2026-05-08 08:29:12] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:29:12.626290414Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:29:12] wall=20.38s
+[2026-05-08 08:29:12] prompt_tokens=1140
+[2026-05-08 08:29:12] gen_tokens=325
+[2026-05-08 08:29:12] prompt_tps=2499.00
+[2026-05-08 08:29:12] gen_tps=16.80
+[2026-05-08 08:29:12] [generate_candidate] solution_0002.py validation=ok ok=True
+[2026-05-08 08:29:12] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:29:12] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0006_test_failure_solution_0002.txt
+[2026-05-08 08:29:17] Agent initialized
+[2026-05-08 08:29:18] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:29:18] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:29:18] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:29:18] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:29:18] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:29:18] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:29:18] Agent initialized
+[2026-05-08 08:29:19] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:29:19] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:29:19] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:29:19] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:29:19] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:29:19] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:29:19] === Iteration 1/1 ===
+[2026-05-08 08:29:19] Prompt saved to results/agent_bbob/smoke2_agent/debug/0004_prompt.txt
+[2026-05-08 08:29:40] [ollama attempt 1/10] status=200
+[2026-05-08 08:29:40] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:29:40.733244553Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:29:40] wall=21.17s
+[2026-05-08 08:29:40] prompt_tokens=648
+[2026-05-08 08:29:40] gen_tokens=328
+[2026-05-08 08:29:40] prompt_tps=562.55
+[2026-05-08 08:29:40] gen_tps=16.87
+[2026-05-08 08:29:40] [generate_candidate] solution_0003.py validation=ok ok=True
+[2026-05-08 08:29:41] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:29:41] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0005_test_failure_solution_0003.txt
+[2026-05-08 08:29:41] [runtime fix attempt 1] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:29:41] Prompt saved to results/agent_bbob/smoke2_agent/debug/0006_prompt.txt
+[2026-05-08 08:30:04] [ollama attempt 1/10] status=200
+[2026-05-08 08:30:04] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:30:04.124413768Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:30:04] wall=23.09s
+[2026-05-08 08:30:04] prompt_tokens=1133
+[2026-05-08 08:30:04] gen_tokens=331
+[2026-05-08 08:30:04] prompt_tps=580.72
+[2026-05-08 08:30:04] gen_tps=16.10
+[2026-05-08 08:30:04] [generate_candidate] solution_0004.py validation=ok ok=True
+[2026-05-08 08:30:04] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:30:04] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0007_test_failure_solution_0004.txt
+[2026-05-08 08:30:04] [runtime fix attempt 2] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:30:04] Prompt saved to results/agent_bbob/smoke2_agent/debug/0008_prompt.txt
+[2026-05-08 08:30:26] [ollama attempt 1/10] status=200
+[2026-05-08 08:30:26] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:30:26.839171305Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:30:26] wall=22.42s
+[2026-05-08 08:30:26] prompt_tokens=1131
+[2026-05-08 08:30:26] gen_tokens=337
+[2026-05-08 08:30:26] prompt_tps=2406.09
+[2026-05-08 08:30:26] gen_tps=15.78
+[2026-05-08 08:30:26] [generate_candidate] solution_0005.py validation=ok ok=True
+[2026-05-08 08:30:27] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:30:27] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0009_test_failure_solution_0005.txt
+[2026-05-08 08:30:32] Agent initialized
+[2026-05-08 08:30:32] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:30:32] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:30:32] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:30:32] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:30:32] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:30:32] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:30:33] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:30:33] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-08 08:30:33] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:30:33] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0005_test_failure_solution_0004.txt
+[2026-05-08 08:30:33] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:30:33] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0006_test_failure_solution_0005.txt
+[2026-05-08 08:30:33] === Iteration 1/1 ===
+[2026-05-08 08:30:33] Prompt saved to results/agent_bbob/smoke2_agent/debug/0007_prompt.txt
+[2026-05-08 08:30:55] [ollama attempt 1/10] status=200
+[2026-05-08 08:30:55] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:30:55.31749956Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO'
+[2026-05-08 08:30:55] wall=21.57s
+[2026-05-08 08:30:55] prompt_tokens=648
+[2026-05-08 08:30:55] gen_tokens=322
+[2026-05-08 08:30:55] prompt_tps=569.94
+[2026-05-08 08:30:55] gen_tps=16.20
+[2026-05-08 08:30:55] [generate_candidate] solution_0006.py validation=ok ok=True
+[2026-05-08 08:30:55] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0006.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:30:55] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0008_test_failure_solution_0006.txt
+[2026-05-08 08:30:55] [runtime fix attempt 1] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0006.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:30:55] Prompt saved to results/agent_bbob/smoke2_agent/debug/0009_prompt.txt
+[2026-05-08 08:31:19] [ollama attempt 1/10] status=200
+[2026-05-08 08:31:19] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:31:19.161836207Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:31:19] wall=23.54s
+[2026-05-08 08:31:19] prompt_tokens=1127
+[2026-05-08 08:31:19] gen_tokens=326
+[2026-05-08 08:31:19] prompt_tps=569.69
+[2026-05-08 08:31:19] gen_tps=15.53
+[2026-05-08 08:31:19] [generate_candidate] solution_0007.py validation=ok ok=True
+[2026-05-08 08:31:19] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0007.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:31:19] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0010_test_failure_solution_0007.txt
+[2026-05-08 08:31:19] [runtime fix attempt 2] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0007.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:31:19] Prompt saved to results/agent_bbob/smoke2_agent/debug/0011_prompt.txt
+[2026-05-08 08:31:41] [ollama attempt 1/10] status=200
+[2026-05-08 08:31:41] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:31:41.327894147Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:31:41] wall=21.87s
+[2026-05-08 08:31:41] prompt_tokens=1122
+[2026-05-08 08:31:41] gen_tokens=319
+[2026-05-08 08:31:41] prompt_tps=2356.70
+[2026-05-08 08:31:41] gen_tps=15.32
+[2026-05-08 08:31:41] [generate_candidate] solution_0008.py validation=ok ok=True
+[2026-05-08 08:31:41] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0008.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:31:41] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0012_test_failure_solution_0008.txt
+[2026-05-08 08:31:46] Agent initialized
+[2026-05-08 08:31:46] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:31:46] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:31:47] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:31:47] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:31:47] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:31:47] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:31:47] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:31:47] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-08 08:31:48] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:31:48] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0005_test_failure_solution_0004.txt
+[2026-05-08 08:31:48] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:31:48] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0006_test_failure_solution_0005.txt
+[2026-05-08 08:31:48] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0006.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:31:48] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0007_test_failure_solution_0006.txt
+[2026-05-08 08:31:48] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0007.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:31:48] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0008_test_failure_solution_0007.txt
+[2026-05-08 08:31:49] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0008.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:31:49] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0009_test_failure_solution_0008.txt
+[2026-05-08 08:31:49] === Iteration 1/1 ===
+[2026-05-08 08:31:49] Prompt saved to results/agent_bbob/smoke2_agent/debug/0010_prompt.txt
+[2026-05-08 08:32:11] [ollama attempt 1/10] status=200
+[2026-05-08 08:32:11] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:32:11.130339551Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:32:11] wall=22.05s
+[2026-05-08 08:32:11] prompt_tokens=648
+[2026-05-08 08:32:11] gen_tokens=324
+[2026-05-08 08:32:11] prompt_tps=560.67
+[2026-05-08 08:32:11] gen_tps=15.94
+[2026-05-08 08:32:11] [generate_candidate] solution_0009.py validation=ok ok=True
+[2026-05-08 08:32:11] [test 1] runtime failure for solution_0009.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0009.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:32:11] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0011_test_failure_solution_0009.txt
+[2026-05-08 08:32:11] [runtime fix attempt 1] [test 1] runtime failure for solution_0009.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0009.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:32:11] Prompt saved to results/agent_bbob/smoke2_agent/debug/0012_prompt.txt
+[2026-05-08 08:32:34] [ollama attempt 1/10] status=200
+[2026-05-08 08:32:34] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:32:34.962459535Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:32:34] wall=23.53s
+[2026-05-08 08:32:34] prompt_tokens=1129
+[2026-05-08 08:32:34] gen_tokens=321
+[2026-05-08 08:32:34] prompt_tps=570.25
+[2026-05-08 08:32:34] gen_tps=15.30
+[2026-05-08 08:32:34] [generate_candidate] solution_0010.py validation=ok ok=True
+[2026-05-08 08:32:35] [test 1] runtime failure for solution_0010.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0010.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:32:35] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0013_test_failure_solution_0010.txt
+[2026-05-08 08:32:35] [runtime fix attempt 2] [test 1] runtime failure for solution_0010.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0010.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:32:35] Prompt saved to results/agent_bbob/smoke2_agent/debug/0014_prompt.txt
+[2026-05-08 08:32:57] [ollama attempt 1/10] status=200
+[2026-05-08 08:32:57] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:32:57.695350732Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:32:57] wall=22.43s
+[2026-05-08 08:32:57] prompt_tokens=1121
+[2026-05-08 08:32:57] gen_tokens=325
+[2026-05-08 08:32:57] prompt_tps=2370.94
+[2026-05-08 08:32:57] gen_tps=15.20
+[2026-05-08 08:32:57] [generate_candidate] solution_0011.py validation=ok ok=True
+[2026-05-08 08:32:58] [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0011.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:32:58] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0015_test_failure_solution_0011.txt
+[2026-05-08 08:33:03] Agent initialized
+[2026-05-08 08:33:03] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:33:03] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:33:03] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:33:03] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:33:03] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:33:03] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:33:04] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:33:04] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-08 08:33:04] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:33:04] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0005_test_failure_solution_0004.txt
+[2026-05-08 08:33:04] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:33:04] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0006_test_failure_solution_0005.txt
+[2026-05-08 08:33:04] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0006.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:33:04] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0007_test_failure_solution_0006.txt
+[2026-05-08 08:33:05] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0007.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:33:05] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0008_test_failure_solution_0007.txt
+[2026-05-08 08:33:05] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0008.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:33:05] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0009_test_failure_solution_0008.txt
+[2026-05-08 08:33:05] [test 1] runtime failure for solution_0009.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0009.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:33:05] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0010_test_failure_solution_0009.txt
+[2026-05-08 08:33:06] [test 1] runtime failure for solution_0010.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0010.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:33:06] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0011_test_failure_solution_0010.txt
+[2026-05-08 08:33:06] [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0011.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:33:06] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0012_test_failure_solution_0011.txt
+[2026-05-08 08:33:06] === Iteration 1/1 ===
+[2026-05-08 08:33:06] Prompt saved to results/agent_bbob/smoke2_agent/debug/0013_prompt.txt
+[2026-05-08 08:33:28] [ollama attempt 1/10] status=200
+[2026-05-08 08:33:28] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:33:28.319312455Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:33:28] wall=22.05s
+[2026-05-08 08:33:28] prompt_tokens=648
+[2026-05-08 08:33:28] gen_tokens=323
+[2026-05-08 08:33:28] prompt_tps=559.38
+[2026-05-08 08:33:28] gen_tps=15.90
+[2026-05-08 08:33:28] [generate_candidate] solution_0012.py validation=ok ok=True
+[2026-05-08 08:33:28] [test 1] runtime failure for solution_0012.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0012.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:33:28] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0014_test_failure_solution_0012.txt
+[2026-05-08 08:33:28] [runtime fix attempt 1] [test 1] runtime failure for solution_0012.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0012.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:33:28] Prompt saved to results/agent_bbob/smoke2_agent/debug/0015_prompt.txt
+[2026-05-08 08:33:52] [ollama attempt 1/10] status=200
+[2026-05-08 08:33:52] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:33:52.529458375Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:33:52] wall=23.91s
+[2026-05-08 08:33:52] prompt_tokens=1128
+[2026-05-08 08:33:52] gen_tokens=326
+[2026-05-08 08:33:52] prompt_tps=568.54
+[2026-05-08 08:33:52] gen_tps=15.27
+[2026-05-08 08:33:52] [generate_candidate] solution_0013.py validation=ok ok=True
+[2026-05-08 08:33:52] [test 1] runtime failure for solution_0013.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0013.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:33:52] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0016_test_failure_solution_0013.txt
+[2026-05-08 08:33:52] [runtime fix attempt 2] [test 1] runtime failure for solution_0013.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0013.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:33:52] Prompt saved to results/agent_bbob/smoke2_agent/debug/0017_prompt.txt
+[2026-05-08 08:34:16] [ollama attempt 1/10] status=200
+[2026-05-08 08:34:16] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:34:16.271539942Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:34:16] wall=23.44s
+[2026-05-08 08:34:16] prompt_tokens=1126
+[2026-05-08 08:34:16] gen_tokens=337
+[2026-05-08 08:34:16] prompt_tps=2374.10
+[2026-05-08 08:34:16] gen_tps=15.06
+[2026-05-08 08:34:16] [generate_candidate] solution_0014.py validation=ok ok=True
+[2026-05-08 08:34:16] [test 1] runtime failure for solution_0014.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0014.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:34:16] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0018_test_failure_solution_0014.txt
+[2026-05-08 08:34:21] Agent initialized
+[2026-05-08 08:34:21] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:34:21] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:34:22] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:34:22] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:34:22] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:34:22] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:34:22] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:34:22] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-08 08:34:22] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:34:22] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0005_test_failure_solution_0004.txt
+[2026-05-08 08:34:23] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:34:23] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0006_test_failure_solution_0005.txt
+[2026-05-08 08:34:23] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0006.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:34:23] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0007_test_failure_solution_0006.txt
+[2026-05-08 08:34:23] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0007.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:34:23] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0008_test_failure_solution_0007.txt
+[2026-05-08 08:34:23] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0008.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:34:23] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0009_test_failure_solution_0008.txt
+[2026-05-08 08:34:24] [test 1] runtime failure for solution_0009.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0009.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:34:24] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0010_test_failure_solution_0009.txt
+[2026-05-08 08:34:24] [test 1] runtime failure for solution_0010.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0010.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:34:24] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0011_test_failure_solution_0010.txt
+[2026-05-08 08:34:24] [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0011.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:34:24] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0012_test_failure_solution_0011.txt
+[2026-05-08 08:34:25] [test 1] runtime failure for solution_0012.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0012.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:34:25] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0013_test_failure_solution_0012.txt
+[2026-05-08 08:34:25] [test 1] runtime failure for solution_0013.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0013.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:34:25] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0014_test_failure_solution_0013.txt
+[2026-05-08 08:34:25] [test 1] runtime failure for solution_0014.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0014.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:34:25] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0015_test_failure_solution_0014.txt
+[2026-05-08 08:34:25] === Iteration 1/1 ===
+[2026-05-08 08:34:25] Prompt saved to results/agent_bbob/smoke2_agent/debug/0016_prompt.txt
+[2026-05-08 08:34:48] [ollama attempt 1/10] status=200
+[2026-05-08 08:34:48] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:34:48.124922262Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:34:48] wall=22.54s
+[2026-05-08 08:34:48] prompt_tokens=648
+[2026-05-08 08:34:48] gen_tokens=328
+[2026-05-08 08:34:48] prompt_tps=555.34
+[2026-05-08 08:34:48] gen_tps=15.77
+[2026-05-08 08:34:48] [generate_candidate] solution_0015.py validation=ok ok=True
+[2026-05-08 08:34:48] [test 1] runtime failure for solution_0015.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0015.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:34:48] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0017_test_failure_solution_0015.txt
+[2026-05-08 08:34:48] [runtime fix attempt 1] [test 1] runtime failure for solution_0015.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0015.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:34:48] Prompt saved to results/agent_bbob/smoke2_agent/debug/0018_prompt.txt
+[2026-05-08 08:35:13] [ollama attempt 1/10] status=200
+[2026-05-08 08:35:13] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:35:13.129446076Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:35:13] wall=24.70s
+[2026-05-08 08:35:13] prompt_tokens=1133
+[2026-05-08 08:35:13] gen_tokens=335
+[2026-05-08 08:35:13] prompt_tps=567.19
+[2026-05-08 08:35:13] gen_tps=15.10
+[2026-05-08 08:35:13] [generate_candidate] solution_0016.py validation=ok ok=True
+[2026-05-08 08:35:13] [test 1] runtime failure for solution_0016.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0016.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:35:13] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0019_test_failure_solution_0016.txt
+[2026-05-08 08:35:13] [runtime fix attempt 2] [test 1] runtime failure for solution_0016.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0016.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:35:13] Prompt saved to results/agent_bbob/smoke2_agent/debug/0020_prompt.txt
+[2026-05-08 08:35:36] [ollama attempt 1/10] status=200
+[2026-05-08 08:35:36] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:35:36.931756458Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:35:36] wall=23.50s
+[2026-05-08 08:35:36] prompt_tokens=1131
+[2026-05-08 08:35:36] gen_tokens=337
+[2026-05-08 08:35:36] prompt_tps=2344.65
+[2026-05-08 08:35:36] gen_tps=14.98
+[2026-05-08 08:35:36] [generate_candidate] solution_0017.py validation=ok ok=True
+[2026-05-08 08:35:37] [test 1] runtime failure for solution_0017.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0017.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:35:37] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0021_test_failure_solution_0017.txt
+[2026-05-08 08:35:42] Agent initialized
+[2026-05-08 08:35:42] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:35:42] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:35:42] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:35:42] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:35:43] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:35:43] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:35:43] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:35:43] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-08 08:35:43] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:35:43] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0005_test_failure_solution_0004.txt
+[2026-05-08 08:35:43] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:35:43] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0006_test_failure_solution_0005.txt
+[2026-05-08 08:35:44] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0006.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:35:44] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0007_test_failure_solution_0006.txt
+[2026-05-08 08:35:44] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0007.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:35:44] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0008_test_failure_solution_0007.txt
+[2026-05-08 08:35:44] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0008.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:35:44] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0009_test_failure_solution_0008.txt
+[2026-05-08 08:35:44] [test 1] runtime failure for solution_0009.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0009.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:35:44] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0010_test_failure_solution_0009.txt
+[2026-05-08 08:35:45] [test 1] runtime failure for solution_0010.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0010.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:35:45] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0011_test_failure_solution_0010.txt
+[2026-05-08 08:35:45] [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0011.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:35:45] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0012_test_failure_solution_0011.txt
+[2026-05-08 08:35:45] [test 1] runtime failure for solution_0012.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0012.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:35:45] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0013_test_failure_solution_0012.txt
+[2026-05-08 08:35:45] [test 1] runtime failure for solution_0013.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0013.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:35:45] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0014_test_failure_solution_0013.txt
+[2026-05-08 08:35:46] [test 1] runtime failure for solution_0014.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0014.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:35:46] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0015_test_failure_solution_0014.txt
+[2026-05-08 08:35:46] [test 1] runtime failure for solution_0015.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0015.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:35:46] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0016_test_failure_solution_0015.txt
+[2026-05-08 08:35:46] [test 1] runtime failure for solution_0016.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0016.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:35:46] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0017_test_failure_solution_0016.txt
+[2026-05-08 08:35:47] [test 1] runtime failure for solution_0017.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0017.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:35:47] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0018_test_failure_solution_0017.txt
+[2026-05-08 08:35:47] === Iteration 1/1 ===
+[2026-05-08 08:35:47] Prompt saved to results/agent_bbob/smoke2_agent/debug/0019_prompt.txt
+[2026-05-08 08:36:09] [ollama attempt 1/10] status=200
+[2026-05-08 08:36:09] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:36:09.329104757Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:36:09] wall=22.27s
+[2026-05-08 08:36:09] prompt_tokens=648
+[2026-05-08 08:36:09] gen_tokens=325
+[2026-05-08 08:36:09] prompt_tps=556.24
+[2026-05-08 08:36:09] gen_tps=15.83
+[2026-05-08 08:36:09] [generate_candidate] solution_0018.py validation=ok ok=True
+[2026-05-08 08:36:09] [test 1] runtime failure for solution_0018.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0018.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:36:09] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0020_test_failure_solution_0018.txt
+[2026-05-08 08:36:09] [runtime fix attempt 1] [test 1] runtime failure for solution_0018.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0018.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:36:09] Prompt saved to results/agent_bbob/smoke2_agent/debug/0021_prompt.txt
+[2026-05-08 08:36:33] [ollama attempt 1/10] status=200
+[2026-05-08 08:36:33] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:36:33.813202287Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:36:33] wall=24.19s
+[2026-05-08 08:36:33] prompt_tokens=1130
+[2026-05-08 08:36:33] gen_tokens=328
+[2026-05-08 08:36:33] prompt_tps=569.95
+[2026-05-08 08:36:33] gen_tps=15.12
+[2026-05-08 08:36:33] [generate_candidate] solution_0019.py validation=ok ok=True
+[2026-05-08 08:36:34] [test 1] runtime failure for solution_0019.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0019.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:36:34] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0022_test_failure_solution_0019.txt
+[2026-05-08 08:36:34] [runtime fix attempt 2] [test 1] runtime failure for solution_0019.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0019.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:36:34] Prompt saved to results/agent_bbob/smoke2_agent/debug/0023_prompt.txt
+[2026-05-08 08:36:57] [ollama attempt 1/10] status=200
+[2026-05-08 08:36:57] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:36:57.388062734Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:36:57] wall=23.28s
+[2026-05-08 08:36:57] prompt_tokens=1128
+[2026-05-08 08:36:57] gen_tokens=334
+[2026-05-08 08:36:57] prompt_tps=2364.49
+[2026-05-08 08:36:57] gen_tps=14.99
+[2026-05-08 08:36:57] [generate_candidate] solution_0020.py validation=ok ok=True
+[2026-05-08 08:36:57] [test 1] runtime failure for solution_0020.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0020.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_dimensions'
+
+[2026-05-08 08:36:57] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0024_test_failure_solution_0020.txt
+[2026-05-08 08:37:02] Agent initialized
+[2026-05-08 08:37:02] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:37:02] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:37:03] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:37:03] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:37:03] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:37:03] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:37:03] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:37:03] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-08 08:37:04] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:37:04] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0005_test_failure_solution_0004.txt
+[2026-05-08 08:37:04] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:37:04] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0006_test_failure_solution_0005.txt
+[2026-05-08 08:37:04] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0006.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:37:04] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0007_test_failure_solution_0006.txt
+[2026-05-08 08:37:04] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0007.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:37:04] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0008_test_failure_solution_0007.txt
+[2026-05-08 08:37:05] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0008.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:37:05] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0009_test_failure_solution_0008.txt
+[2026-05-08 08:37:05] [test 1] runtime failure for solution_0009.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0009.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:37:05] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0010_test_failure_solution_0009.txt
+[2026-05-08 08:37:05] [test 1] runtime failure for solution_0010.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0010.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:37:05] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0011_test_failure_solution_0010.txt
+[2026-05-08 08:37:05] [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0011.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:37:05] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0012_test_failure_solution_0011.txt
+[2026-05-08 08:37:06] [test 1] runtime failure for solution_0012.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0012.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:37:06] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0013_test_failure_solution_0012.txt
+[2026-05-08 08:37:06] [test 1] runtime failure for solution_0013.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0013.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:37:06] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0014_test_failure_solution_0013.txt
+[2026-05-08 08:37:06] [test 1] runtime failure for solution_0014.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0014.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:37:06] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0015_test_failure_solution_0014.txt
+[2026-05-08 08:37:06] [test 1] runtime failure for solution_0015.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0015.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:37:06] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0016_test_failure_solution_0015.txt
+[2026-05-08 08:37:07] [test 1] runtime failure for solution_0016.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0016.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:37:07] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0017_test_failure_solution_0016.txt
+[2026-05-08 08:37:07] [test 1] runtime failure for solution_0017.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0017.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:37:07] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0018_test_failure_solution_0017.txt
+[2026-05-08 08:37:07] [test 1] runtime failure for solution_0018.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0018.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:37:07] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0019_test_failure_solution_0018.txt
+[2026-05-08 08:37:07] [test 1] runtime failure for solution_0019.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0019.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:37:07] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0020_test_failure_solution_0019.txt
+[2026-05-08 08:37:08] [test 1] runtime failure for solution_0020.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0020.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_dimensions'
+
+[2026-05-08 08:37:08] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0021_test_failure_solution_0020.txt
+[2026-05-08 08:37:08] === Iteration 1/1 ===
+[2026-05-08 08:37:08] Prompt saved to results/agent_bbob/smoke2_agent/debug/0022_prompt.txt
+[2026-05-08 08:37:33] [ollama attempt 1/10] status=200
+[2026-05-08 08:37:33] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:37:33.247923812Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:37:33] wall=24.99s
+[2026-05-08 08:37:33] prompt_tokens=648
+[2026-05-08 08:37:33] gen_tokens=367
+[2026-05-08 08:37:33] prompt_tps=561.69
+[2026-05-08 08:37:33] gen_tps=15.80
+[2026-05-08 08:37:33] [generate_candidate] solution_0021.py validation=ok ok=True
+[2026-05-08 08:37:33] [test 1] runtime failure for solution_0021.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0021.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:37:33] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0023_test_failure_solution_0021.txt
+[2026-05-08 08:37:33] [runtime fix attempt 1] [test 1] runtime failure for solution_0021.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0021.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:37:33] Prompt saved to results/agent_bbob/smoke2_agent/debug/0024_prompt.txt
+[2026-05-08 08:38:00] [ollama attempt 1/10] status=200
+[2026-05-08 08:38:00] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:38:00.979117373Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:38:00] wall=27.43s
+[2026-05-08 08:38:00] prompt_tokens=1172
+[2026-05-08 08:38:00] gen_tokens=374
+[2026-05-08 08:38:00] prompt_tps=573.17
+[2026-05-08 08:38:00] gen_tps=15.11
+[2026-05-08 08:38:01] [generate_candidate] solution_0022.py validation=ok ok=True
+[2026-05-08 08:38:01] [test 1] runtime failure for solution_0022.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0022.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:01] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0025_test_failure_solution_0022.txt
+[2026-05-08 08:38:01] [runtime fix attempt 2] [test 1] runtime failure for solution_0022.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0022.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:01] Prompt saved to results/agent_bbob/smoke2_agent/debug/0026_prompt.txt
+[2026-05-08 08:38:28] [ollama attempt 1/10] status=200
+[2026-05-08 08:38:28] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:38:28.443764114Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:38:28] wall=27.16s
+[2026-05-08 08:38:28] prompt_tokens=1170
+[2026-05-08 08:38:28] gen_tokens=388
+[2026-05-08 08:38:28] prompt_tps=2061.15
+[2026-05-08 08:38:28] gen_tps=14.97
+[2026-05-08 08:38:28] [generate_candidate] solution_0023.py validation=ok ok=True
+[2026-05-08 08:38:28] [test 1] runtime failure for solution_0023.py
+returncode=1
+stdout:
+2026-05-08 08:38:28,723 - opytimizer.spaces.search — INFO — Overriding class: Space -> SearchSpace.
+2026-05-08 08:38:28,732 - opytimizer.core.space — DEBUG — Agents: 30 | Size: (2, 1) | Objectives: 1 | Lower Bound: [-5. -5.] | Upper Bound: [5. 5.] | Mapping: ['x0', 'x1'] | Built: True.
+2026-05-08 08:38:28,732 - opytimizer.spaces.search — INFO — Class overrided.
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0023.py", line 42, in <module>
+    optimizer = PSO(search_space, algorithm_params={"n_particles": 30})
+TypeError: PSO.__init__() got an unexpected keyword argument 'algorithm_params'
+
+[2026-05-08 08:38:28] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0027_test_failure_solution_0023.txt
+[2026-05-08 08:38:33] Agent initialized
+[2026-05-08 08:38:34] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:38:34] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:38:34] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:38:34] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:38:34] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:34] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:38:34] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:38:34] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-08 08:38:35] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:35] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0005_test_failure_solution_0004.txt
+[2026-05-08 08:38:35] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:38:35] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0006_test_failure_solution_0005.txt
+[2026-05-08 08:38:35] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0006.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:38:35] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0007_test_failure_solution_0006.txt
+[2026-05-08 08:38:35] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0007.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:38:35] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0008_test_failure_solution_0007.txt
+[2026-05-08 08:38:36] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0008.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:36] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0009_test_failure_solution_0008.txt
+[2026-05-08 08:38:36] [test 1] runtime failure for solution_0009.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0009.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:38:36] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0010_test_failure_solution_0009.txt
+[2026-05-08 08:38:36] [test 1] runtime failure for solution_0010.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0010.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:36] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0011_test_failure_solution_0010.txt
+[2026-05-08 08:38:37] [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0011.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:38:37] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0012_test_failure_solution_0011.txt
+[2026-05-08 08:38:37] [test 1] runtime failure for solution_0012.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0012.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:38:37] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0013_test_failure_solution_0012.txt
+[2026-05-08 08:38:37] [test 1] runtime failure for solution_0013.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0013.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:37] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0014_test_failure_solution_0013.txt
+[2026-05-08 08:38:37] [test 1] runtime failure for solution_0014.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0014.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:38:37] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0015_test_failure_solution_0014.txt
+[2026-05-08 08:38:38] [test 1] runtime failure for solution_0015.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0015.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:38:38] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0016_test_failure_solution_0015.txt
+[2026-05-08 08:38:38] [test 1] runtime failure for solution_0016.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0016.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:38] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0017_test_failure_solution_0016.txt
+[2026-05-08 08:38:38] [test 1] runtime failure for solution_0017.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0017.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:38:38] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0018_test_failure_solution_0017.txt
+[2026-05-08 08:38:38] [test 1] runtime failure for solution_0018.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0018.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:38:38] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0019_test_failure_solution_0018.txt
+[2026-05-08 08:38:39] [test 1] runtime failure for solution_0019.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0019.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:39] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0020_test_failure_solution_0019.txt
+[2026-05-08 08:38:39] [test 1] runtime failure for solution_0020.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0020.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_dimensions'
+
+[2026-05-08 08:38:39] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0021_test_failure_solution_0020.txt
+[2026-05-08 08:38:39] [test 1] runtime failure for solution_0021.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0021.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:38:39] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0022_test_failure_solution_0021.txt
+[2026-05-08 08:38:39] [test 1] runtime failure for solution_0022.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0022.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:38:39] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0023_test_failure_solution_0022.txt
+[2026-05-08 08:38:40] [test 1] runtime failure for solution_0023.py
+returncode=1
+stdout:
+2026-05-08 08:38:40,198 - opytimizer.spaces.search — INFO — Overriding class: Space -> SearchSpace.
+2026-05-08 08:38:40,206 - opytimizer.core.space — DEBUG — Agents: 30 | Size: (2, 1) | Objectives: 1 | Lower Bound: [-5. -5.] | Upper Bound: [5. 5.] | Mapping: ['x0', 'x1'] | Built: True.
+2026-05-08 08:38:40,207 - opytimizer.spaces.search — INFO — Class overrided.
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0023.py", line 42, in <module>
+    optimizer = PSO(search_space, algorithm_params={"n_particles": 30})
+TypeError: PSO.__init__() got an unexpected keyword argument 'algorithm_params'
+
+[2026-05-08 08:38:40] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0024_test_failure_solution_0023.txt
+[2026-05-08 08:38:40] === Iteration 1/1 ===
+[2026-05-08 08:38:40] Prompt saved to results/agent_bbob/smoke2_agent/debug/0025_prompt.txt
+[2026-05-08 08:39:02] [ollama attempt 1/10] status=200
+[2026-05-08 08:39:02] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:39:02.291907973Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:39:02] wall=22.05s
+[2026-05-08 08:39:02] prompt_tokens=648
+[2026-05-08 08:39:02] gen_tokens=322
+[2026-05-08 08:39:02] prompt_tps=552.09
+[2026-05-08 08:39:02] gen_tps=15.85
+[2026-05-08 08:39:02] [generate_candidate] solution_0024.py validation=ok ok=True
+[2026-05-08 08:39:02] [test 1] runtime failure for solution_0024.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0024.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:39:02] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0026_test_failure_solution_0024.txt
+[2026-05-08 08:39:02] [runtime fix attempt 1] [test 1] runtime failure for solution_0024.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0024.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:39:02] Prompt saved to results/agent_bbob/smoke2_agent/debug/0027_prompt.txt
+[2026-05-08 08:39:27] [ollama attempt 1/10] status=200
+[2026-05-08 08:39:27] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:39:27.494933013Z","response":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PSO\\n\\n# Read'
+[2026-05-08 08:39:27] wall=24.90s
+[2026-05-08 08:39:27] prompt_tokens=1127
+[2026-05-08 08:39:27] gen_tokens=338
+[2026-05-08 08:39:27] prompt_tps=567.57
+[2026-05-08 08:39:27] gen_tps=15.16
+[2026-05-08 08:39:27] [generate_candidate] solution_0025.py validation=ok ok=True
+[2026-05-08 08:39:27] [test 1] runtime failure for solution_0025.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0025.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:39:27] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0028_test_failure_solution_0025.txt
+[2026-05-08 08:39:27] [runtime fix attempt 2] [test 1] runtime failure for solution_0025.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0025.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:39:27] Prompt saved to results/agent_bbob/smoke2_agent/debug/0029_prompt.txt
+[2026-05-08 08:39:50] [ollama attempt 1/10] status=200
+[2026-05-08 08:39:50] [ollama attempt 1/10] raw head='{"model":"qwen2.5-coder:14b","created_at":"2026-05-08T08:39:50.373919544Z","response":"```python\\nimport sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Function\\nfrom opytimizer.spaces import SearchSpace\\nfrom opytimizer.optimizers.single_objective.swarm import PS'
+[2026-05-08 08:39:50] wall=22.58s
+[2026-05-08 08:39:50] prompt_tokens=1134
+[2026-05-08 08:39:50] gen_tokens=323
+[2026-05-08 08:39:50] prompt_tps=2376.33
+[2026-05-08 08:39:50] gen_tps=15.01
+[2026-05-08 08:39:50] [generate_candidate] solution_0026.py validation=ok ok=True
+[2026-05-08 08:39:50] [test 1] runtime failure for solution_0026.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0026.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:39:50] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0030_test_failure_solution_0026.txt
+[2026-05-08 08:39:55] Agent initialized
+[2026-05-08 08:39:55] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0000.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:39:55] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0001_test_failure_solution_0000.txt
+[2026-05-08 08:39:56] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0001.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:39:56] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0002_test_failure_solution_0001.txt
+[2026-05-08 08:39:56] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0002.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:39:56] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0003_test_failure_solution_0002.txt
+[2026-05-08 08:39:56] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0003.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:39:56] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0004_test_failure_solution_0003.txt
+[2026-05-08 08:39:57] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0004.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:39:57] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0005_test_failure_solution_0004.txt
+[2026-05-08 08:39:57] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0005.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:39:57] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0006_test_failure_solution_0005.txt
+[2026-05-08 08:39:57] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0006.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:39:57] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0007_test_failure_solution_0006.txt
+[2026-05-08 08:39:57] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0007.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:39:57] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0008_test_failure_solution_0007.txt
+[2026-05-08 08:39:58] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0008.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:39:58] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0009_test_failure_solution_0008.txt
+[2026-05-08 08:39:58] [test 1] runtime failure for solution_0009.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0009.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:39:58] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0010_test_failure_solution_0009.txt
+[2026-05-08 08:39:58] [test 1] runtime failure for solution_0010.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0010.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:39:58] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0011_test_failure_solution_0010.txt
+[2026-05-08 08:39:58] [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0011.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:39:58] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0012_test_failure_solution_0011.txt
+[2026-05-08 08:39:59] [test 1] runtime failure for solution_0012.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0012.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:39:59] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0013_test_failure_solution_0012.txt
+[2026-05-08 08:39:59] [test 1] runtime failure for solution_0013.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0013.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:39:59] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0014_test_failure_solution_0013.txt
+[2026-05-08 08:39:59] [test 1] runtime failure for solution_0014.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0014.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:39:59] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0015_test_failure_solution_0014.txt
+[2026-05-08 08:39:59] [test 1] runtime failure for solution_0015.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0015.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:39:59] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0016_test_failure_solution_0015.txt
+[2026-05-08 08:40:00] [test 1] runtime failure for solution_0016.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0016.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:40:00] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0017_test_failure_solution_0016.txt
+[2026-05-08 08:40:00] [test 1] runtime failure for solution_0017.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0017.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:40:00] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0018_test_failure_solution_0017.txt
+[2026-05-08 08:40:00] [test 1] runtime failure for solution_0018.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0018.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:40:00] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0019_test_failure_solution_0018.txt
+[2026-05-08 08:40:01] [test 1] runtime failure for solution_0019.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0019.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:40:01] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0020_test_failure_solution_0019.txt
+[2026-05-08 08:40:01] [test 1] runtime failure for solution_0020.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0020.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=10,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_dimensions'
+
+[2026-05-08 08:40:01] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0021_test_failure_solution_0020.txt
+[2026-05-08 08:40:01] [test 1] runtime failure for solution_0021.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0021.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:40:01] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0022_test_failure_solution_0021.txt
+[2026-05-08 08:40:01] [test 1] runtime failure for solution_0022.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0022.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_agents=30,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:40:01] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0023_test_failure_solution_0022.txt
+[2026-05-08 08:40:02] [test 1] runtime failure for solution_0023.py
+returncode=1
+stdout:
+2026-05-08 08:40:02,111 - opytimizer.spaces.search — INFO — Overriding class: Space -> SearchSpace.
+2026-05-08 08:40:02,119 - opytimizer.core.space — DEBUG — Agents: 30 | Size: (2, 1) | Objectives: 1 | Lower Bound: [-5. -5.] | Upper Bound: [5. 5.] | Mapping: ['x0', 'x1'] | Built: True.
+2026-05-08 08:40:02,120 - opytimizer.spaces.search — INFO — Class overrided.
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0023.py", line 42, in <module>
+    optimizer = PSO(search_space, algorithm_params={"n_particles": 30})
+TypeError: PSO.__init__() got an unexpected keyword argument 'algorithm_params'
+
+[2026-05-08 08:40:02] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0024_test_failure_solution_0023.txt
+[2026-05-08 08:40:02] [test 1] runtime failure for solution_0024.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0024.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+        lower_bound=[-5.0] * dimension,
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 2 required positional arguments: 'n_agents' and 'n_objectives'
+
+[2026-05-08 08:40:02] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0025_test_failure_solution_0024.txt
+[2026-05-08 08:40:02] [test 1] runtime failure for solution_0025.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0025.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<3 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() got an unexpected keyword argument 'n_iterations'
+
+[2026-05-08 08:40:02] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0026_test_failure_solution_0025.txt
+[2026-05-08 08:40:02] [test 1] runtime failure for solution_0026.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke2_agent/solutions/solution_0026.py", line 33, in <module>
+    search_space = SearchSpace(
+        n_variables=dimension,
+    ...<2 lines>...
+        upper_bound=[5.0] * dimension
+    )
+TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'
+
+[2026-05-08 08:40:02] Saved test failure details to results/agent_bbob/smoke2_agent/debug/0027_test_failure_solution_0026.txt
+[2026-05-08 08:40:02] === Iteration 1/1 ===
+[2026-05-08 08:40:02] Prompt saved to results/agent_bbob/smoke2_agent/debug/0028_prompt.txt

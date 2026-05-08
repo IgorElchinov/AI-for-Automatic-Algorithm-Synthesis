@@ -1,0 +1,37 @@
+[test 1] runtime failure for solution_0064.py
+returncode=1
+stdout:
+2026-05-08 10:54:31,315 - opytimizer.spaces.search — INFO — Overriding class: Space -> SearchSpace.
+2026-05-08 10:54:31,323 - opytimizer.core.space — DEBUG — Agents: 10 | Size: (2, 1) | Objectives: 1 | Lower Bound: [-5. -5.] | Upper Bound: [5. 5.] | Mapping: ['x0', 'x1'] | Built: True.
+2026-05-08 10:54:31,324 - opytimizer.spaces.search — INFO — Class overrided.
+2026-05-08 10:54:31,324 - opytimizer.optimizers.single_objective.swarm.pso — INFO — Overriding class: Optimizer -> PSO.
+2026-05-08 10:54:31,324 - opytimizer.core.optimizer — DEBUG — Algorithm: PSO | Custom Parameters: None | Built: True.
+2026-05-08 10:54:31,324 - opytimizer.optimizers.single_objective.swarm.pso — INFO — Class overrided.
+2026-05-08 10:54:31,324 - opytimizer.core.function — INFO — Creating class: Function.
+2026-05-08 10:54:31,324 - opytimizer.core.function — DEBUG — Function: objective_fn | Built: True.
+2026-05-08 10:54:31,324 - opytimizer.core.function — INFO — Class created.
+2026-05-08 10:54:31,324 - opytimizer.opytimizer — INFO — Creating class: Opytimizer.
+2026-05-08 10:54:31,324 - opytimizer.opytimizer — DEBUG — Space: <opytimizer.spaces.search.SearchSpace object at 0x7616e9403230> | Optimizer: <opytimizer.optimizers.single_objective.swarm.pso.PSO object at 0x7616e949d160>| Function: <opytimizer.core.function.Function object at 0x7616e949d400>.
+2026-05-08 10:54:31,324 - opytimizer.opytimizer — INFO — Class created.
+2026-05-08 10:54:31,325 - opytimizer.opytimizer — INFO — Starting optimization task.
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke3_agent/solutions/solution_0064.py", line 51, in <module>
+    opt.start(n_iterations=evaluation_budget // 10)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/opytimizer.py", line 227, in start
+    self.evaluate(callbacks)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/opytimizer.py", line 185, in evaluate
+    self.optimizer.evaluate(*self.evaluate_args)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/optimizers/single_objective/swarm/pso.py", line 150, in evaluate
+    fit = function(agent.position)
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/core/function.py", line 57, in __call__
+    result = self.pointer(x)
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke3_agent/solutions/solution_0064.py", line 30, in objective_fn
+    return problem(x.reshape(1, -1))[0]
+           ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "cocoex/interface.pyx", line 841, in cocoex.interface.Problem.__call__
+ValueError: Buffer has wrong number of dimensions (expected 1, got 2)

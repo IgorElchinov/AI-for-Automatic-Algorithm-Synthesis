@@ -1,0 +1,1025 @@
+
+================================================================================
+ts=1778224341.7881255
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 278, in main
+    agent.run(0)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0002.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778224405.7526915
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0005.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778224474.8217607
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0008.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778224547.0390449
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0011.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778224620.967405
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0014.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0014.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778224698.4694333
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0017.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0017.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778224774.7829435
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0020.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0020.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778224847.8326936
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0023.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0023.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778224930.490532
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0026.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0026.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225009.5395966
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0029.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0029.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225088.0048797
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0032.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0032.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225172.3447416
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0035.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0035.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225249.5828536
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0038.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0038.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225330.2636461
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0041.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0041.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225411.354318
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0044.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0044.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225505.0993004
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0047.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0047.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225586.4947119
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0050.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0050.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225666.9723685
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0053.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0053.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225751.1017003
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0056.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0056.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225838.352554
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0059.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0059.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778225920.2336543
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0062.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0062.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778226299.1216161
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0065.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0065.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778226383.5313325
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0068.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0068.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778226474.770902
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0071.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0071.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778226572.1597486
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0074.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0074.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778226666.0076585
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0077.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0077.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778226754.9041338
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0080.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0080.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778226848.461028
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0083.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0083.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778226936.1201813
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0086.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0086.py", line 5, in <module>
+    from opytimizer.optimizers.swarm.pso import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227024.882399
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0089.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0089.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227118.4696994
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0092.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0092.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227209.9535453
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0095.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0095.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227305.9805477
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0098.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0098.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227399.2148097
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0101.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0101.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227496.7530246
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0104.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0104.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227591.962493
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0107.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0107.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227690.5362434
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0110.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0110.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227795.3345935
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0113.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0113.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227899.1288364
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0116.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0116.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778227998.6845431
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0119.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0119.py", line 5, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
+
+================================================================================
+ts=1778228097.8729815
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 290, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0122.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/agent_exp1/solutions/solution_0122.py", line 4, in <module>
+    from opytimizer.optimizers.swarm import PSO
+ModuleNotFoundError: No module named 'opytimizer.optimizers.swarm'
+
+
