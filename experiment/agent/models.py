@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 import time
 import typing as tp
+import os
 
 import requests
 
@@ -147,3 +148,125 @@ class OllamaClient:
                     time.sleep(1.5 * attempt)
 
         raise RuntimeError(f"Ollama generate failed after {max_attempts} attempts: {last_error}")
+
+
+class OpenRouterClient:
+    def __init__(
+        self,
+        model: str,
+        api_key: str | None = None,
+        base_url: str = "https://openrouter.ai/api/v1",
+        timeout: int = 600,
+        temperature: float = 0.15,
+        top_p: float = 0.9,
+        max_tokens: int = 768,
+        extra_headers: dict[str, str] | None = None,
+        max_attempts: int = 6,
+        debug_writer: tp.Callable[[str, str, str], Path] | None = None,
+        logger: tp.Callable[[str], None] | None = None,
+    ) -> None:
+        self.model = model
+        self.api_key = api_key or os.environ.get("OPENROUTER_API_KEY")
+        if not self.api_key:
+            raise ValueError("OPENROUTER_API_KEY is not set")
+
+        self.base_url = base_url.rstrip("/")
+        self.timeout = timeout
+        self.temperature = temperature
+        self.top_p = top_p
+        self.max_tokens = max_tokens
+        self.extra_headers = extra_headers or {}
+        self.max_attempts = max_attempts
+        self.debug_writer = debug_writer
+        self.logger = logger
+
+    def _log(self, message: str) -> None:
+        if self.logger is not None:
+            self.logger(message)
+
+    def _dump(self, stem: str, text: str, suffix: str) -> None:
+        if self.debug_writer is not None:
+            path = self.debug_writer(stem, text, suffix)
+            self._log(f"Saved debug artifact to {path}")
+
+    def generate(self, prompt: str) -> ModelResponse:
+        last_error: Exception | None = None
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+            **self.extra_headers,
+        }
+
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": self.temperature,
+            "top_p": self.top_p,
+            "max_tokens": self.max_tokens,
+            "stream": False,
+        }
+
+        for attempt in range(1, self.max_attempts + 1):
+            started_at = time.perf_counter()
+            raw_text = ""
+
+            try:
+                response = requests.post(
+                    f"{self.base_url}/chat/completions",
+                    headers=headers,
+                    json=payload,
+                    timeout=self.timeout,
+                )
+
+                raw_text = response.text
+                self._log(f"[openrouter attempt {attempt}/{self.max_attempts}] status={response.status_code}")
+                self._log(f"[openrouter attempt {attempt}/{self.max_attempts}] raw head={raw_text[:500]!r}")
+
+                if response.status_code >= 400:
+                    self._dump(f"openrouter_attempt_{attempt}_http_error", raw_text, ".json")
+                    response.raise_for_status()
+
+                data = response.json()
+
+                choices = data.get("choices", [])
+                if not choices:
+                    self._dump(f"openrouter_attempt_{attempt}_no_choices", raw_text, ".json")
+                    raise RuntimeError("OpenRouter response has no choices")
+
+                message = choices[0].get("message", {})
+                text = message.get("content")
+
+                if text is None:
+                    self._dump(f"openrouter_attempt_{attempt}_empty_content", raw_text, ".json")
+                    raise RuntimeError("OpenRouter response content is empty")
+
+                elapsed = time.perf_counter() - started_at
+                usage = data.get("usage", {})
+                self._log(
+                    f"[openrouter] model={data.get('model')} "
+                    f"prompt_tokens={usage.get('prompt_tokens')} "
+                    f"completion_tokens={usage.get('completion_tokens')} "
+                    f"total_tokens={usage.get('total_tokens')}"
+                )
+
+                return ModelResponse(
+                    text=text,
+                    wall_time_sec=elapsed,
+                    raw=data,
+                )
+
+            except Exception as exc:
+                last_error = exc
+                self._log(f"[openrouter attempt {attempt}/{self.max_attempts}] failed: {exc}")
+                if raw_text:
+                    self._dump(f"openrouter_attempt_{attempt}_raw", raw_text, ".txt")
+                if attempt < self.max_attempts:
+                    time.sleep(1.5 * attempt)
+
+        raise RuntimeError(f"OpenRouter generate failed after {self.max_attempts} attempts: {last_error}")
+
+
+

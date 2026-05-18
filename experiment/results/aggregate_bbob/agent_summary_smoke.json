@@ -1,36 +1,36 @@
 {
-  "n_agent_runs": 1,
+  "n_agent_runs": 4,
   "inner_loop_total_score_summary": {
-    "count": 1,
-    "mean": 28.408462240903493,
-    "median": 28.408462240903493,
-    "std": 0.0,
-    "min": 28.408462240903493,
-    "max": 28.408462240903493
+    "count": 4,
+    "mean": -7.5e+17,
+    "median": -1e+18,
+    "std": 4.330127018922193e+17,
+    "min": -1e+18,
+    "max": 28.408462240903756
   },
   "inner_loop_mean_score_summary": {
     "count": 1,
-    "mean": 0.5918429633521561,
-    "median": 0.5918429633521561,
+    "mean": 0.5918429633521616,
+    "median": 0.5918429633521616,
     "std": 0.0,
-    "min": 0.5918429633521561,
-    "max": 0.5918429633521561
+    "min": 0.5918429633521616,
+    "max": 0.5918429633521616
   },
   "final_holdout_total_score_summary": {
     "count": 1,
-    "mean": -417.81561767192824,
-    "median": -417.81561767192824,
+    "mean": -417.8156176719287,
+    "median": -417.8156176719287,
     "std": 0.0,
-    "min": -417.81561767192824,
-    "max": -417.81561767192824
+    "min": -417.8156176719287,
+    "max": -417.8156176719287
   },
   "final_holdout_mean_score_summary": {
     "count": 1,
-    "mean": -0.8704492034831838,
-    "median": -0.8704492034831838,
+    "mean": -0.8704492034831848,
+    "median": -0.8704492034831848,
     "std": 0.0,
-    "min": -0.8704492034831838,
-    "max": -0.8704492034831838
+    "min": -0.8704492034831848,
+    "max": -0.8704492034831848
   },
   "best_run_by_holdout_mean_score": {
     "run_name": "smoke_agent",
@@ -38,14 +38,14 @@
     "status": "completed",
     "completed_iterations": 2,
     "best_solution_path": "results/agent_bbob/smoke_agent/solutions/solution_0008.py",
-    "best_score_total_inner_loop": 28.408462240903493,
-    "best_score_mean_inner_loop": 0.5918429633521561,
+    "best_score_total_inner_loop": 28.408462240903756,
+    "best_score_mean_inner_loop": 0.5918429633521616,
     "n_inner_loop_tests": 48,
-    "final_holdout_total_score": -417.81561767192824,
-    "final_holdout_mean_score": -0.8704492034831838,
+    "final_holdout_total_score": -417.8156176719287,
+    "final_holdout_mean_score": -0.8704492034831848,
     "n_final_holdout_tests": 480,
-    "best_solution_test_time_sec": 64.2462678060001,
-    "model": "qwen2.5-coder:14b",
+    "best_solution_test_time_sec": 66.64808212200023,
+    "model": "openai/gpt-oss-120b:free",
     "temperature": 0.15,
     "top_p": 0.9,
     "num_ctx": 8192,

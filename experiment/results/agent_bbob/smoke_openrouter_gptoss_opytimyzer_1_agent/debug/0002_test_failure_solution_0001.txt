@@ -1,0 +1,39 @@
+[test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+2026-05-18 22:35:08,162 - opytimizer.spaces.search — INFO — Overriding class: Space -> SearchSpace.
+2026-05-18 22:35:08,162 - opytimizer.core.space — DEBUG — Agents: 20 | Size: (2, 1) | Objectives: 1 | Lower Bound: [-5. -5.] | Upper Bound: [5. 5.] | Mapping: ['x0', 'x1'] | Built: True.
+2026-05-18 22:35:08,163 - opytimizer.spaces.search — INFO — Class overrided.
+2026-05-18 22:35:08,163 - opytimizer.core.function — INFO — Creating class: Function.
+2026-05-18 22:35:08,163 - opytimizer.core.function — DEBUG — Function: objective | Built: True.
+2026-05-18 22:35:08,163 - opytimizer.core.function — INFO — Class created.
+2026-05-18 22:35:08,163 - opytimizer.optimizers.single_objective.swarm.pso — INFO — Overriding class: Optimizer -> PSO.
+2026-05-18 22:35:08,163 - opytimizer.core.optimizer — DEBUG — Algorithm: PSO | Custom Parameters: None | Built: True.
+2026-05-18 22:35:08,164 - opytimizer.optimizers.single_objective.swarm.pso — INFO — Class overrided.
+2026-05-18 22:35:08,164 - opytimizer.opytimizer — INFO — Creating class: Opytimizer.
+2026-05-18 22:35:08,164 - opytimizer.opytimizer — DEBUG — Space: <opytimizer.spaces.search.SearchSpace object at 0x10e0012b0> | Optimizer: <opytimizer.optimizers.single_objective.swarm.pso.PSO object at 0x10e001550>| Function: <opytimizer.core.function.Function object at 0x10e001400>.
+2026-05-18 22:35:08,164 - opytimizer.opytimizer — INFO — Class created.
+2026-05-18 22:35:08,164 - opytimizer.opytimizer — INFO — Starting optimization task.
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_openrouter_gptoss_opytimyzer_1_agent/solutions/solution_0001.py", line 63, in <module>
+    main()
+    ~~~~^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_openrouter_gptoss_opytimyzer_1_agent/solutions/solution_0001.py", line 57, in main
+    opt.start(n_iterations=n_iterations)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/opytimizer.py", line 227, in start
+    self.evaluate(callbacks)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/opytimizer.py", line 185, in evaluate
+    self.optimizer.evaluate(*self.evaluate_args)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/optimizers/single_objective/swarm/pso.py", line 150, in evaluate
+    fit = function(agent.position)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/core/function.py", line 57, in __call__
+    result = self.pointer(x)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_openrouter_gptoss_opytimyzer_1_agent/solutions/solution_0001.py", line 51, in objective
+    return problem(arr.tolist())[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: invalid index to scalar variable.

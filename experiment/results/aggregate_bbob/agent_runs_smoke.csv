@@ -1,2 +1,5 @@
 run_name,run_dir,status,completed_iterations,best_solution_path,best_score_total_inner_loop,best_score_mean_inner_loop,n_inner_loop_tests,final_holdout_total_score,final_holdout_mean_score,n_final_holdout_tests,best_solution_test_time_sec,model,temperature,top_p,num_ctx,num_predict,budget_multiplier
-smoke_agent,results/agent_bbob/smoke_agent,completed,2,results/agent_bbob/smoke_agent/solutions/solution_0008.py,28.408462240903493,0.5918429633521561,48,-417.81561767192824,-0.8704492034831838,480,64.2462678060001,qwen2.5-coder:14b,0.15,0.9,8192,768,20
+agent_exp1,results/agent_bbob/agent_exp1,paused_retrying,0,results/agent_bbob/agent_exp1/solutions/solution_0000.py,-1e+18,,,,,,,qwen2.5-coder:14b,0.15,0.9,8192,768,20
+smoke2_agent,results/agent_bbob/smoke2_agent,running,0,results/agent_bbob/smoke2_agent/solutions/solution_0000.py,-1e+18,,,,,,,qwen2.5-coder:14b,0.15,0.9,8192,768,20
+smoke3_agent,results/agent_bbob/smoke3_agent,running,0,results/agent_bbob/smoke3_agent/solutions/solution_0000.py,-1e+18,,,,,,,qwen2.5-coder:14b,0.15,0.9,8192,768,20
+smoke_agent,results/agent_bbob/smoke_agent,completed,2,results/agent_bbob/smoke_agent/solutions/solution_0008.py,28.408462240903756,0.5918429633521616,48,-417.8156176719287,-0.8704492034831848,480,66.64808212200023,openai/gpt-oss-120b:free,0.15,0.9,8192,768,20

@@ -13,7 +13,7 @@ from .interfaces import (
     ModelClient,
 )
 from .runner import PythonRunner
-from .models import OllamaClient
+from .models import OllamaClient, OpenRouterClient
 from .prompts import DefaultPromptStrategy
 from .validation import validate_python_file
 from .agent import Agent
@@ -31,6 +31,7 @@ __all__ = [
     "ModelClient",
     "PythonRunner",
     "OllamaClient",
+    "OpenRouterClient",
     "DefaultPromptStrategy",
     "validate_python_file",
     "Agent",

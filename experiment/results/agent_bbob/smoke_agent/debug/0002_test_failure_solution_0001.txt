@@ -16,6 +16,6 @@ Valid keys for suite instance are:
  instances
 
 Traceback (most recent call last):
-  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0001.py", line 24, in <module>
     problem = suite.get_problem()
 TypeError: Suite.get_problem() missing 1 required positional argument: 'id'

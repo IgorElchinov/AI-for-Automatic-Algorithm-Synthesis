@@ -8,12 +8,16 @@ import random
 import sys
 import time
 import traceback
+from typing import Callable
 
 from agent.agent import Agent
-from agent.models import OllamaClient
+from agent.interfaces import ModelClient
+from agent.models import OllamaClient, OpenRouterClient
 from agent.types import BAD_SCORE
 from tasks.coco_bbob import CocoBbobAdapter, DEFAULT_BBOB_PROBLEM_TEXT
 
+
+from dataclasses import dataclass
 
 @dataclass
 class RunConfig:
@@ -22,7 +26,10 @@ class RunConfig:
     max_consecutive_failures: int
     sleep_on_failure_sec: float
     pause_after_max_failures_sec: float
+
+    provider: str   # "ollama" | "openrouter"
     model: str
+
     timeout_per_test: int
     k: int
     retry_initial_generation: int
@@ -31,6 +38,7 @@ class RunConfig:
     smoke_test_count: int
     ancestor_pool_size: int
     budget_multiplier: int
+
     temperature: float
     top_p: float
     num_ctx: int
@@ -64,6 +72,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--think", action="store_true")
     parser.add_argument("--raw", action="store_true")
     parser.add_argument("--verbose", action="store_true")
+    parser.add_argument(
+        "--provider",
+        type=str,
+        choices=["ollama", "openrouter"],
+        default="ollama",
+    )
     return parser.parse_args()
 
 
@@ -104,6 +118,7 @@ def build_run_config(args: argparse.Namespace, run_name: str) -> RunConfig:
         max_consecutive_failures=args.max_consecutive_failures,
         sleep_on_failure_sec=args.sleep_on_failure_sec,
         pause_after_max_failures_sec=args.pause_after_max_failures_sec,
+        provider=args.provider,
         model=args.model,
         timeout_per_test=args.timeout_per_test,
         k=args.k,
@@ -127,21 +142,65 @@ def make_adapter(config: RunConfig) -> CocoBbobAdapter:
     return CocoBbobAdapter(problem_text=DEFAULT_BBOB_PROBLEM_TEXT, budget_multiplier=config.budget_multiplier)
 
 
-def make_client(config: RunConfig) -> OllamaClient:
-    return OllamaClient(
-        model=config.model,
-        think=config.think,
-        raw=config.raw,
-        num_ctx=config.num_ctx,
-        num_predict=config.num_predict,
-        temperature=config.temperature,
-        top_p=config.top_p,
-    )
+def make_client(
+    config: RunConfig,
+    logger: Callable[[str], None] | None = None,
+    debug_writer: Callable[[str, str, str], Path] | None = None,
+) -> ModelClient:
+    if config.provider == "ollama":
+        return OllamaClient(
+            model=config.model,
+            think=config.think,
+            raw=config.raw,
+            num_ctx=config.num_ctx,
+            num_predict=config.num_predict,
+            temperature=config.temperature,
+            top_p=config.top_p,
+            logger=logger,
+            debug_writer=debug_writer,
+        )
+
+    if config.provider == "openrouter":
+        return OpenRouterClient(
+            model=config.model,
+            temperature=config.temperature,
+            top_p=config.top_p,
+            max_tokens=config.num_predict,
+            logger=logger,
+            debug_writer=debug_writer,
+        )
+
+    raise ValueError(f"Unknown provider: {config.provider}")
 
 
 def build_agent(config: RunConfig, adapter: CocoBbobAdapter, run_dir: Path, solutions_dir: Path) -> Agent:
     Agent.SOLUTIONS_PATH = solutions_dir
-    client = make_client(config)
+
+    debug_dir = run_dir / "debug"
+    log_file = debug_dir / "agent.log"
+    debug_dir.mkdir(parents=True, exist_ok=True)
+
+    def logger(message: str) -> None:
+        line = f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] {message}"
+        if config.verbose:
+            print(line)
+        with log_file.open("a", encoding="utf-8") as f:
+            f.write(line + "\n")
+
+    artifact_counter = {"value": 0}
+
+    def debug_writer(stem: str, text: str, suffix: str) -> Path:
+        artifact_counter["value"] += 1
+        path = debug_dir / f"{artifact_counter['value']:04d}_{stem}{suffix}"
+        path.write_text(text, encoding="utf-8")
+        return path
+
+    client = make_client(
+        config,
+        logger=logger,
+        debug_writer=debug_writer,
+    )
+
     agent = Agent(
         problem=adapter,
         model_client=client,
@@ -150,14 +209,13 @@ def build_agent(config: RunConfig, adapter: CocoBbobAdapter, run_dir: Path, solu
         retry_initial_generation=config.retry_initial_generation,
         retry_fix_generation=config.retry_fix_generation,
         retry_runtime_fix_generation=config.retry_runtime_fix_generation,
-        debug_dir=run_dir / "debug",
+        debug_dir=debug_dir,
         verbose=config.verbose,
         smoke_test_count=config.smoke_test_count,
         ancestor_pool_size=config.ancestor_pool_size,
         initial_solutions=list_solution_files(solutions_dir),
     )
-    client.logger = agent._log
-    client.debug_writer = agent._write_debug_text
+
     return agent
 
 

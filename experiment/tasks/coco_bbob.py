@@ -8,41 +8,14 @@ import cocoex
 from agent.types import TestCase
 
 
-DEFAULT_BBOB_PROBLEM_TEXT = """
-Write a complete Python 3 program.
+# LIBRARY_RESTRICTIONS = '''
+# Library restrictions:
+# - you may use Python standard library
+# - you may use cocoex to access the benchmark problem
+# - You can use arbitrary optimization libraries such as opytimizer, scipy, nevergrad, pymoo, etc.
+# '''
 
-The program reads from stdin exactly 6 lines:
-1) suite name (always "bbob")
-2) function index (integer)
-3) dimension (integer)
-4) instance index (integer)
-5) evaluation budget (integer)
-6) random seed (integer)
-
-The program must:
-- import cocoex
-- reconstruct exactly the requested COCO BBOB problem
-- optimize the black-box function under the given evaluation budget
-- print exactly `dimension` floating-point numbers separated by spaces:
-  these numbers are the final candidate solution vector x
-
-Important API details:
-- suite_instance is a fixed string: "year: 2009"
-- instance is an integer index and must be used only inside suite_options
-- DO NOT pass the integer instance as suite_instance
-- reconstruct the problem exactly like this:
-
-    suite = cocoex.Suite(
-        suite_name=suite_name,
-        suite_instance="year: 2009",
-        suite_options=(
-            f"function_indices: {function_index} "
-            f"instance_indices: {instance} "
-            f"dimensions: {dimension}"
-        ),
-    )
-    problem = next(iter(suite))
-
+LIBRARY_RESTRICTIONS = '''
 Library restrictions:
 - you may use Python standard library
 - you may use cocoex to access the benchmark problem
@@ -92,6 +65,47 @@ optimizer = PSO()
 function = Function(objective_fn)
 opt = Opytimizer(space, optimizer, function)
 opt.start(n_iterations=n_iterations)
+'''
+
+
+DEFAULT_BBOB_PROBLEM_TEXT = """
+Write a complete Python 3 program.
+
+The program reads from stdin exactly 6 lines:
+1) suite name (always "bbob")
+2) function index (integer)
+3) dimension (integer)
+4) instance index (integer)
+5) evaluation budget (integer)
+6) random seed (integer)
+
+The program must:
+- import cocoex
+- reconstruct exactly the requested COCO BBOB problem
+- optimize the black-box function under the given evaluation budget
+- print exactly `dimension` floating-point numbers separated by spaces:
+  these numbers are the final candidate solution vector x
+
+Important API details:
+- suite_instance is a fixed string: "year: 2009"
+- instance is an integer index and must be used only inside suite_options
+- DO NOT pass the integer instance as suite_instance
+- reconstruct the problem exactly like this:
+
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance="year: 2009",
+        suite_options=(
+            f"function_indices: {function_index} "
+            f"instance_indices: {instance} "
+            f"dimensions: {dimension}"
+        ),
+    )
+    problem = next(iter(suite))
+
+""" + \
+LIBRARY_RESTRICTIONS + \
+"""
 
 Important:
 - Do not invent module paths.

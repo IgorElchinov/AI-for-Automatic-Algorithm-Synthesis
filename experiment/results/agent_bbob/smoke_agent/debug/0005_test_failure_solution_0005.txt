@@ -4,7 +4,7 @@ stdout:
 
 stderr:
 Traceback (most recent call last):
-  File "/home/igor/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0005.py", line 19, in <module>
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent/solutions/solution_0005.py", line 19, in <module>
     suite = cocoex.Suite(
         suite_name=suite_name,
         suite_instance=instance,

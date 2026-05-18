@@ -1,2 +1,5 @@
 run_name,run_dir,test_set,seed,budget_multiplier,n_tests,available_algorithms
+base_exp1,results/baselines_bbob/base_exp1,final,42,20,480,"pso,de,gwo,sa"
+smoke2_base,results/baselines_bbob/smoke2_base,final,42,20,480,pso
+smoke3_base,results/baselines_bbob/smoke3_base,final,42,20,480,pso
 smoke_base,results/baselines_bbob/smoke_base,final,42,20,480,pso

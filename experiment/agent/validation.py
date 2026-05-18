@@ -7,6 +7,14 @@ import subprocess
 from .types import Solution, ValidationResult
 
 
+BAD_MARKERS = [
+    "### Candidate solution",
+    "### Instruction",
+    "### Output requirements",
+    "### Task",
+    "```",
+]
+
 def is_degenerate_code(text: str) -> bool:
     stripped = text.strip()
 
@@ -16,29 +24,163 @@ def is_degenerate_code(text: str) -> bool:
     if stripped.replace("`", "").strip() == "":
         return True
 
-    # bad_markers = [
-    #     "### Candidate solution",
-    #     "### Instruction",
-    #     "### Output requirements",
-    #     "### Task",
-    # ]
-    # if any(marker in stripped for marker in bad_markers):
-    #     return True
-
-    # lines = [line.strip() for line in stripped.splitlines() if line.strip()]
-    # if lines:
-    #     if any(line.startswith("###") or line.startswith("```") for line in lines[:3]):
-    #         return True
-
     extracted = Solution.extract_code(text).strip()
     if not extracted:
         return True
+
+    if any(marker in stripped for marker in BAD_MARKERS):
+        lines = [line.strip() for line in stripped.splitlines() if line.strip()]
+        first_lines = lines[:8]
+        if any(
+            line.startswith("###")
+            or line.startswith("```")
+            or "Candidate solution" in line
+            or line.startswith("Instruction")
+            for line in first_lines
+        ):
+            return True
 
     tokens = stripped.split()
     if tokens and all(token.replace("`", "") == "" for token in tokens):
         return True
 
     return False
+
+
+ALLOWED_TOP_LEVEL_IMPORTS = {
+    "math",
+    "random",
+    "statistics",
+    "itertools",
+    "functools",
+    "collections",
+    "heapq",
+    "bisect",
+    "dataclasses",
+    "typing",
+    "pathlib",
+    "time",
+    "json",
+    "re",
+    "numpy",
+    "cocoex",
+    "opytimizer",
+}
+
+FORBIDDEN_PREFIXES = (
+    "scipy",
+    "nevergrad",
+    "pymoo",
+    "sklearn",
+    "torch",
+    "tensorflow",
+)
+
+BAD_IMPORT_PREFIXES = (
+    "opytimizer.optimizers.swarm",
+    "opytimizer.optimizers.population",
+    "opytimizer.optimizers.evolutionary",
+    "opytimizer.optimizers.science",
+)
+
+def validate_imports(text: str) -> ValidationResult | None:                 # TODO: Use this
+    try:
+        tree = ast.parse(text)
+    except SyntaxError:
+        return None  # syntax stage already handles this
+
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            for alias in node.names:
+                name = alias.name
+                top = name.split(".")[0]
+
+                if name.startswith(BAD_IMPORT_PREFIXES):
+                    return ValidationResult(
+                        False,
+                        "bad_import",
+                        f"Outdated Opytimizer import path: {name}",
+                    )
+
+                if name.startswith(FORBIDDEN_PREFIXES):
+                    return ValidationResult(
+                        False,
+                        "forbidden_import",
+                        f"Forbidden library import: {name}",
+                    )
+
+                if top not in ALLOWED_TOP_LEVEL_IMPORTS:
+                    return ValidationResult(
+                        False,
+                        "unknown_import",
+                        f"Unexpected import: {name}",
+                    )
+
+        elif isinstance(node, ast.ImportFrom):
+            module = node.module or ""
+            top = module.split(".")[0] if module else ""
+
+            if module.startswith(BAD_IMPORT_PREFIXES):
+                return ValidationResult(
+                    False,
+                    "bad_import",
+                    f"Outdated Opytimizer import path: {module}",
+                )
+
+            if module.startswith(FORBIDDEN_PREFIXES):
+                return ValidationResult(
+                    False,
+                    "forbidden_import",
+                    f"Forbidden library import: {module}",
+                )
+
+            if module and top not in ALLOWED_TOP_LEVEL_IMPORTS:
+                return ValidationResult(
+                    False,
+                    "unknown_import",
+                    f"Unexpected from-import: {module}",
+                )
+
+    return None
+
+
+REQUIRED_OPY_SYMBOLS = {
+    "Opytimizer",
+    "Function",
+    "SearchSpace",
+}
+
+def validate_opytimizer_usage(text: str) -> ValidationResult | None:                 # TODO: Use this
+    try:
+        tree = ast.parse(text)
+    except SyntaxError:
+        return None
+
+    imported_names = set()
+    imported_modules = set()
+
+    for node in ast.walk(tree):
+        if isinstance(node, ast.ImportFrom):
+            module = node.module or ""
+            imported_modules.add(module)
+            for alias in node.names:
+                imported_names.add(alias.name)
+        elif isinstance(node, ast.Import):
+            for alias in node.names:
+                imported_modules.add(alias.name)
+
+    if "opytimizer" not in {m.split(".")[0] for m in imported_modules}:
+        return ValidationResult(False, "missing_opytimizer", "No Opytimizer import found")
+
+    missing = REQUIRED_OPY_SYMBOLS - imported_names
+    if missing:
+        return ValidationResult(
+            False,
+            "missing_opytimizer_symbols",
+            f"Missing required Opytimizer symbols: {sorted(missing)}",
+        )
+
+    return None
 
 
 def validate_python_file(solution: Solution) -> ValidationResult:

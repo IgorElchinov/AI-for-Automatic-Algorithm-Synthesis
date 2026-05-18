@@ -1,0 +1,49 @@
+
+================================================================================
+ts=1779132901.387103
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 336, in main
+    agent.run(0)
+    ~~~~~~~~~^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+2026-05-18 22:35:01,284 - opytimizer.spaces.search — INFO — Overriding class: Space -> SearchSpace.
+2026-05-18 22:35:01,284 - opytimizer.core.space — DEBUG — Agents: 20 | Size: (2, 1) | Objectives: 1 | Lower Bound: [-5. -5.] | Upper Bound: [5. 5.] | Mapping: ['x0', 'x1'] | Built: True.
+2026-05-18 22:35:01,285 - opytimizer.spaces.search — INFO — Class overrided.
+2026-05-18 22:35:01,285 - opytimizer.core.function — INFO — Creating class: Function.
+2026-05-18 22:35:01,285 - opytimizer.core.function — DEBUG — Function: objective | Built: True.
+2026-05-18 22:35:01,285 - opytimizer.core.function — INFO — Class created.
+2026-05-18 22:35:01,285 - opytimizer.optimizers.single_objective.swarm.pso — INFO — Overriding class: Optimizer -> PSO.
+2026-05-18 22:35:01,286 - opytimizer.core.optimizer — DEBUG — Algorithm: PSO | Custom Parameters: None | Built: True.
+2026-05-18 22:35:01,286 - opytimizer.optimizers.single_objective.swarm.pso — INFO — Class overrided.
+2026-05-18 22:35:01,286 - opytimizer.opytimizer — INFO — Creating class: Opytimizer.
+2026-05-18 22:35:01,286 - opytimizer.opytimizer — DEBUG — Space: <opytimizer.spaces.search.SearchSpace object at 0x10add5160> | Optimizer: <opytimizer.optimizers.single_objective.swarm.pso.PSO object at 0x10add5400>| Function: <opytimizer.core.function.Function object at 0x10add52b0>.
+2026-05-18 22:35:01,286 - opytimizer.opytimizer — INFO — Class created.
+2026-05-18 22:35:01,286 - opytimizer.opytimizer — INFO — Starting optimization task.
+2026-05-18 22:35:01,297 - opytimizer.opytimizer — INFO — Optimization task ended.
+2026-05-18 22:35:01,297 - opytimizer.opytimizer — INFO — It took 0.011243104934692383 seconds.
+
+stderr:
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+  0%|          | 0/2 [00:00<?, ?it/s, fitness=79.8]
+ 50%|#####     | 1/2 [00:00<00:00, 296.46it/s, fitness=79.6]
+100%|##########| 2/2 [00:00<00:00, 532.61it/s, fitness=79.6]
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_openrouter_gptoss_opytimyzer_1_agent/solutions/solution_0002.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_openrouter_gptoss_opytimyzer_1_agent/solutions/solution_0002.py", line 58, in main
+    best = opt.best_agent.position
+           ^^^^^^^^^^^^^^
+AttributeError: 'Opytimizer' object has no attribute 'best_agent'
+
+

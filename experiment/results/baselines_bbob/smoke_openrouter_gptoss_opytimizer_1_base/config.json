@@ -1,0 +1,22 @@
+{
+  "run_name": "smoke_openrouter_gptoss_opytimizer_1_base",
+  "model_group": "opytimizer_baselines",
+  "seed": 42,
+  "budget_multiplier": 20,
+  "test_set": "final",
+  "selected_algorithms": [
+    "pso"
+  ],
+  "n_tests": 480,
+  "available_algorithms": [
+    "pso"
+  ],
+  "missing_algorithms": [
+    {
+      "name": "woa",
+      "module_path": "opytimizer.optimizers.single_objective.population",
+      "class_name": "WOA",
+      "error": "module 'opytimizer.optimizers.single_objective.population' has no attribute 'WOA'"
+    }
+  ]
+}

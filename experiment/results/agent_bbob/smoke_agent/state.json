@@ -11,9 +11,9 @@
   "last_error": null,
   "final_holdout_score": -417.81561767192824,
   "final_holdout_issue": "OK",
-  "last_update_ts": 1778223823.7087858,
-  "best_score_total_inner_loop": 28.408462240903493,
-  "best_score_mean_inner_loop": 0.5918429633521561,
-  "final_holdout_total_score": -417.81561767192824,
-  "final_holdout_mean_score": -0.8704492034831838
+  "last_update_ts": 1779131974.404191,
+  "best_score_total_inner_loop": 28.408462240903756,
+  "best_score_mean_inner_loop": 0.5918429633521616,
+  "final_holdout_total_score": -417.8156176719287,
+  "final_holdout_mean_score": -0.8704492034831848
 }
