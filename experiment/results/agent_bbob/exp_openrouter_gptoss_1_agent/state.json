@@ -1,0 +1,17 @@
+{
+  "run_name": "exp_openrouter_gptoss_1_agent",
+  "status": "running",
+  "initialized": true,
+  "completed_iterations": 7,
+  "consecutive_failures": 0,
+  "total_failures": 0,
+  "pause_cycles": 0,
+  "best_solution_path": "results/agent_bbob/exp_openrouter_gptoss_1_agent/solutions/solution_0001.py",
+  "best_score_total_inner_loop": 31.23036933035454,
+  "best_score_mean_inner_loop": 0.6506326943823862,
+  "last_error": null,
+  "final_holdout_total_score": null,
+  "final_holdout_mean_score": null,
+  "final_holdout_issue": null,
+  "last_update_ts": 1779276320.306449
+}

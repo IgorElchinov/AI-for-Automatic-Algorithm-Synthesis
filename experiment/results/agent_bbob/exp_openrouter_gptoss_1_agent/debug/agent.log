@@ -1,0 +1,201 @@
+[2026-05-20 13:03:22] Agent initialized
+[2026-05-20 13:03:22] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0001_prompt.txt
+[2026-05-20 13:03:45] [openrouter attempt 1/6] status=200
+[2026-05-20 13:03:45] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 13:03:45] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=560 completion_tokens=347 total_tokens=907
+[2026-05-20 13:03:45] [generate_candidate] solution_0000.py validation=ok ok=True
+[2026-05-20 13:03:45] [tests] solution_0000.py score=-0.172120 time=0.36s issue=OK
+[2026-05-20 13:03:54] [tests] solution_0000.py score=17.346264 time=8.69s issue=OK
+[2026-05-20 13:03:54] Agent initialized
+[2026-05-20 13:04:03] [tests] solution_0000.py score=17.346264 time=8.57s issue=OK
+[2026-05-20 13:04:03] === Iteration 1/1 ===
+[2026-05-20 13:04:03] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0001_prompt.txt
+[2026-05-20 13:05:07] [openrouter attempt 1/6] status=200
+[2026-05-20 13:05:07] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 13:05:07] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=863 completion_tokens=1129 total_tokens=1992
+[2026-05-20 13:05:07] [generate_candidate] solution_0001.py validation=ok ok=True
+[2026-05-20 13:05:07] [tests] solution_0001.py score=0.054936 time=0.42s issue=OK
+[2026-05-20 13:05:17] [tests] solution_0001.py score=31.230369 time=9.64s issue=OK
+[2026-05-20 13:05:17] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0002_prompt.txt
+[2026-05-20 13:06:16] [openrouter attempt 1/6] status=200
+[2026-05-20 13:06:16] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 13:06:16] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=1635 completion_tokens=1098 total_tokens=2733
+[2026-05-20 13:06:16] [generate_candidate] solution_0002.py validation=ok ok=True
+[2026-05-20 13:06:17] [tests] solution_0002.py score=0.054936 time=0.41s issue=OK
+[2026-05-20 13:06:25] [tests] solution_0002.py score=31.230369 time=9.76s issue=OK
+[2026-05-20 13:06:25] [best] solution_0002.py score=31.230369
+[2026-05-20 13:06:25] Agent initialized
+[2026-05-20 13:06:33] [tests] solution_0000.py score=17.346264 time=8.45s issue=OK
+[2026-05-20 13:06:43] [tests] solution_0001.py score=31.230369 time=9.65s issue=OK
+[2026-05-20 13:06:53] [tests] solution_0002.py score=31.230369 time=9.72s issue=OK
+[2026-05-20 13:06:53] === Iteration 1/1 ===
+[2026-05-20 13:06:53] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0001_prompt.txt
+[2026-05-20 13:07:53] [openrouter attempt 1/6] status=200
+[2026-05-20 13:07:53] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 13:07:53] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=2996 completion_tokens=1099 total_tokens=4095
+[2026-05-20 13:07:53] [generate_candidate] solution_0003.py validation=ok ok=True
+[2026-05-20 13:07:54] [tests] solution_0003.py score=0.054936 time=0.41s issue=OK
+[2026-05-20 13:08:03] [tests] solution_0003.py score=31.230369 time=9.63s issue=OK
+[2026-05-20 13:08:03] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0002_prompt.txt
+[2026-05-20 13:09:02] [openrouter attempt 1/6] status=200
+[2026-05-20 13:09:02] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 13:09:02] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=1620 completion_tokens=1091 total_tokens=2711
+[2026-05-20 13:09:02] [generate_candidate] solution_0004.py validation=ok ok=True
+[2026-05-20 13:09:03] [tests] solution_0004.py score=0.054936 time=0.41s issue=OK
+[2026-05-20 13:09:12] [tests] solution_0004.py score=31.230369 time=9.66s issue=OK
+[2026-05-20 13:09:12] [best] solution_0001.py score=31.230369
+[2026-05-20 13:09:12] Agent initialized
+[2026-05-20 13:09:21] [tests] solution_0000.py score=17.346264 time=8.43s issue=OK
+[2026-05-20 13:09:30] [tests] solution_0001.py score=31.230369 time=9.61s issue=OK
+[2026-05-20 13:09:40] [tests] solution_0002.py score=31.230369 time=9.61s issue=OK
+[2026-05-20 13:09:50] [tests] solution_0003.py score=31.230369 time=9.65s issue=OK
+[2026-05-20 13:09:59] [tests] solution_0004.py score=31.230369 time=9.65s issue=OK
+[2026-05-20 13:09:59] === Iteration 1/1 ===
+[2026-05-20 13:09:59] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0001_prompt.txt
+[2026-05-20 13:10:58] [openrouter attempt 1/6] status=200
+[2026-05-20 13:10:58] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 13:10:58] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=2981 completion_tokens=1123 total_tokens=4104
+[2026-05-20 13:10:58] [generate_candidate] solution_0005.py validation=ok ok=True
+[2026-05-20 13:10:58] [tests] solution_0005.py score=0.054936 time=0.40s issue=OK
+[2026-05-20 13:11:08] [tests] solution_0005.py score=31.230369 time=9.69s issue=OK
+[2026-05-20 13:11:08] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0002_prompt.txt
+[2026-05-20 13:12:08] [openrouter attempt 1/6] status=200
+[2026-05-20 13:12:08] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 13:12:08] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=1620 completion_tokens=1094 total_tokens=2714
+[2026-05-20 13:12:08] [generate_candidate] solution_0006.py validation=ok ok=True
+[2026-05-20 13:12:08] [tests] solution_0006.py score=0.054936 time=0.41s issue=OK
+[2026-05-20 13:12:18] [tests] solution_0006.py score=31.230369 time=9.63s issue=OK
+[2026-05-20 13:12:18] [best] solution_0001.py score=31.230369
+[2026-05-20 13:12:18] Agent initialized
+[2026-05-20 13:12:26] [tests] solution_0000.py score=17.346264 time=8.37s issue=OK
+[2026-05-20 13:12:36] [tests] solution_0001.py score=31.230369 time=9.56s issue=OK
+[2026-05-20 13:12:45] [tests] solution_0002.py score=31.230369 time=9.58s issue=OK
+[2026-05-20 13:12:55] [tests] solution_0003.py score=31.230369 time=9.55s issue=OK
+[2026-05-20 13:13:04] [tests] solution_0004.py score=31.230369 time=9.56s issue=OK
+[2026-05-20 13:13:14] [tests] solution_0005.py score=31.230369 time=9.64s issue=OK
+[2026-05-20 13:13:23] [tests] solution_0006.py score=31.230369 time=9.55s issue=OK
+[2026-05-20 13:13:23] === Iteration 1/1 ===
+[2026-05-20 13:13:23] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0001_prompt.txt
+[2026-05-20 13:14:07] [openrouter attempt 1/6] status=200
+[2026-05-20 13:14:07] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 13:14:07] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=3751 completion_tokens=1079 total_tokens=4830
+[2026-05-20 13:14:07] [generate_candidate] solution_0007.py validation=ok ok=True
+[2026-05-20 13:14:08] [tests] solution_0007.py score=0.054936 time=0.41s issue=OK
+[2026-05-20 13:14:17] [tests] solution_0007.py score=31.230369 time=9.58s issue=OK
+[2026-05-20 13:14:17] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0002_prompt.txt
+[2026-05-20 13:15:05] [openrouter attempt 1/6] status=200
+[2026-05-20 13:15:05] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 13:15:05] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=1617 completion_tokens=1094 total_tokens=2711
+[2026-05-20 13:15:05] [generate_candidate] solution_0008.py validation=ok ok=True
+[2026-05-20 13:15:05] [tests] solution_0008.py score=0.054936 time=0.40s issue=OK
+[2026-05-20 13:15:15] [tests] solution_0008.py score=31.230369 time=9.58s issue=OK
+[2026-05-20 13:15:15] [best] solution_0001.py score=31.230369
+[2026-05-20 13:15:15] Agent initialized
+[2026-05-20 13:59:29] [tests] solution_0000.py score=17.346264 time=13.43s issue=OK
+[2026-05-20 13:59:40] [tests] solution_0001.py score=31.230369 time=11.12s issue=OK
+[2026-05-20 13:59:51] [tests] solution_0002.py score=31.230369 time=11.04s issue=OK
+[2026-05-20 14:00:07] [tests] solution_0003.py score=31.230369 time=15.83s issue=OK
+[2026-05-20 14:00:16] [tests] solution_0004.py score=31.230369 time=9.01s issue=OK
+[2026-05-20 14:00:24] [tests] solution_0005.py score=31.230369 time=8.31s issue=OK
+[2026-05-20 14:00:31] [tests] solution_0006.py score=31.230369 time=6.80s issue=OK
+[2026-05-20 14:00:38] [tests] solution_0007.py score=31.230369 time=7.64s issue=OK
+[2026-05-20 14:00:46] [tests] solution_0008.py score=31.230369 time=7.06s issue=OK
+[2026-05-20 14:00:46] === Iteration 1/1 ===
+[2026-05-20 14:00:46] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0001_prompt.txt
+[2026-05-20 14:01:57] [openrouter attempt 1/6] status=200
+[2026-05-20 14:01:57] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 14:01:57] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=3748 completion_tokens=1079 total_tokens=4827
+[2026-05-20 14:01:57] [generate_candidate] solution_0009.py validation=ok ok=True
+[2026-05-20 14:01:57] [tests] solution_0009.py score=0.054936 time=0.33s issue=OK
+[2026-05-20 14:02:04] [tests] solution_0009.py score=31.230369 time=6.80s issue=OK
+[2026-05-20 14:02:04] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0002_prompt.txt
+[2026-05-20 14:03:08] [openrouter attempt 1/6] status=200
+[2026-05-20 14:03:08] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 14:03:08] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=1617 completion_tokens=1094 total_tokens=2711
+[2026-05-20 14:03:09] [generate_candidate] solution_0010.py validation=ok ok=True
+[2026-05-20 14:03:09] [tests] solution_0010.py score=0.054936 time=0.29s issue=OK
+[2026-05-20 14:03:15] [tests] solution_0010.py score=31.230369 time=6.46s issue=OK
+[2026-05-20 14:03:15] [best] solution_0001.py score=31.230369
+[2026-05-20 14:03:15] Agent initialized
+[2026-05-20 14:03:21] [tests] solution_0000.py score=17.346264 time=5.78s issue=OK
+[2026-05-20 14:03:28] [tests] solution_0001.py score=31.230369 time=6.45s issue=OK
+[2026-05-20 14:03:34] [tests] solution_0002.py score=31.230369 time=6.96s issue=OK
+[2026-05-20 14:03:41] [tests] solution_0003.py score=31.230369 time=6.29s issue=OK
+[2026-05-20 14:03:47] [tests] solution_0004.py score=31.230369 time=6.40s issue=OK
+[2026-05-20 14:03:53] [tests] solution_0005.py score=31.230369 time=6.27s issue=OK
+[2026-05-20 14:04:00] [tests] solution_0006.py score=31.230369 time=6.17s issue=OK
+[2026-05-20 14:04:06] [tests] solution_0007.py score=31.230369 time=6.15s issue=OK
+[2026-05-20 14:04:12] [tests] solution_0008.py score=31.230369 time=6.19s issue=OK
+[2026-05-20 14:04:18] [tests] solution_0009.py score=31.230369 time=6.16s issue=OK
+[2026-05-20 14:04:24] [tests] solution_0010.py score=31.230369 time=6.18s issue=OK
+[2026-05-20 14:04:24] === Iteration 1/1 ===
+[2026-05-20 14:04:24] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0001_prompt.txt
+[2026-05-20 14:05:14] [openrouter attempt 1/6] status=200
+[2026-05-20 14:05:14] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 14:05:14] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=3751 completion_tokens=1079 total_tokens=4830
+[2026-05-20 14:05:14] [generate_candidate] solution_0011.py validation=ok ok=True
+[2026-05-20 14:05:14] [tests] solution_0011.py score=0.054936 time=0.29s issue=OK
+[2026-05-20 14:05:21] [tests] solution_0011.py score=31.230369 time=6.42s issue=OK
+[2026-05-20 14:05:21] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0002_prompt.txt
+[2026-05-20 14:06:12] [openrouter attempt 1/6] status=200
+[2026-05-20 14:06:12] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 14:06:12] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=1617 completion_tokens=1082 total_tokens=2699
+[2026-05-20 14:06:12] [generate_candidate] solution_0012.py validation=ok ok=True
+[2026-05-20 14:06:12] [tests] solution_0012.py score=0.054936 time=0.29s issue=OK
+[2026-05-20 14:06:19] [tests] solution_0012.py score=31.230369 time=6.42s issue=OK
+[2026-05-20 14:06:19] [best] solution_0001.py score=31.230369
+[2026-05-20 14:06:19] Agent initialized
+[2026-05-20 14:06:24] [tests] solution_0000.py score=17.346264 time=5.42s issue=OK
+[2026-05-20 14:06:30] [tests] solution_0001.py score=31.230369 time=6.14s issue=OK
+[2026-05-20 14:06:36] [tests] solution_0002.py score=31.230369 time=6.17s issue=OK
+[2026-05-20 14:06:42] [tests] solution_0003.py score=31.230369 time=6.14s issue=OK
+[2026-05-20 14:06:49] [tests] solution_0004.py score=31.230369 time=6.20s issue=OK
+[2026-05-20 14:06:55] [tests] solution_0005.py score=31.230369 time=6.30s issue=OK
+[2026-05-20 14:07:01] [tests] solution_0006.py score=31.230369 time=6.24s issue=OK
+[2026-05-20 14:07:07] [tests] solution_0007.py score=31.230369 time=6.28s issue=OK
+[2026-05-20 14:07:14] [tests] solution_0008.py score=31.230369 time=6.15s issue=OK
+[2026-05-20 14:07:20] [tests] solution_0009.py score=31.230369 time=6.19s issue=OK
+[2026-05-20 14:07:26] [tests] solution_0010.py score=31.230369 time=6.20s issue=OK
+[2026-05-20 14:07:32] [tests] solution_0011.py score=31.230369 time=6.14s issue=OK
+[2026-05-20 14:07:38] [tests] solution_0012.py score=31.230369 time=6.19s issue=OK
+[2026-05-20 14:07:38] === Iteration 1/1 ===
+[2026-05-20 14:07:38] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0001_prompt.txt
+[2026-05-20 14:08:45] [openrouter attempt 1/6] status=200
+[2026-05-20 14:08:45] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 14:08:45] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=3751 completion_tokens=1085 total_tokens=4836
+[2026-05-20 14:08:46] [generate_candidate] solution_0013.py validation=ok ok=True
+[2026-05-20 14:08:46] [tests] solution_0013.py score=0.054936 time=0.32s issue=OK
+[2026-05-20 14:08:55] [tests] solution_0013.py score=31.230369 time=8.75s issue=OK
+[2026-05-20 14:08:55] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0002_prompt.txt
+[2026-05-20 14:10:12] [openrouter attempt 1/6] status=200
+[2026-05-20 14:10:12] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 14:10:12] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=1620 completion_tokens=1105 total_tokens=2725
+[2026-05-20 14:10:13] [generate_candidate] solution_0014.py validation=ok ok=True
+[2026-05-20 14:10:14] [tests] solution_0014.py score=0.054936 time=1.49s issue=OK
+[2026-05-20 14:25:20] [tests] solution_0014.py score=31.230369 time=12.46s issue=OK
+[2026-05-20 14:25:20] [best] solution_0001.py score=31.230369
+[2026-05-20 14:25:20] Agent initialized
+[2026-05-20 14:25:30] [tests] solution_0000.py score=17.346264 time=9.85s issue=OK
+[2026-05-20 14:25:38] [tests] solution_0001.py score=31.230369 time=7.86s issue=OK
+[2026-05-20 14:25:44] [tests] solution_0002.py score=31.230369 time=6.45s issue=OK
+[2026-05-20 14:25:50] [tests] solution_0003.py score=31.230369 time=6.47s issue=OK
+[2026-05-20 14:25:57] [tests] solution_0004.py score=31.230369 time=6.52s issue=OK
+[2026-05-20 14:26:03] [tests] solution_0005.py score=31.230369 time=6.23s issue=OK
+[2026-05-20 14:26:09] [tests] solution_0006.py score=31.230369 time=6.07s issue=OK
+[2026-05-20 14:26:44] [tests] solution_0007.py score=31.230369 time=9.72s issue=OK
+[2026-05-20 14:26:51] [tests] solution_0008.py score=31.230369 time=7.48s issue=OK
+[2026-05-20 14:27:51] [tests] solution_0009.py score=31.230369 time=11.14s issue=OK
+[2026-05-20 14:42:59] [tests] solution_0010.py score=31.230369 time=11.24s issue=OK
+[2026-05-20 14:43:06] [tests] solution_0011.py score=31.230369 time=6.28s issue=OK
+[2026-05-20 14:43:25] [tests] solution_0012.py score=31.230369 time=19.59s issue=OK
+[2026-05-20 14:53:49] [tests] solution_0013.py score=31.230369 time=27.93s issue=OK
+[2026-05-20 14:53:59] [tests] solution_0014.py score=31.230369 time=10.06s issue=OK
+[2026-05-20 14:53:59] === Iteration 1/1 ===
+[2026-05-20 14:53:59] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0001_prompt.txt
+[2026-05-20 14:54:46] [openrouter attempt 1/6] status=200
+[2026-05-20 14:54:46] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-05-20 14:54:46] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=3748 completion_tokens=1085 total_tokens=4833
+[2026-05-20 14:54:46] [generate_candidate] solution_0015.py validation=ok ok=True
+[2026-05-20 14:54:47] [tests] solution_0015.py score=0.054936 time=0.29s issue=OK
+[2026-05-20 14:54:53] [tests] solution_0015.py score=31.230369 time=6.84s issue=OK
+[2026-05-20 14:54:53] Prompt saved to results/agent_bbob/exp_openrouter_gptoss_1_agent/debug/0002_prompt.txt

@@ -8,64 +8,64 @@ import cocoex
 from agent.types import TestCase
 
 
-# LIBRARY_RESTRICTIONS = '''
-# Library restrictions:
-# - you may use Python standard library
-# - you may use cocoex to access the benchmark problem
-# - You can use arbitrary optimization libraries such as opytimizer, scipy, nevergrad, pymoo, etc.
-# '''
-
 LIBRARY_RESTRICTIONS = '''
 Library restrictions:
 - you may use Python standard library
 - you may use cocoex to access the benchmark problem
-- for the optimization algorithm itself, use Opytimizer
-- do NOT rely on arbitrary third-party optimization libraries such as scipy, nevergrad, pymoo, etc.
-- the point of the task is to build the optimizer using Opytimizer components
-
-Opytimizer API memo
-
-Use only the current Opytimizer API.
-
-Verified core imports:
-from opytimizer import Opytimizer
-from opytimizer.core import Function
-from opytimizer.spaces import SearchSpace
-
-Verified optimizer import example:
-from opytimizer.optimizers.single_objective.swarm import PSO
-
-Current package structure:
-- opytimizer.optimizers.single_objective.evolutionary
-- opytimizer.optimizers.single_objective.misc
-- opytimizer.optimizers.single_objective.population
-- opytimizer.optimizers.single_objective.science
-- opytimizer.optimizers.single_objective.social
-- opytimizer.optimizers.single_objective.swarm
-
-Do not use old import paths such as:
-- from opytimizer.optimizers.swarm import PSO
-
-Typical usage pattern:
-1. Define objective function and wrap it with Function(...)
-2. Build SearchSpace(...)
-3. Instantiate optimizer, e.g. PSO()
-4. Build Opytimizer(space, optimizer, function)
-5. Run opt.start(n_iterations=...)
-
-Reference pattern:
-space = SearchSpace(
-    n_agents=n_agents,
-    n_variables=dimension,
-    n_objectives=1,
-    lower_bound=lower_bound,
-    upper_bound=upper_bound,
-)
-optimizer = PSO()
-function = Function(objective_fn)
-opt = Opytimizer(space, optimizer, function)
-opt.start(n_iterations=n_iterations)
+- You can use arbitrary optimization libraries such as opytimizer, scipy, nevergrad, pymoo, etc.
 '''
+
+# LIBRARY_RESTRICTIONS = '''
+# Library restrictions:
+# - you may use Python standard library
+# - you may use cocoex to access the benchmark problem
+# - for the optimization algorithm itself, use Opytimizer
+# - do NOT rely on arbitrary third-party optimization libraries such as scipy, nevergrad, pymoo, etc.
+# - the point of the task is to build the optimizer using Opytimizer components
+
+# Opytimizer API memo
+
+# Use only the current Opytimizer API.
+
+# Verified core imports:
+# from opytimizer import Opytimizer
+# from opytimizer.core import Function
+# from opytimizer.spaces import SearchSpace
+
+# Verified optimizer import example:
+# from opytimizer.optimizers.single_objective.swarm import PSO
+
+# Current package structure:
+# - opytimizer.optimizers.single_objective.evolutionary
+# - opytimizer.optimizers.single_objective.misc
+# - opytimizer.optimizers.single_objective.population
+# - opytimizer.optimizers.single_objective.science
+# - opytimizer.optimizers.single_objective.social
+# - opytimizer.optimizers.single_objective.swarm
+
+# Do not use old import paths such as:
+# - from opytimizer.optimizers.swarm import PSO
+
+# Typical usage pattern:
+# 1. Define objective function and wrap it with Function(...)
+# 2. Build SearchSpace(...)
+# 3. Instantiate optimizer, e.g. PSO()
+# 4. Build Opytimizer(space, optimizer, function)
+# 5. Run opt.start(n_iterations=...)
+
+# Reference pattern:
+# space = SearchSpace(
+#     n_agents=n_agents,
+#     n_variables=dimension,
+#     n_objectives=1,
+#     lower_bound=lower_bound,
+#     upper_bound=upper_bound,
+# )
+# optimizer = PSO()
+# function = Function(objective_fn)
+# opt = Opytimizer(space, optimizer, function)
+# opt.start(n_iterations=n_iterations)
+# '''
 
 
 DEFAULT_BBOB_PROBLEM_TEXT = """
