@@ -287,3 +287,5 @@
 {"ts": 1781861052.727714, "event": "agent_exception", "completed_iterations": 0, "consecutive_failures": 17, "error": "OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions"}
 {"ts": 1781861086.326991, "event": "agent_exception", "completed_iterations": 0, "consecutive_failures": 18, "error": "OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions"}
 {"ts": 1781861119.478274, "event": "agent_exception", "completed_iterations": 0, "consecutive_failures": 19, "error": "OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions"}
+{"ts": 1781861151.805902, "event": "agent_exception", "completed_iterations": 0, "consecutive_failures": 20, "error": "OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions"}
+{"ts": 1781861156.811784, "event": "pause_after_max_consecutive_failures", "consecutive_failures": 20, "pause_cycles": 15, "sleep_sec": 300.0}

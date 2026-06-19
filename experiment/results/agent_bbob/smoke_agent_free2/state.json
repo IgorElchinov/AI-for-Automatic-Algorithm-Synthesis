@@ -1,11 +1,11 @@
 {
   "run_name": "smoke_agent_free2",
-  "status": "running",
+  "status": "paused_retrying",
   "initialized": false,
   "completed_iterations": 0,
-  "consecutive_failures": 19,
-  "total_failures": 299,
-  "pause_cycles": 14,
+  "consecutive_failures": 20,
+  "total_failures": 300,
+  "pause_cycles": 15,
   "best_solution_path": null,
   "best_score_total_inner_loop": null,
   "best_score_mean_inner_loop": null,
@@ -13,5 +13,5 @@
   "final_holdout_total_score": null,
   "final_holdout_mean_score": null,
   "final_holdout_issue": null,
-  "last_update_ts": 1781861119.4775622
+  "last_update_ts": 1781861156.8109162
 }
