@@ -10698,3 +10698,345 @@ Traceback (most recent call last):
   File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
 RuntimeError: OpenRouter generate failed after 6 attempts: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
 
+
+================================================================================
+ts=1781860737.549522
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781860770.7736661
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781860804.50418
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781860837.673557
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781860873.190762
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781860906.004491
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781860937.5486012
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781860939.226343
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781860970.035114
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781860970.7249448
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781861002.124616
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781861003.0002618
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781861033.33664
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781861036.894347
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781861065.0558279
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781861069.525374
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781861095.7075
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+
+
+================================================================================
+ts=1781861102.445209
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 349, in main
+    atomic_write_json(state_path, state)
+        ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 266, in get_tested_solution
+    candidate = self.generate_valid_solution(prompt, path, description)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 149, in generate_valid_solution
+    candidate, validation = self.generate_candidate(prompt, path, description)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 126, in generate_candidate
+    response = self.model_client.generate(prompt)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/models.py", line 269, in generate
+RuntimeError: OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+

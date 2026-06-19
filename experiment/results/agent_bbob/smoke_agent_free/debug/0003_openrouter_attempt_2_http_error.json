@@ -1,1 +1,1 @@
-{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}
+{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}

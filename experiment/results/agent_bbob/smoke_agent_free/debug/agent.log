@@ -18347,3 +18347,630 @@
 [2026-06-19 12:00:46] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
 [2026-06-19 12:00:46] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
 [2026-06-19 12:00:46] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:18:34] [openrouter attempt 3/6] status=429
+[2026-06-19 12:18:34] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:18:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:18:34] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:18:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:18:41] [openrouter attempt 4/6] status=429
+[2026-06-19 12:18:41] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:18:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:18:41] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:18:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:18:48] [openrouter attempt 5/6] status=429
+[2026-06-19 12:18:48] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:18:48] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:18:48] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:18:48] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:18:57] [openrouter attempt 6/6] status=429
+[2026-06-19 12:18:57] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860740000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:18:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:18:57] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:18:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:19:02] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:19:02] Agent initialized
+[2026-06-19 12:19:02] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:19:03] [openrouter attempt 1/6] status=429
+[2026-06-19 12:19:03] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:19:03] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:19:05] [openrouter attempt 2/6] status=429
+[2026-06-19 12:19:05] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:05] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:19:05] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:05] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:19:09] [openrouter attempt 3/6] status=429
+[2026-06-19 12:19:09] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:19:09] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:19:15] [openrouter attempt 4/6] status=429
+[2026-06-19 12:19:15] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:15] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:19:15] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:15] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:19:22] [openrouter attempt 5/6] status=429
+[2026-06-19 12:19:22] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:19:22] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:19:30] [openrouter attempt 6/6] status=429
+[2026-06-19 12:19:30] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:19:30] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:19:35] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:19:35] Agent initialized
+[2026-06-19 12:19:35] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:19:36] [openrouter attempt 1/6] status=429
+[2026-06-19 12:19:36] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:19:36] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:19:39] [openrouter attempt 2/6] status=429
+[2026-06-19 12:19:39] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:39] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:19:39] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:39] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:19:43] [openrouter attempt 3/6] status=429
+[2026-06-19 12:19:43] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860800000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:43] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:19:43] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:43] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:19:48] [openrouter attempt 4/6] status=429
+[2026-06-19 12:19:48] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860800000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:48] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:19:48] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:48] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:19:55] [openrouter attempt 5/6] status=429
+[2026-06-19 12:19:55] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860800000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:19:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:19:55] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:19:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:20:04] [openrouter attempt 6/6] status=429
+[2026-06-19 12:20:04] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:20:04] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:20:09] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:20:09] Agent initialized
+[2026-06-19 12:20:09] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:20:10] [openrouter attempt 1/6] status=429
+[2026-06-19 12:20:10] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:10] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:20:10] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:10] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:20:13] [openrouter attempt 2/6] status=429
+[2026-06-19 12:20:13] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:13] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:20:13] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:13] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:20:16] [openrouter attempt 3/6] status=429
+[2026-06-19 12:20:16] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:16] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:20:16] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:16] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:20:22] [openrouter attempt 4/6] status=429
+[2026-06-19 12:20:22] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:20:22] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:20:28] [openrouter attempt 5/6] status=429
+[2026-06-19 12:20:28] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:20:28] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:20:37] [openrouter attempt 6/6] status=429
+[2026-06-19 12:20:37] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:20:37] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:20:42] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:20:42] Agent initialized
+[2026-06-19 12:20:42] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:20:43] [openrouter attempt 1/6] status=429
+[2026-06-19 12:20:43] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860860000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:43] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:20:43] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:43] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:20:45] [openrouter attempt 2/6] status=429
+[2026-06-19 12:20:45] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860860000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:45] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:20:45] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:45] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:20:49] [openrouter attempt 3/6] status=429
+[2026-06-19 12:20:49] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860860000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:49] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:20:49] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:49] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:20:55] [openrouter attempt 4/6] status=429
+[2026-06-19 12:20:55] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860860000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:20:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:20:55] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:20:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:21:04] [openrouter attempt 5/6] status=429
+[2026-06-19 12:21:04] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:21:04] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:21:13] [openrouter attempt 6/6] status=429
+[2026-06-19 12:21:13] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:13] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:21:13] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:13] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:21:18] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:21:18] Agent initialized
+[2026-06-19 12:21:18] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:21:19] [openrouter attempt 1/6] status=429
+[2026-06-19 12:21:19] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:19] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:21:19] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:19] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:21:21] [openrouter attempt 2/6] status=429
+[2026-06-19 12:21:21] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:21] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:21:21] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:21] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:21:25] [openrouter attempt 3/6] status=429
+[2026-06-19 12:21:25] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:25] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:21:25] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:25] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:21:30] [openrouter attempt 4/6] status=429
+[2026-06-19 12:21:30] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:21:30] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:21:37] [openrouter attempt 5/6] status=429
+[2026-06-19 12:21:37] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:21:37] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:21:45] [openrouter attempt 6/6] status=429
+[2026-06-19 12:21:45] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860920000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:45] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:21:46] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:46] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:21:51] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:21:51] Agent initialized
+[2026-06-19 12:21:51] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:21:51] [openrouter attempt 1/6] status=429
+[2026-06-19 12:21:51] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860920000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:51] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:21:51] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:51] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:21:53] [openrouter attempt 2/6] status=429
+[2026-06-19 12:21:53] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860920000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:21:53] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:21:54] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:21:54] Agent initialized
+[2026-06-19 12:21:54] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:21:54] [openrouter attempt 1/6] status=400
+[2026-06-19 12:21:54] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:54] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:21:54] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:54] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:21:56] [openrouter attempt 2/6] status=400
+[2026-06-19 12:21:56] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:56] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:21:56] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:56] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:21:57] [openrouter attempt 3/6] status=429
+[2026-06-19 12:21:57] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860920000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:21:57] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:21:59] [openrouter attempt 3/6] status=400
+[2026-06-19 12:21:59] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:21:59] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:21:59] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:21:59] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:22:02] [openrouter attempt 4/6] status=429
+[2026-06-19 12:22:02] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:22:02] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:22:04] [openrouter attempt 4/6] status=400
+[2026-06-19 12:22:04] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:22:04] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:22:09] [openrouter attempt 5/6] status=429
+[2026-06-19 12:22:09] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:22:09] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:22:11] [openrouter attempt 5/6] status=400
+[2026-06-19 12:22:11] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:22:11] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:22:17] [openrouter attempt 6/6] status=429
+[2026-06-19 12:22:17] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:17] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:22:17] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:17] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:22:19] [openrouter attempt 6/6] status=400
+[2026-06-19 12:22:19] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:19] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:22:19] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:19] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:22:22] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:22:22] Agent initialized
+[2026-06-19 12:22:22] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:22:23] [openrouter attempt 1/6] status=429
+[2026-06-19 12:22:23] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:23] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:22:23] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:23] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:22:24] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:22:24] Agent initialized
+[2026-06-19 12:22:24] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:22:24] [openrouter attempt 1/6] status=400
+[2026-06-19 12:22:24] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:24] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:22:24] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:24] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:22:25] [openrouter attempt 2/6] status=429
+[2026-06-19 12:22:25] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:25] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:22:25] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:25] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:22:26] [openrouter attempt 2/6] status=400
+[2026-06-19 12:22:26] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:26] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:22:26] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:26] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:22:29] [openrouter attempt 3/6] status=429
+[2026-06-19 12:22:29] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:29] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:22:29] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:29] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:22:30] [openrouter attempt 3/6] status=400
+[2026-06-19 12:22:30] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:22:30] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:22:34] [openrouter attempt 4/6] status=429
+[2026-06-19 12:22:34] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:22:34] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:22:36] [openrouter attempt 4/6] status=400
+[2026-06-19 12:22:36] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:22:36] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:22:41] [openrouter attempt 5/6] status=429
+[2026-06-19 12:22:41] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860980000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:22:41] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:22:42] [openrouter attempt 5/6] status=400
+[2026-06-19 12:22:42] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:42] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:22:42] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:42] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:22:50] [openrouter attempt 6/6] status=429
+[2026-06-19 12:22:50] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860980000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:50] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:22:50] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:50] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:22:50] [openrouter attempt 6/6] status=400
+[2026-06-19 12:22:50] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:50] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:22:50] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:50] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:22:55] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:22:55] Agent initialized
+[2026-06-19 12:22:55] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:22:55] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:22:55] Agent initialized
+[2026-06-19 12:22:55] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:22:55] [openrouter attempt 1/6] status=429
+[2026-06-19 12:22:55] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860980000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:22:55] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:22:56] [openrouter attempt 1/6] status=400
+[2026-06-19 12:22:56] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:56] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:22:56] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:56] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:22:57] [openrouter attempt 2/6] status=400
+[2026-06-19 12:22:57] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:22:57] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:22:58] [openrouter attempt 2/6] status=429
+[2026-06-19 12:22:58] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781860980000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:22:58] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:22:58] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:22:58] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:23:01] [openrouter attempt 3/6] status=400
+[2026-06-19 12:23:01] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:23:01] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:23:02] [openrouter attempt 3/6] status=429
+[2026-06-19 12:23:02] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:23:02] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:23:07] [openrouter attempt 4/6] status=400
+[2026-06-19 12:23:07] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:07] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:23:07] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:07] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:23:08] [openrouter attempt 4/6] status=429
+[2026-06-19 12:23:08] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:08] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:23:08] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:08] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:23:14] [openrouter attempt 5/6] status=400
+[2026-06-19 12:23:14] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:14] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:23:14] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:14] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:23:14] [openrouter attempt 5/6] status=429
+[2026-06-19 12:23:14] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:14] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:23:14] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:14] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:23:22] [openrouter attempt 6/6] status=400
+[2026-06-19 12:23:22] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:23:22] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:23:22] [openrouter attempt 6/6] status=429
+[2026-06-19 12:23:22] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:23:22] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:23:27] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:23:27] Agent initialized
+[2026-06-19 12:23:27] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:23:28] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:23:28] Agent initialized
+[2026-06-19 12:23:28] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:23:28] [openrouter attempt 1/6] status=400
+[2026-06-19 12:23:28] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:23:28] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:23:28] [openrouter attempt 1/6] status=429
+[2026-06-19 12:23:28] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:23:28] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:23:30] [openrouter attempt 2/6] status=400
+[2026-06-19 12:23:30] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:23:30] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:23:30] [openrouter attempt 2/6] status=429
+[2026-06-19 12:23:30] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:23:30] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:23:34] [openrouter attempt 3/6] status=400
+[2026-06-19 12:23:34] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:23:34] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:23:36] [openrouter attempt 3/6] status=429
+[2026-06-19 12:23:36] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:23:36] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:23:38] [openrouter attempt 4/6] status=400
+[2026-06-19 12:23:38] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:38] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:23:38] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:38] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:23:41] [openrouter attempt 4/6] status=429
+[2026-06-19 12:23:41] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:23:41] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:23:45] [openrouter attempt 5/6] status=400
+[2026-06-19 12:23:45] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:45] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:23:45] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:45] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:23:48] [openrouter attempt 5/6] status=429
+[2026-06-19 12:23:48] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781861040000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:48] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:23:48] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:48] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:23:53] [openrouter attempt 6/6] status=400
+[2026-06-19 12:23:53] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:23:53] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:23:56] [openrouter attempt 6/6] status=429
+[2026-06-19 12:23:56] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781861040000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:56] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:23:56] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:56] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:23:58] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:23:58] Agent initialized
+[2026-06-19 12:23:58] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:23:59] [openrouter attempt 1/6] status=400
+[2026-06-19 12:23:59] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:23:59] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:23:59] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:23:59] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:24:01] [openrouter attempt 2/6] status=400
+[2026-06-19 12:24:01] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:24:01] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:24:01] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:24:01] Agent initialized
+[2026-06-19 12:24:01] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:24:02] [openrouter attempt 1/6] status=429
+[2026-06-19 12:24:02] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:24:02] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:24:04] [openrouter attempt 2/6] status=429
+[2026-06-19 12:24:04] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:24:04] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:24:05] [openrouter attempt 3/6] status=400
+[2026-06-19 12:24:05] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:05] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:24:05] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:05] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:24:08] [openrouter attempt 3/6] status=429
+[2026-06-19 12:24:08] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:08] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:24:08] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:08] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:24:10] [openrouter attempt 4/6] status=400
+[2026-06-19 12:24:10] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:10] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:24:10] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:10] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:24:13] [openrouter attempt 4/6] status=429
+[2026-06-19 12:24:13] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:13] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:24:13] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:13] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:24:17] [openrouter attempt 5/6] status=400
+[2026-06-19 12:24:17] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:17] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:24:17] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:17] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:24:20] [openrouter attempt 5/6] status=429
+[2026-06-19 12:24:20] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:20] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:24:20] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:20] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:24:25] [openrouter attempt 6/6] status=400
+[2026-06-19 12:24:25] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:25] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:24:25] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:25] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:24:29] [openrouter attempt 6/6] status=429
+[2026-06-19 12:24:29] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:29] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:24:29] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:29] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:24:30] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:24:30] Agent initialized
+[2026-06-19 12:24:30] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:24:30] [openrouter attempt 1/6] status=400
+[2026-06-19 12:24:30] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:24:30] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:24:32] [openrouter attempt 2/6] status=400
+[2026-06-19 12:24:32] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:32] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:24:32] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:32] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:24:34] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:24:34] Agent initialized
+[2026-06-19 12:24:34] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:24:35] [openrouter attempt 3/6] status=400
+[2026-06-19 12:24:35] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:35] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:24:35] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:35] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:24:36] [openrouter attempt 1/6] status=429
+[2026-06-19 12:24:36] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:24:36] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:24:38] [openrouter attempt 2/6] status=429
+[2026-06-19 12:24:38] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:38] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:24:38] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:38] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:24:41] [openrouter attempt 4/6] status=400
+[2026-06-19 12:24:41] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:24:41] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:24:42] [openrouter attempt 3/6] status=429
+[2026-06-19 12:24:42] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781861100000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:42] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:24:42] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:42] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:24:47] [openrouter attempt 4/6] status=429
+[2026-06-19 12:24:47] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781861100000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:47] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:24:47] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:47] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:24:47] [openrouter attempt 5/6] status=400
+[2026-06-19 12:24:47] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:47] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:24:47] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:47] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:24:54] [openrouter attempt 5/6] status=429
+[2026-06-19 12:24:54] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: limit_rpm/cohere/north-mini-code-20260617/d3a18412-b833-40de-bc07-c4ba9a1dea53. High demand for cohere/north-mini-code:free on OpenRouter - limited to 15 requests per minute. Please retry shortly.","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"15","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781861100000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:54] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:24:54] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:54] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:24:55] [openrouter attempt 6/6] status=400
+[2026-06-19 12:24:55] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:24:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:24:55] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:24:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:25:00] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:25:00] Agent initialized
+[2026-06-19 12:25:00] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:25:01] [openrouter attempt 1/6] status=400
+[2026-06-19 12:25:01] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:25:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:25:01] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:25:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:25:02] [openrouter attempt 6/6] status=429
+[2026-06-19 12:25:02] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:25:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:25:02] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:25:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:25:03] [openrouter attempt 2/6] status=400
+[2026-06-19 12:25:03] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:25:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:25:03] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:25:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:25:06] [openrouter attempt 3/6] status=400
+[2026-06-19 12:25:06] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:25:06] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:25:06] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:25:06] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:25:07] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:25:07] Agent initialized
+[2026-06-19 12:25:07] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:25:08] [openrouter attempt 1/6] status=429
+[2026-06-19 12:25:08] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:25:08] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:25:08] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:25:08] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:25:11] [openrouter attempt 2/6] status=429
+[2026-06-19 12:25:11] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:25:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:25:11] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:25:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:25:11] [openrouter attempt 4/6] status=400
+[2026-06-19 12:25:11] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:25:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:25:11] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:25:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:25:15] [openrouter attempt 3/6] status=429
+[2026-06-19 12:25:15] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:25:15] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:25:15] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:25:15] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:25:18] [openrouter attempt 5/6] status=400
+[2026-06-19 12:25:18] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:25:18] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:25:18] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:25:18] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt

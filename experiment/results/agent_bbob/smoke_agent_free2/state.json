@@ -3,9 +3,9 @@
   "status": "running",
   "initialized": false,
   "completed_iterations": 0,
-  "consecutive_failures": 2,
-  "total_failures": 262,
-  "pause_cycles": 13,
+  "consecutive_failures": 19,
+  "total_failures": 299,
+  "pause_cycles": 14,
   "best_solution_path": null,
   "best_score_total_inner_loop": null,
   "best_score_mean_inner_loop": null,
@@ -13,5 +13,5 @@
   "final_holdout_total_score": null,
   "final_holdout_mean_score": null,
   "final_holdout_issue": null,
-  "last_update_ts": 1781859585.4942
+  "last_update_ts": 1781861119.4775622
 }
