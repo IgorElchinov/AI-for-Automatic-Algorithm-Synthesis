@@ -229,11 +229,18 @@ If `--model` is missing, empty, or still set to the default Ollama placeholder
 `qwen2.5-coder:14b`, the script will instead use `OPENROUTER_DEFAULT_MODEL` if set,
 or `openai/gpt-oss-120b:free` by default.
 
+Because OpenRouter free models are subject to provider availability and quota:
+
+- free models like `cohere/north-mini-code:free` can hit high-demand rate limits
+- some model IDs may become invalid or unavailable over time
+- if `--prefer-free` is used, confirm `OPENROUTER_FREE_MODEL` points to a currently valid free model
+
 Notes:
 
 - `--provider openrouter` is required
 - `OPENROUTER_API_KEY` must be set
 - `--model` must be a valid OpenRouter model id unless `--prefer-free` is used
+- if a free model fails repeatedly, try a paid/standard model or adjust your OpenRouter quota
 
 ---
 

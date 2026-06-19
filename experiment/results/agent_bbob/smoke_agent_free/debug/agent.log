@@ -19149,3 +19149,487 @@
 [2026-06-19 12:26:45] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
 [2026-06-19 12:26:45] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
 [2026-06-19 12:26:45] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:26:50] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:26:50] Agent initialized
+[2026-06-19 12:26:50] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:26:51] [openrouter attempt 1/6] status=429
+[2026-06-19 12:26:51] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:26:51] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:26:51] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:26:51] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:26:51] [openrouter attempt 5/6] status=400
+[2026-06-19 12:26:51] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:26:51] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:26:51] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:26:51] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:26:53] [openrouter attempt 2/6] status=429
+[2026-06-19 12:26:53] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:26:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:26:53] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:26:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:26:57] [openrouter attempt 3/6] status=429
+[2026-06-19 12:26:57] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:26:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:26:57] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:26:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:26:59] [openrouter attempt 6/6] status=400
+[2026-06-19 12:26:59] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:26:59] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:26:59] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:26:59] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:27:04] [openrouter attempt 4/6] status=429
+[2026-06-19 12:27:04] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:27:04] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:04] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:27:04] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:27:04] Agent initialized
+[2026-06-19 12:27:04] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:27:05] [openrouter attempt 1/6] status=400
+[2026-06-19 12:27:05] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:05] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:27:05] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:05] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:27:07] [openrouter attempt 2/6] status=400
+[2026-06-19 12:27:07] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:07] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:27:07] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:07] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:27:10] [openrouter attempt 3/6] status=400
+[2026-06-19 12:27:10] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:10] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:27:10] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:10] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:27:13] [openrouter attempt 5/6] status=429
+[2026-06-19 12:27:13] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:13] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:27:13] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:13] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:27:15] [openrouter attempt 4/6] status=400
+[2026-06-19 12:27:15] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:15] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:27:15] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:15] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:27:21] [openrouter attempt 6/6] status=429
+[2026-06-19 12:27:21] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:21] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:27:21] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:21] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:27:22] [openrouter attempt 5/6] status=400
+[2026-06-19 12:27:22] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:27:22] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:22] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:27:26] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:27:26] Agent initialized
+[2026-06-19 12:27:26] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:27:27] [openrouter attempt 1/6] status=429
+[2026-06-19 12:27:27] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:27] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:27:27] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:27] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:27:29] [openrouter attempt 2/6] status=429
+[2026-06-19 12:27:29] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:29] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:27:29] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:29] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:27:30] [openrouter attempt 6/6] status=400
+[2026-06-19 12:27:30] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:27:30] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:30] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:27:33] [openrouter attempt 3/6] status=429
+[2026-06-19 12:27:33] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:33] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:27:33] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:33] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:27:35] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:27:35] Agent initialized
+[2026-06-19 12:27:35] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:27:35] [openrouter attempt 1/6] status=400
+[2026-06-19 12:27:35] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:35] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:27:35] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:35] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:27:37] [openrouter attempt 2/6] status=400
+[2026-06-19 12:27:37] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:27:37] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:27:38] [openrouter attempt 4/6] status=429
+[2026-06-19 12:27:38] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:38] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:27:38] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:38] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:27:42] [openrouter attempt 3/6] status=400
+[2026-06-19 12:27:42] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:42] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:27:42] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:42] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:27:45] [openrouter attempt 5/6] status=429
+[2026-06-19 12:27:45] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:45] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:27:45] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:45] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:27:47] [openrouter attempt 4/6] status=400
+[2026-06-19 12:27:47] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:47] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:27:47] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:47] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:27:53] [openrouter attempt 5/6] status=400
+[2026-06-19 12:27:53] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:27:53] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:27:53] [openrouter attempt 6/6] status=429
+[2026-06-19 12:27:53] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:27:53] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:27:59] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:27:59] Agent initialized
+[2026-06-19 12:27:59] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:27:59] [openrouter attempt 1/6] status=429
+[2026-06-19 12:27:59] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:27:59] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:27:59] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:27:59] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:28:01] [openrouter attempt 6/6] status=400
+[2026-06-19 12:28:01] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:28:01] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:28:02] [openrouter attempt 2/6] status=429
+[2026-06-19 12:28:02] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:28:02] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:02] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:28:06] [openrouter attempt 3/6] status=429
+[2026-06-19 12:28:06] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:06] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:28:06] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:06] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:28:06] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:28:06] Agent initialized
+[2026-06-19 12:28:06] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:28:07] [openrouter attempt 1/6] status=400
+[2026-06-19 12:28:07] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:07] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:28:07] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:07] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:28:09] [openrouter attempt 2/6] status=400
+[2026-06-19 12:28:09] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:28:09] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:28:11] [openrouter attempt 4/6] status=429
+[2026-06-19 12:28:11] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:28:11] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:28:12] [openrouter attempt 3/6] status=400
+[2026-06-19 12:28:12] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:12] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:28:12] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:12] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:28:17] [openrouter attempt 4/6] status=400
+[2026-06-19 12:28:17] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:17] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:28:17] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:17] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:28:20] [openrouter attempt 5/6] status=429
+[2026-06-19 12:28:20] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:20] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:28:20] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:20] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:28:24] [openrouter attempt 5/6] status=400
+[2026-06-19 12:28:24] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:24] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:28:24] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:24] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:28:28] [openrouter attempt 6/6] status=429
+[2026-06-19 12:28:28] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:28:28] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:28:32] [openrouter attempt 6/6] status=400
+[2026-06-19 12:28:32] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:32] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:28:32] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:32] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:28:33] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:28:33] Agent initialized
+[2026-06-19 12:28:33] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:28:34] [openrouter attempt 1/6] status=429
+[2026-06-19 12:28:34] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:28:34] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:28:36] [openrouter attempt 2/6] status=429
+[2026-06-19 12:28:36] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:28:36] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:36] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:28:37] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:28:37] Agent initialized
+[2026-06-19 12:28:37] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:28:37] [openrouter attempt 1/6] status=400
+[2026-06-19 12:28:37] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:28:37] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:28:40] [openrouter attempt 2/6] status=400
+[2026-06-19 12:28:40] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:40] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:28:40] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:40] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:28:41] [openrouter attempt 3/6] status=429
+[2026-06-19 12:28:41] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:28:41] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:28:43] [openrouter attempt 3/6] status=400
+[2026-06-19 12:28:43] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:43] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:28:43] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:43] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:28:46] [openrouter attempt 4/6] status=429
+[2026-06-19 12:28:46] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:46] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:28:46] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:46] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:28:49] [openrouter attempt 4/6] status=400
+[2026-06-19 12:28:49] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:49] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:28:49] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:49] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:28:53] [openrouter attempt 5/6] status=429
+[2026-06-19 12:28:53] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:28:53] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:53] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:28:55] [openrouter attempt 5/6] status=400
+[2026-06-19 12:28:55] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:28:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:28:55] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:28:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:29:03] [openrouter attempt 6/6] status=429
+[2026-06-19 12:29:03] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:29:03] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:29:03] [openrouter attempt 6/6] status=400
+[2026-06-19 12:29:03] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:29:03] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:29:08] Prefer-free enabled: switching OpenRouter model to cohere/north-mini-code:free
+[2026-06-19 12:29:08] Agent initialized
+[2026-06-19 12:29:08] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:29:08] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:29:08] Agent initialized
+[2026-06-19 12:29:08] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:29:08] [openrouter attempt 1/6] status=429
+[2026-06-19 12:29:08] [openrouter attempt 1/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:08] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:29:08] [openrouter attempt 1/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:08] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:29:09] [openrouter attempt 1/6] status=400
+[2026-06-19 12:29:09] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:29:09] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:29:11] [openrouter attempt 2/6] status=429
+[2026-06-19 12:29:11] [openrouter attempt 2/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:29:11] [openrouter attempt 2/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:29:11] [openrouter attempt 2/6] status=400
+[2026-06-19 12:29:11] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:29:11] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:11] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:29:15] [openrouter attempt 3/6] status=429
+[2026-06-19 12:29:15] [openrouter attempt 3/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:15] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:29:15] [openrouter attempt 3/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:15] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:29:17] [openrouter attempt 3/6] failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-06-19 12:29:20] [openrouter attempt 4/6] status=429
+[2026-06-19 12:29:20] [openrouter attempt 4/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:20] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:29:20] [openrouter attempt 4/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:20] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:29:21] [openrouter attempt 4/6] status=400
+[2026-06-19 12:29:21] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:21] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_4_http_error.json
+[2026-06-19 12:29:21] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:21] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_4_raw.txt
+[2026-06-19 12:29:28] [openrouter attempt 5/6] status=400
+[2026-06-19 12:29:28] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_5_http_error.json
+[2026-06-19 12:29:28] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_5_raw.txt
+[2026-06-19 12:29:28] [openrouter attempt 5/6] status=429
+[2026-06-19 12:29:28] [openrouter attempt 5/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:29:28] [openrouter attempt 5/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:28] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:29:37] [openrouter attempt 6/6] status=400
+[2026-06-19 12:29:37] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_6_http_error.json
+[2026-06-19 12:29:37] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:37] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_6_raw.txt
+[2026-06-19 12:29:38] [openrouter attempt 6/6] status=429
+[2026-06-19 12:29:38] [openrouter attempt 6/6] raw head='{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1781913600000"},"provider_name":null}},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:38] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:29:38] [openrouter attempt 6/6] failed: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:38] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:29:42] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:29:42] Agent initialized
+[2026-06-19 12:29:42] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:29:45] [openrouter attempt 1/6] failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-06-19 12:29:47] [openrouter attempt 2/6] status=400
+[2026-06-19 12:29:47] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:47] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_2_http_error.json
+[2026-06-19 12:29:47] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:47] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_2_raw.txt
+[2026-06-19 12:29:50] [openrouter attempt 3/6] status=400
+[2026-06-19 12:29:50] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:50] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_3_http_error.json
+[2026-06-19 12:29:50] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:50] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_3_raw.txt
+[2026-06-19 12:29:55] [openrouter attempt 4/6] status=400
+[2026-06-19 12:29:55] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:29:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_4_http_error.json
+[2026-06-19 12:29:55] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:29:55] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_4_raw.txt
+[2026-06-19 12:30:01] [openrouter attempt 5/6] status=400
+[2026-06-19 12:30:01] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:30:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_5_http_error.json
+[2026-06-19 12:30:01] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:30:01] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_5_raw.txt
+[2026-06-19 12:30:10] [openrouter attempt 6/6] status=400
+[2026-06-19 12:30:10] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:30:10] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_6_http_error.json
+[2026-06-19 12:30:10] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:30:10] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_6_raw.txt
+[2026-06-19 12:30:15] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:30:15] Agent initialized
+[2026-06-19 12:30:15] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:30:16] [openrouter attempt 1/6] status=400
+[2026-06-19 12:30:16] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:30:16] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:30:16] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:30:16] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:30:18] [openrouter attempt 2/6] status=400
+[2026-06-19 12:30:18] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:30:18] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:30:18] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:30:18] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:30:21] [openrouter attempt 3/6] status=400
+[2026-06-19 12:30:21] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:30:21] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:30:21] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:30:21] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:30:26] [openrouter attempt 4/6] status=400
+[2026-06-19 12:30:26] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:30:26] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:30:26] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:30:26] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:30:35] [openrouter attempt 5/6] failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-06-19 12:30:44] [openrouter attempt 6/6] status=400
+[2026-06-19 12:30:44] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:30:44] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_6_http_error.json
+[2026-06-19 12:30:44] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:30:44] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_6_raw.txt
+[2026-06-19 12:30:49] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:30:49] Agent initialized
+[2026-06-19 12:30:49] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:30:50] [openrouter attempt 1/6] status=400
+[2026-06-19 12:30:50] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:30:50] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:30:50] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:30:50] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:30:54] [openrouter attempt 2/6] failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-06-19 12:30:58] [openrouter attempt 3/6] status=400
+[2026-06-19 12:30:58] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:30:58] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_3_http_error.json
+[2026-06-19 12:30:58] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:30:58] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_3_raw.txt
+[2026-06-19 12:31:03] [openrouter attempt 4/6] status=400
+[2026-06-19 12:31:03] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_4_http_error.json
+[2026-06-19 12:31:03] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:03] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_4_raw.txt
+[2026-06-19 12:31:09] [openrouter attempt 5/6] status=400
+[2026-06-19 12:31:09] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_5_http_error.json
+[2026-06-19 12:31:09] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:09] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_5_raw.txt
+[2026-06-19 12:31:18] [openrouter attempt 6/6] status=400
+[2026-06-19 12:31:18] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:18] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_6_http_error.json
+[2026-06-19 12:31:18] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:18] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_6_raw.txt
+[2026-06-19 12:31:23] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:31:23] Agent initialized
+[2026-06-19 12:31:23] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:31:23] [openrouter attempt 1/6] status=400
+[2026-06-19 12:31:23] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:23] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:31:23] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:23] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:31:26] [openrouter attempt 2/6] status=400
+[2026-06-19 12:31:26] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:26] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:31:26] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:26] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:31:29] [openrouter attempt 3/6] status=400
+[2026-06-19 12:31:29] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:29] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:31:29] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:29] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:31:34] [openrouter attempt 4/6] status=400
+[2026-06-19 12:31:34] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:31:34] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:34] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:31:41] [openrouter attempt 5/6] status=400
+[2026-06-19 12:31:41] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:31:41] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:41] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-19 12:31:49] [openrouter attempt 6/6] status=400
+[2026-06-19 12:31:49] [openrouter attempt 6/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:49] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-19 12:31:49] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:49] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-19 12:31:54] Prefer-free enabled: switching OpenRouter model to meta-llama/Llama-2-7b-chat
+[2026-06-19 12:31:54] Agent initialized
+[2026-06-19 12:31:54] Prompt saved to results/agent_bbob/smoke_agent_free/debug/0001_prompt.txt
+[2026-06-19 12:31:54] [openrouter attempt 1/6] status=400
+[2026-06-19 12:31:54] [openrouter attempt 1/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:54] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-19 12:31:54] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:54] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-19 12:31:57] [openrouter attempt 2/6] status=400
+[2026-06-19 12:31:57] [openrouter attempt 2/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:31:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-19 12:31:57] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:31:57] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-19 12:32:00] [openrouter attempt 3/6] status=400
+[2026-06-19 12:32:00] [openrouter attempt 3/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:32:00] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-19 12:32:00] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:32:00] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-19 12:32:05] [openrouter attempt 4/6] status=400
+[2026-06-19 12:32:05] [openrouter attempt 4/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:32:05] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-19 12:32:05] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:32:05] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-19 12:32:12] [openrouter attempt 5/6] status=400
+[2026-06-19 12:32:12] [openrouter attempt 5/6] raw head='{"error":{"message":"meta-llama/Llama-2-7b-chat is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-19 12:32:12] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-19 12:32:12] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-19 12:32:12] Saved debug artifact to results/agent_bbob/smoke_agent_free/debug/0010_openrouter_attempt_5_raw.txt

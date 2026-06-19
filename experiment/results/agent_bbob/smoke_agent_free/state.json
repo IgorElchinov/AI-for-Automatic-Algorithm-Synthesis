@@ -3,15 +3,15 @@
   "status": "running",
   "initialized": false,
   "completed_iterations": 0,
-  "consecutive_failures": 15,
-  "total_failures": 315,
+  "consecutive_failures": 19,
+  "total_failures": 339,
   "pause_cycles": 16,
   "best_solution_path": null,
   "best_score_total_inner_loop": null,
   "best_score_mean_inner_loop": null,
-  "last_error": "OpenRouter generate failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions",
+  "last_error": "OpenRouter generate failed after 6 attempts: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions",
   "final_holdout_total_score": null,
   "final_holdout_mean_score": null,
   "final_holdout_issue": null,
-  "last_update_ts": 1781861205.391884
+  "last_update_ts": 1781861509.6308649
 }
