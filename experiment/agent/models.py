@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import json
 import time
 import typing as tp
 import os
@@ -189,6 +190,26 @@ class OpenRouterClient:
             path = self.debug_writer(stem, text, suffix)
             self._log(f"Saved debug artifact to {path}")
 
+    def _extract_choice_text(self, choice: dict[str, tp.Any]) -> str | None:
+        if not isinstance(choice, dict):
+            return None
+
+        message = choice.get("message")
+        if isinstance(message, dict):
+            content = message.get("content")
+            if isinstance(content, str) and content != "":
+                return content
+
+        text = choice.get("text")
+        if isinstance(text, str) and text != "":
+            return text
+
+        content = choice.get("content")
+        if isinstance(content, str) and content != "":
+            return content
+
+        return None
+
     def generate(self, prompt: str) -> ModelResponse:
         last_error: Exception | None = None
 
@@ -225,23 +246,67 @@ class OpenRouterClient:
                 self._log(f"[openrouter attempt {attempt}/{self.max_attempts}] status={response.status_code}")
                 self._log(f"[openrouter attempt {attempt}/{self.max_attempts}] raw head={raw_text[:500]!r}")
 
+                if response.status_code == 429:
+                    self._dump(f"openrouter_attempt_{attempt}_rate_limit", raw_text, ".json")
+                    retry_after = response.headers.get("Retry-After") or response.headers.get("retry-after")
+                    wait_seconds = None
+                    if retry_after is not None:
+                        try:
+                            wait_seconds = float(retry_after)
+                        except ValueError:
+                            pass
+
+                    if wait_seconds is None:
+                        reset_header = response.headers.get("x-ratelimit-reset")
+                        if reset_header is not None:
+                            try:
+                                reset_ts = float(reset_header)
+                                if reset_ts > 1e12:
+                                    reset_ts /= 1000.0
+                                wait_seconds = max(0.0, reset_ts - time.time())
+                            except ValueError:
+                                pass
+
+                    if wait_seconds is None:
+                        wait_seconds = min(60.0, 2.0 * attempt)
+
+                    self._log(f"[openrouter attempt {attempt}] rate limited, waiting {wait_seconds:.1f}s before retry")
+                    if attempt < self.max_attempts:
+                        time.sleep(wait_seconds)
+                        continue
+
                 if response.status_code >= 400:
                     self._dump(f"openrouter_attempt_{attempt}_http_error", raw_text, ".json")
                     response.raise_for_status()
 
                 data = response.json()
 
+                if isinstance(data, dict) and "error" in data:
+                    self._dump(f"openrouter_attempt_{attempt}_error", raw_text, ".json")
+                    err = data["error"]
+                    err_msg = None
+                    if isinstance(err, dict):
+                        err_msg = err.get("message") or err.get("code")
+                    else:
+                        err_msg = str(err)
+                    raise RuntimeError(f"OpenRouter returned error: {err_msg}")
+
                 choices = data.get("choices", [])
                 if not choices:
                     self._dump(f"openrouter_attempt_{attempt}_no_choices", raw_text, ".json")
                     raise RuntimeError("OpenRouter response has no choices")
 
-                message = choices[0].get("message", {})
-                text = message.get("content")
+                choice = choices[0]
+                text = self._extract_choice_text(choice)
 
                 if text is None:
                     self._dump(f"openrouter_attempt_{attempt}_empty_content", raw_text, ".json")
-                    raise RuntimeError("OpenRouter response content is empty")
+                    self._dump(
+                        f"openrouter_attempt_{attempt}_choice", json.dumps(choice, ensure_ascii=False, indent=2), ".json"
+                    )
+                    raise RuntimeError(
+                        f"OpenRouter response content is empty or missing; choice keys={list(choice.keys()) if isinstance(choice, dict) else 'unknown'}"
+                    )
 
                 elapsed = time.perf_counter() - started_at
                 usage = data.get("usage", {})

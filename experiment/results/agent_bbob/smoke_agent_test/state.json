@@ -1,0 +1,17 @@
+{
+  "run_name": "smoke_agent_test",
+  "status": "running",
+  "initialized": false,
+  "completed_iterations": 0,
+  "consecutive_failures": 12,
+  "total_failures": 172,
+  "pause_cycles": 8,
+  "best_solution_path": null,
+  "best_score_total_inner_loop": null,
+  "best_score_mean_inner_loop": null,
+  "last_error": "Ollama generate failed after 10 attempts: 503 Server Error: Service Unavailable for url: http://localhost:11434/api/generate",
+  "final_holdout_total_score": null,
+  "final_holdout_mean_score": null,
+  "final_holdout_issue": null,
+  "last_update_ts": 1781858405.0201118
+}

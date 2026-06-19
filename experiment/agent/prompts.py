@@ -7,11 +7,17 @@ Return only valid Python 3 code.
 Do not include markdown fences.
 The program must read from stdin and print to stdout using the format from the task.
 A simple fast heuristic is acceptable.
+Use the current Opytimizer API:
+from opytimizer import Opytimizer
+from opytimizer.core import Function
+from opytimizer.spaces import SearchSpace
+from opytimizer.optimizers.single_objective.swarm import PSO
+Do not use deprecated import paths such as opytimizer.optimizers.swarm.
 """.strip()
 
     gen_instruction = """
 You are writing a Python program for an optimization problem.
-Generate a complete solution from scratch.
+Generate a complete solution from scratch using the current Opytimizer API.
 """.strip()
 
     combine_instruction = """

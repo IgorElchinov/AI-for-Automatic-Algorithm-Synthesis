@@ -1,0 +1,180 @@
+/no_think
+Return only valid Python 3 code.
+No explanations.
+Do not output triple backticks.
+Do not output markdown.
+If you cannot solve the task, still output a valid Python program.
+
+### Instruction
+You are given a problem and one candidate solution which is incorrect.
+Fix the solution while keeping it correct and reasonably fast.
+Return only valid Python 3 code.
+
+### Output requirements
+Return only valid Python 3 code.
+Do not include markdown fences.
+The program must read from stdin and print to stdout using the format from the task.
+A simple fast heuristic is acceptable.
+Use the current Opytimizer API:
+from opytimizer import Opytimizer
+from opytimizer.core import Function
+from opytimizer.spaces import SearchSpace
+from opytimizer.optimizers.single_objective.swarm import PSO
+Do not use deprecated import paths such as opytimizer.optimizers.swarm.
+
+### Task
+Write a complete Python 3 program.
+
+The program reads from stdin exactly 6 lines:
+1) suite name (always "bbob")
+2) function index (integer)
+3) dimension (integer)
+4) instance index (integer)
+5) evaluation budget (integer)
+6) random seed (integer)
+
+The program must:
+- import cocoex
+- reconstruct exactly the requested COCO BBOB problem
+- optimize the black-box function under the given evaluation budget
+- print exactly `dimension` floating-point numbers separated by spaces:
+  these numbers are the final candidate solution vector x
+
+Important API details:
+- suite_instance is a fixed string: "year: 2009"
+- instance is an integer index and must be used only inside suite_options
+- DO NOT pass the integer instance as suite_instance
+- reconstruct the problem exactly like this:
+
+    suite = cocoex.Suite(
+        suite_name=suite_name,
+        suite_instance="year: 2009",
+        suite_options=(
+            f"function_indices: {function_index} "
+            f"instance_indices: {instance} "
+            f"dimensions: {dimension}"
+        ),
+    )
+    problem = next(iter(suite))
+
+Current Opytimizer API:
+- from opytimizer import Opytimizer
+- from opytimizer.core import Function
+- from opytimizer.spaces import SearchSpace
+- from opytimizer.optimizers.single_objective.swarm import PSO
+
+Do not use deprecated import paths such as:
+- from opytimizer.optimizers.swarm import PSO
+- from opytimizer.optimizers.population import GWO
+- from opytimizer.optimizers.evolutionary import DE
+
+A minimal Opytimizer pattern is:
+
+    function = Function(problem)
+    search_space = SearchSpace(
+        n_agents=20,
+        n_variables=dimension,
+        n_objectives=1,
+        lower_bound=problem.lower_bounds,
+        upper_bound=problem.upper_bounds,
+    )
+    optimizer = PSO()
+    opt = Opytimizer(search_space, optimizer, function)
+    opt.start(n_iterations=max(1, evaluation_budget // 20))
+    best_agent = search_space.best_agent
+    best_position = best_agent.position
+
+
+Library restrictions:
+- you may use Python standard library
+- you may use cocoex to access the benchmark problem
+- You can use arbitrary optimization libraries such as opytimizer, scipy, nevergrad, pymoo, etc.
+Important:
+- Do not invent module paths.
+- Do not invent class names.
+- If unsure, use only the verified PSO pattern above.
+
+Output requirements:
+- output only the numbers, nothing else
+- do not print explanations
+- do not print markdown
+- the code must be executable Python 3
+- respect the evaluation budget
+- a simple robust optimizer built with Opytimizer is better than a fancy broken one
+
+Your answer must be only Python code.
+
+### Candidate solution
+import cocoex
+from opytimizer import Opytimizer
+from opytimizer.core import Function
+from opytimizer.spaces import SearchSpace
+from opytimizer.optimizers.single_objective.swarm import PSO
+
+suite_name = input().strip()
+function_index = int(input().strip())
+dimension = int(input().strip())
+instance = int(input().strip())
+evaluation_budget = int(input().strip())
+random_seed = int(input().strip())
+
+suite = cocoex.Suite(
+    suite_name=suite_name,
+    suite_instance="year: 2009",
+    suite_options=(
+        f"function_indices: {function_index} "
+        f"instance_indices: {instance} "
+        f"dimensions: {dimension}"
+    ),
+)
+problem = next(iter(suite))
+
+function = Function(problem)
+search_space = SearchSpace(
+    n_agents=20,
+    n_variables=dimension,
+    n_objectives=1,
+    lower_bound=problem.lower_bounds,
+    upper_bound=problem.upper_bounds,
+)
+optimizer = PSO()
+opt = Opytimizer(search_space, optimizer, function)
+opt.start(n_iterations=max(1, evaluation_budget // 20))
+best_agent = search_space.best_agent
+best_position = best_agent.position
+
+print(" ".join(map(str, best_position)))
+
+### Issue
+[test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+2026-06-18 21:08:01,305 - opytimizer.core.function — INFO — Creating class: Function.
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v3/solutions/solution_0001.py", line 25, in <module>
+    function = Function(problem)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/core/function.py", line 34, in __init__
+    self.pointer = pointer
+    ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/core/function.py", line 72, in pointer
+    if len(signature(pointer).parameters) > 1:
+           ~~~~~~~~~^^^^^^^^^
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 3375, in signature
+    return Signature.from_callable(obj, follow_wrapped=follow_wrapped,
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                   globals=globals, locals=locals, eval_str=eval_str)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 3098, in from_callable
+    return _signature_from_callable(obj, sigcls=cls,
+                                    follow_wrapper_chains=follow_wrapped,
+                                    globals=globals, locals=locals, eval_str=eval_str)
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 2685, in _signature_from_callable
+    return _get_signature_of(call)
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 2592, in _signature_from_callable
+    return _signature_from_builtin(sigcls, obj,
+                                   skip_bound_arg=skip_bound_arg)
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 2378, in _signature_from_builtin
+    raise ValueError("no signature found for builtin {!r}".format(func))
+ValueError: no signature found for builtin <method-wrapper '__call__' of cocoex.interface.Problem object at 0x10e421010>

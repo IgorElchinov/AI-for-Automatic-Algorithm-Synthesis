@@ -1,0 +1,17 @@
+{
+  "run_name": "smoke_agent_fixed_v2",
+  "status": "running",
+  "initialized": true,
+  "completed_iterations": 0,
+  "consecutive_failures": 2,
+  "total_failures": 3,
+  "pause_cycles": 0,
+  "best_solution_path": "results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0000.py",
+  "best_score_total_inner_loop": -1e+18,
+  "best_score_mean_inner_loop": null,
+  "last_error": "Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0013.py\nreturncode=1\nstdout:\n\nstderr:\nTraceback (most recent call last):\n  File \"/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0013.py\", line 1, in <module>\n    import cocoex\nModuleNotFoundError: No module named 'cocoex'\n",
+  "final_holdout_total_score": null,
+  "final_holdout_mean_score": null,
+  "final_holdout_issue": null,
+  "last_update_ts": 1781805916.330936
+}

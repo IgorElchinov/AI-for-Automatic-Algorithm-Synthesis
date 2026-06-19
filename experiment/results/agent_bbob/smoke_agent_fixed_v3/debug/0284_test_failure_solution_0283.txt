@@ -1,0 +1,13 @@
+[test 1] runtime failure for solution_0283.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v3/solutions/solution_0283.py", line 45, in <module>
+    main()
+    ~~~~^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v3/solutions/solution_0283.py", line 10, in main
+    function_index = int(input_data[1])
+                         ~~~~~~~~~~^^^
+IndexError: list index out of range

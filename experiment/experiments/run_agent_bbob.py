@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from dataclasses import asdict, dataclass
 import json
 from pathlib import Path
@@ -46,6 +47,7 @@ class RunConfig:
     think: bool
     raw: bool
     verbose: bool
+    prefer_free: bool
 
 
 def parse_args() -> argparse.Namespace:
@@ -57,6 +59,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-on-failure-sec", type=float, default=5.0)
     parser.add_argument("--pause-after-max-failures-sec", type=float, default=300.0)
     parser.add_argument("--model", type=str, default="qwen2.5-coder:14b")
+    parser.add_argument("--prefer-free", action="store_true", help="Prefer free/open-source models when using OpenRouter")
     parser.add_argument("--timeout-per-test", type=int, default=120)
     parser.add_argument("--k", type=int, default=3)
     parser.add_argument("--retry-initial-generation", type=int, default=5)
@@ -135,6 +138,8 @@ def build_run_config(args: argparse.Namespace, run_name: str) -> RunConfig:
         think=args.think,
         raw=args.raw,
         verbose=args.verbose,
+        prefer_free=args.prefer_free,
+        # preserve compat: prefer_free flag stored in model string via sentinel None handling
     )
 
 
@@ -161,8 +166,23 @@ def make_client(
         )
 
     if config.provider == "openrouter":
+        chosen_model = config.model
+        if getattr(config, "prefer_free", False):
+            if chosen_model and chosen_model.strip().endswith(":free"):
+                if logger is not None:
+                    logger(f"Prefer-free enabled and explicit free model preserved: {chosen_model}")
+            else:
+                chosen_model = os.environ.get("OPENROUTER_FREE_MODEL", "cohere/north-mini-code:free")
+                if logger is not None:
+                    logger(f"Prefer-free enabled: switching OpenRouter model to {chosen_model}")
+
+        if not chosen_model or chosen_model.strip() == "" or chosen_model == "qwen2.5-coder:14b":
+            chosen_model = os.environ.get("OPENROUTER_DEFAULT_MODEL", "openai/gpt-oss-120b:free")
+            if logger is not None:
+                logger(f"OpenRouter provider selected with invalid or missing model; defaulting to {chosen_model}")
+
         return OpenRouterClient(
-            model=config.model,
+            model=chosen_model,
             temperature=config.temperature,
             top_p=config.top_p,
             max_tokens=config.num_predict,

@@ -1,0 +1,9 @@
+[test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0011.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'

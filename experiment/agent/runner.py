@@ -3,13 +3,16 @@ from __future__ import annotations
 from pathlib import Path
 import subprocess
 import time
+import sys
 
 from .types import ExecutionResult
 
 
 class PythonRunner:
-    def __init__(self, python_executable: str = "python3") -> None:
-        self.python_executable = python_executable
+    def __init__(self, python_executable: str | None = None) -> None:
+        # Use the current Python interpreter by default so subprocesses inherit
+        # the active virtual environment when the agent is launched from it.
+        self.python_executable = python_executable or sys.executable
 
     def run(self, solution_path: Path, input_text: str, timeout: int) -> ExecutionResult:
         started_at = time.perf_counter()

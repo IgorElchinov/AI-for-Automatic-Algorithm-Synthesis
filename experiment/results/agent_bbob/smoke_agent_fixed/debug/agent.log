@@ -1,0 +1,288 @@
+[2026-06-18 20:58:40] Agent initialized
+[2026-06-18 20:58:40] Prompt saved to results/agent_bbob/smoke_agent_fixed/debug/0001_prompt.txt
+[2026-06-18 20:58:41] [openrouter attempt 1/6] status=400
+[2026-06-18 20:58:41] [openrouter attempt 1/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:58:41] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-18 20:58:41] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:58:41] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-18 20:58:43] [openrouter attempt 2/6] status=400
+[2026-06-18 20:58:43] [openrouter attempt 2/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:58:43] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-18 20:58:43] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:58:43] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-18 20:58:46] [openrouter attempt 3/6] status=400
+[2026-06-18 20:58:46] [openrouter attempt 3/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:58:46] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-18 20:58:46] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:58:46] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-18 20:58:52] [openrouter attempt 4/6] status=400
+[2026-06-18 20:58:52] [openrouter attempt 4/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:58:52] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-18 20:58:52] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:58:52] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-18 20:58:59] [openrouter attempt 5/6] status=400
+[2026-06-18 20:58:59] [openrouter attempt 5/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:58:59] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-18 20:58:59] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:58:59] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-18 20:59:07] [openrouter attempt 6/6] status=400
+[2026-06-18 20:59:07] [openrouter attempt 6/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:07] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-18 20:59:07] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:07] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-18 20:59:12] Agent initialized
+[2026-06-18 20:59:12] Prompt saved to results/agent_bbob/smoke_agent_fixed/debug/0001_prompt.txt
+[2026-06-18 20:59:12] [openrouter attempt 1/6] status=400
+[2026-06-18 20:59:12] [openrouter attempt 1/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:12] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-18 20:59:12] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:12] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-18 20:59:14] [openrouter attempt 2/6] status=400
+[2026-06-18 20:59:14] [openrouter attempt 2/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:14] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-18 20:59:14] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:14] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-18 20:59:17] [openrouter attempt 3/6] status=400
+[2026-06-18 20:59:17] [openrouter attempt 3/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:17] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-18 20:59:17] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:17] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-18 20:59:22] [openrouter attempt 4/6] status=400
+[2026-06-18 20:59:22] [openrouter attempt 4/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:22] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-18 20:59:22] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:22] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-18 20:59:29] [openrouter attempt 5/6] status=400
+[2026-06-18 20:59:29] [openrouter attempt 5/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:29] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-18 20:59:29] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:29] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-18 20:59:37] [openrouter attempt 6/6] status=400
+[2026-06-18 20:59:37] [openrouter attempt 6/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:37] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-18 20:59:37] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:37] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-18 20:59:42] Agent initialized
+[2026-06-18 20:59:42] Prompt saved to results/agent_bbob/smoke_agent_fixed/debug/0001_prompt.txt
+[2026-06-18 20:59:43] [openrouter attempt 1/6] status=400
+[2026-06-18 20:59:43] [openrouter attempt 1/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:43] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-18 20:59:43] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:43] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-18 20:59:45] [openrouter attempt 2/6] status=400
+[2026-06-18 20:59:45] [openrouter attempt 2/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:45] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-18 20:59:45] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:45] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-18 20:59:48] [openrouter attempt 3/6] status=400
+[2026-06-18 20:59:48] [openrouter attempt 3/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:48] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-18 20:59:48] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:48] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-18 20:59:53] [openrouter attempt 4/6] status=400
+[2026-06-18 20:59:53] [openrouter attempt 4/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 20:59:53] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-18 20:59:53] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 20:59:53] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-18 21:00:00] [openrouter attempt 5/6] status=400
+[2026-06-18 21:00:00] [openrouter attempt 5/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:00] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-18 21:00:00] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:00] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-18 21:00:08] [openrouter attempt 6/6] status=400
+[2026-06-18 21:00:08] [openrouter attempt 6/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:08] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-18 21:00:08] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:08] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-18 21:00:13] Agent initialized
+[2026-06-18 21:00:13] Prompt saved to results/agent_bbob/smoke_agent_fixed/debug/0001_prompt.txt
+[2026-06-18 21:00:14] [openrouter attempt 1/6] status=400
+[2026-06-18 21:00:14] [openrouter attempt 1/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:14] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-18 21:00:14] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:14] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-18 21:00:17] [openrouter attempt 2/6] status=400
+[2026-06-18 21:00:17] [openrouter attempt 2/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:17] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-18 21:00:17] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:17] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-18 21:00:21] [openrouter attempt 3/6] status=400
+[2026-06-18 21:00:21] [openrouter attempt 3/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:21] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-18 21:00:21] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:21] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-18 21:00:25] [openrouter attempt 4/6] status=400
+[2026-06-18 21:00:25] [openrouter attempt 4/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:25] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-18 21:00:25] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:25] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-18 21:00:32] [openrouter attempt 5/6] status=400
+[2026-06-18 21:00:32] [openrouter attempt 5/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:32] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-18 21:00:32] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:32] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-18 21:00:40] [openrouter attempt 6/6] status=400
+[2026-06-18 21:00:40] [openrouter attempt 6/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:40] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-18 21:00:40] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:40] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-18 21:00:45] Agent initialized
+[2026-06-18 21:00:45] Prompt saved to results/agent_bbob/smoke_agent_fixed/debug/0001_prompt.txt
+[2026-06-18 21:00:46] [openrouter attempt 1/6] status=400
+[2026-06-18 21:00:46] [openrouter attempt 1/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:46] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-18 21:00:46] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:46] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-18 21:00:48] [openrouter attempt 2/6] status=400
+[2026-06-18 21:00:48] [openrouter attempt 2/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:48] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-18 21:00:48] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:48] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-18 21:00:51] [openrouter attempt 3/6] status=400
+[2026-06-18 21:00:51] [openrouter attempt 3/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:51] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-18 21:00:51] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:51] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-18 21:00:56] [openrouter attempt 4/6] status=400
+[2026-06-18 21:00:56] [openrouter attempt 4/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:00:56] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-18 21:00:56] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:00:56] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-18 21:01:03] [openrouter attempt 5/6] status=400
+[2026-06-18 21:01:03] [openrouter attempt 5/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:03] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-18 21:01:03] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:03] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-18 21:01:11] [openrouter attempt 6/6] status=400
+[2026-06-18 21:01:11] [openrouter attempt 6/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:11] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-18 21:01:11] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:11] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-18 21:01:16] Agent initialized
+[2026-06-18 21:01:16] Prompt saved to results/agent_bbob/smoke_agent_fixed/debug/0001_prompt.txt
+[2026-06-18 21:01:16] [openrouter attempt 1/6] status=400
+[2026-06-18 21:01:16] [openrouter attempt 1/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:16] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-18 21:01:16] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:16] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-18 21:01:19] [openrouter attempt 2/6] status=400
+[2026-06-18 21:01:19] [openrouter attempt 2/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:19] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-18 21:01:19] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:19] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-18 21:01:22] [openrouter attempt 3/6] status=400
+[2026-06-18 21:01:22] [openrouter attempt 3/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:22] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-18 21:01:22] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:22] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-18 21:01:27] [openrouter attempt 4/6] status=400
+[2026-06-18 21:01:27] [openrouter attempt 4/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:27] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-18 21:01:27] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:27] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-18 21:01:34] [openrouter attempt 5/6] status=400
+[2026-06-18 21:01:34] [openrouter attempt 5/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:34] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-18 21:01:34] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:34] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-18 21:01:41] [openrouter attempt 6/6] status=400
+[2026-06-18 21:01:41] [openrouter attempt 6/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:41] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-18 21:01:41] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:41] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-18 21:01:46] Agent initialized
+[2026-06-18 21:01:46] Prompt saved to results/agent_bbob/smoke_agent_fixed/debug/0001_prompt.txt
+[2026-06-18 21:01:47] [openrouter attempt 1/6] status=400
+[2026-06-18 21:01:47] [openrouter attempt 1/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:47] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-18 21:01:47] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:47] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-18 21:01:49] [openrouter attempt 2/6] status=400
+[2026-06-18 21:01:49] [openrouter attempt 2/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:49] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-18 21:01:49] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:49] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-18 21:01:53] [openrouter attempt 3/6] status=400
+[2026-06-18 21:01:53] [openrouter attempt 3/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:53] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-18 21:01:53] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:53] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-18 21:01:58] [openrouter attempt 4/6] status=400
+[2026-06-18 21:01:58] [openrouter attempt 4/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:01:58] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-18 21:01:58] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:01:58] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-18 21:02:04] [openrouter attempt 5/6] status=400
+[2026-06-18 21:02:04] [openrouter attempt 5/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:04] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-18 21:02:04] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:04] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-18 21:02:12] [openrouter attempt 6/6] status=400
+[2026-06-18 21:02:12] [openrouter attempt 6/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:12] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-18 21:02:12] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:12] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-18 21:02:17] Agent initialized
+[2026-06-18 21:02:17] Prompt saved to results/agent_bbob/smoke_agent_fixed/debug/0001_prompt.txt
+[2026-06-18 21:02:18] [openrouter attempt 1/6] status=400
+[2026-06-18 21:02:18] [openrouter attempt 1/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:18] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-18 21:02:18] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:18] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-18 21:02:20] [openrouter attempt 2/6] status=400
+[2026-06-18 21:02:20] [openrouter attempt 2/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:20] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-18 21:02:20] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:20] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-18 21:02:23] [openrouter attempt 3/6] status=400
+[2026-06-18 21:02:23] [openrouter attempt 3/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:23] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-18 21:02:23] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:23] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-18 21:02:28] [openrouter attempt 4/6] status=400
+[2026-06-18 21:02:28] [openrouter attempt 4/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:28] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-18 21:02:28] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:28] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-18 21:02:35] [openrouter attempt 5/6] status=400
+[2026-06-18 21:02:35] [openrouter attempt 5/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:35] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-18 21:02:35] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:35] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-18 21:02:43] [openrouter attempt 6/6] status=400
+[2026-06-18 21:02:43] [openrouter attempt 6/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:43] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-18 21:02:43] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:43] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0012_openrouter_attempt_6_raw.txt
+[2026-06-18 21:02:48] Agent initialized
+[2026-06-18 21:02:48] Prompt saved to results/agent_bbob/smoke_agent_fixed/debug/0001_prompt.txt
+[2026-06-18 21:02:48] [openrouter attempt 1/6] status=400
+[2026-06-18 21:02:48] [openrouter attempt 1/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:48] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0001_openrouter_attempt_1_http_error.json
+[2026-06-18 21:02:48] [openrouter attempt 1/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:48] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0002_openrouter_attempt_1_raw.txt
+[2026-06-18 21:02:50] [openrouter attempt 2/6] status=400
+[2026-06-18 21:02:50] [openrouter attempt 2/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:50] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0003_openrouter_attempt_2_http_error.json
+[2026-06-18 21:02:50] [openrouter attempt 2/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:50] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0004_openrouter_attempt_2_raw.txt
+[2026-06-18 21:02:54] [openrouter attempt 3/6] status=400
+[2026-06-18 21:02:54] [openrouter attempt 3/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:54] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0005_openrouter_attempt_3_http_error.json
+[2026-06-18 21:02:54] [openrouter attempt 3/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:54] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0006_openrouter_attempt_3_raw.txt
+[2026-06-18 21:02:59] [openrouter attempt 4/6] status=400
+[2026-06-18 21:02:59] [openrouter attempt 4/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:02:59] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0007_openrouter_attempt_4_http_error.json
+[2026-06-18 21:02:59] [openrouter attempt 4/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:02:59] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0008_openrouter_attempt_4_raw.txt
+[2026-06-18 21:03:09] [openrouter attempt 5/6] status=400
+[2026-06-18 21:03:09] [openrouter attempt 5/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:03:09] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0009_openrouter_attempt_5_http_error.json
+[2026-06-18 21:03:09] [openrouter attempt 5/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:03:09] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0010_openrouter_attempt_5_raw.txt
+[2026-06-18 21:03:18] [openrouter attempt 6/6] status=400
+[2026-06-18 21:03:18] [openrouter attempt 6/6] raw head='{"error":{"message":"openrouter/openai/gpt-4o-mini is not a valid model ID","code":400},"user_id":"user_3DuNLpa0Z2R04IOiYCvzVRhc5WW"}'
+[2026-06-18 21:03:18] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0011_openrouter_attempt_6_http_error.json
+[2026-06-18 21:03:18] [openrouter attempt 6/6] failed: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions
+[2026-06-18 21:03:18] Saved debug artifact to results/agent_bbob/smoke_agent_fixed/debug/0012_openrouter_attempt_6_raw.txt

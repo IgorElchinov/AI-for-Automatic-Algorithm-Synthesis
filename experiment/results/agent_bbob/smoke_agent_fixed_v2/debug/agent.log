@@ -1,0 +1,382 @@
+[2026-06-18 21:03:47] Agent initialized
+[2026-06-18 21:03:47] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0001_prompt.txt
+[2026-06-18 21:03:51] [openrouter attempt 1/6] status=200
+[2026-06-18 21:03:51] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805827-wh9TupKZBYTv01T1K94m","object":"chat.completion","created":1781805827,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Func'
+[2026-06-18 21:03:51] [openrouter] model=openai/gpt-4o-mini prompt_tokens=800 completion_tokens=284 total_tokens=1084
+[2026-06-18 21:03:51] [generate_candidate] solution_0000.py validation=unknown_import ok=False
+[2026-06-18 21:03:51] [generate attempt 1] unknown_import: Unexpected import: sys
+[2026-06-18 21:03:51] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0002_prompt.txt
+[2026-06-18 21:03:57] [openrouter attempt 1/6] status=200
+[2026-06-18 21:03:57] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805832-7GvhTC0kBjS9V58rfvmy","object":"chat.completion","created":1781805832,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytim'
+[2026-06-18 21:03:57] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1104 completion_tokens=272 total_tokens=1376
+[2026-06-18 21:03:57] [generate_candidate] solution_0001.py validation=unknown_import ok=False
+[2026-06-18 21:03:57] [fix attempt 1] unknown_import: Unexpected import: sys
+[2026-06-18 21:03:57] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0003_prompt.txt
+[2026-06-18 21:04:01] [openrouter attempt 1/6] status=200
+[2026-06-18 21:04:01] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805837-2rQXnTziGENHyMkr1ewY","object":"chat.completion","created":1781805837,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core i'
+[2026-06-18 21:04:01] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1092 completion_tokens=269 total_tokens=1361
+[2026-06-18 21:04:01] [generate_candidate] solution_0002.py validation=ok ok=True
+[2026-06-18 21:04:02] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0002.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:02] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0004_test_failure_solution_0002.txt
+[2026-06-18 21:04:02] [runtime fix attempt 1] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0002.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:02] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0005_prompt.txt
+[2026-06-18 21:04:08] [openrouter attempt 1/6] status=200
+[2026-06-18 21:04:08] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805842-szSdDZO3cxcc5vYQy8I8","object":"chat.completion","created":1781805842,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import sys\\nimpor'
+[2026-06-18 21:04:08] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1183 completion_tokens=326 total_tokens=1509
+[2026-06-18 21:04:08] [generate_candidate] solution_0003.py validation=unknown_import ok=False
+[2026-06-18 21:04:08] [runtime fix attempt 1] invalid fix: unknown_import: Unexpected import: sys
+[2026-06-18 21:04:08] [runtime fix attempt 2] unknown_import: Unexpected import: sys
+[2026-06-18 21:04:08] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0006_prompt.txt
+[2026-06-18 21:04:14] [openrouter attempt 1/6] status=200
+[2026-06-18 21:04:14] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805849-MsKiXmGMwd0ToeJ3bO9a","object":"chat.completion","created":1781805849,"model":"openai/gpt-4o-mini","provider":"OpenAI","system_fingerprint":"fp_d0b314e02e","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer'
+[2026-06-18 21:04:14] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1146 completion_tokens=325 total_tokens=1471
+[2026-06-18 21:04:14] [generate_candidate] solution_0004.py validation=unknown_import ok=False
+[2026-06-18 21:04:14] [runtime fix attempt 2] invalid fix: unknown_import: Unexpected import: sys
+[2026-06-18 21:04:19] Agent initialized
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0000.py", line 2, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0001_test_failure_solution_0000.txt
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0001.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0002_test_failure_solution_0001.txt
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0002.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0003_test_failure_solution_0002.txt
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0003.py", line 3, in <module>
+    from opytimizer import Opytimizer
+ModuleNotFoundError: No module named 'opytimizer'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0004_test_failure_solution_0003.txt
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0004.py", line 2, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0005_test_failure_solution_0004.txt
+[2026-06-18 21:04:19] Agent initialized
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0000.py", line 2, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0001_test_failure_solution_0000.txt
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0001.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0002_test_failure_solution_0001.txt
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0002.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0003_test_failure_solution_0002.txt
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0003.py", line 3, in <module>
+    from opytimizer import Opytimizer
+ModuleNotFoundError: No module named 'opytimizer'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0004_test_failure_solution_0003.txt
+[2026-06-18 21:04:19] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0004.py", line 2, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:19] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0005_test_failure_solution_0004.txt
+[2026-06-18 21:04:19] === Iteration 1/1 ===
+[2026-06-18 21:04:19] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0006_prompt.txt
+[2026-06-18 21:04:24] [openrouter attempt 1/6] status=200
+[2026-06-18 21:04:24] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805860-Dlu8gSvaq32iq435D9gi","object":"chat.completion","created":1781805860,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import sys\\nimport cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core import Func'
+[2026-06-18 21:04:24] [openrouter] model=openai/gpt-4o-mini prompt_tokens=800 completion_tokens=284 total_tokens=1084
+[2026-06-18 21:04:24] [generate_candidate] solution_0005.py validation=unknown_import ok=False
+[2026-06-18 21:04:24] [generate attempt 1] unknown_import: Unexpected import: sys
+[2026-06-18 21:04:24] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0007_prompt.txt
+[2026-06-18 21:04:31] [openrouter attempt 1/6] status=200
+[2026-06-18 21:04:31] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805867-cjXslmhNdPgP85vUzoyd","object":"chat.completion","created":1781805867,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytim'
+[2026-06-18 21:04:31] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1104 completion_tokens=269 total_tokens=1373
+[2026-06-18 21:04:32] [generate_candidate] solution_0006.py validation=ok ok=True
+[2026-06-18 21:04:32] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0006.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:32] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0008_test_failure_solution_0006.txt
+[2026-06-18 21:04:32] [runtime fix attempt 1] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0006.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:32] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0009_prompt.txt
+[2026-06-18 21:04:37] [openrouter attempt 1/6] status=200
+[2026-06-18 21:04:37] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805872-TMZX1LvbeTiwyHDN7E8h","object":"chat.completion","created":1781805872,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import sys\\nimport random\\nfrom opytimizer import Opytimizer\\'
+[2026-06-18 21:04:37] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1183 completion_tokens=279 total_tokens=1462
+[2026-06-18 21:04:37] [generate_candidate] solution_0007.py validation=unknown_import ok=False
+[2026-06-18 21:04:37] [runtime fix attempt 1] invalid fix: unknown_import: Unexpected import: sys
+[2026-06-18 21:04:37] [runtime fix attempt 2] unknown_import: Unexpected import: sys
+[2026-06-18 21:04:37] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0010_prompt.txt
+[2026-06-18 21:04:42] [openrouter attempt 1/6] status=200
+[2026-06-18 21:04:42] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805877-spf1idix1th574DKJyJ5","object":"chat.completion","created":1781805877,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core i'
+[2026-06-18 21:04:42] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1099 completion_tokens=269 total_tokens=1368
+[2026-06-18 21:04:42] [generate_candidate] solution_0008.py validation=ok ok=True
+[2026-06-18 21:04:42] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0008.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:42] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0011_test_failure_solution_0008.txt
+[2026-06-18 21:04:47] Agent initialized
+[2026-06-18 21:04:47] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0000.py", line 2, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:47] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0001_test_failure_solution_0000.txt
+[2026-06-18 21:04:47] [test 1] runtime failure for solution_0001.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0001.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:47] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0002_test_failure_solution_0001.txt
+[2026-06-18 21:04:47] [test 1] runtime failure for solution_0002.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0002.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:47] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0003_test_failure_solution_0002.txt
+[2026-06-18 21:04:47] [test 1] runtime failure for solution_0003.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0003.py", line 3, in <module>
+    from opytimizer import Opytimizer
+ModuleNotFoundError: No module named 'opytimizer'
+
+[2026-06-18 21:04:47] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0004_test_failure_solution_0003.txt
+[2026-06-18 21:04:47] [test 1] runtime failure for solution_0004.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0004.py", line 2, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:47] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0005_test_failure_solution_0004.txt
+[2026-06-18 21:04:47] [test 1] runtime failure for solution_0005.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0005.py", line 2, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:47] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0006_test_failure_solution_0005.txt
+[2026-06-18 21:04:47] [test 1] runtime failure for solution_0006.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0006.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:47] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0007_test_failure_solution_0006.txt
+[2026-06-18 21:04:47] [test 1] runtime failure for solution_0007.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0007.py", line 3, in <module>
+    from opytimizer import Opytimizer
+ModuleNotFoundError: No module named 'opytimizer'
+
+[2026-06-18 21:04:47] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0008_test_failure_solution_0007.txt
+[2026-06-18 21:04:47] [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0008.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:04:47] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0009_test_failure_solution_0008.txt
+[2026-06-18 21:04:47] === Iteration 1/1 ===
+[2026-06-18 21:04:47] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0010_prompt.txt
+[2026-06-18 21:04:53] [openrouter attempt 1/6] status=200
+[2026-06-18 21:04:53] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805888-3AcgSwj9Pwz8IUS9S4WL","object":"chat.completion","created":1781805888,"model":"openai/gpt-4o-mini","provider":"OpenAI","system_fingerprint":"fp_623c0b2958","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import sys\\nimport cocoex\\nfrom opytimizer import'
+[2026-06-18 21:04:53] [openrouter] model=openai/gpt-4o-mini prompt_tokens=800 completion_tokens=283 total_tokens=1083
+[2026-06-18 21:04:53] [generate_candidate] solution_0009.py validation=unknown_import ok=False
+[2026-06-18 21:04:53] [generate attempt 1] unknown_import: Unexpected import: sys
+[2026-06-18 21:04:53] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0011_prompt.txt
+[2026-06-18 21:04:59] [openrouter attempt 1/6] status=200
+[2026-06-18 21:04:59] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805894-6p02EuPtYykA9PqDLW3j","object":"chat.completion","created":1781805894,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import cocoex\\nfrom opytimizer import Opytimizer\\nfrom opytim'
+[2026-06-18 21:04:59] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1104 completion_tokens=272 total_tokens=1376
+[2026-06-18 21:04:59] [generate_candidate] solution_0010.py validation=unknown_import ok=False
+[2026-06-18 21:04:59] [fix attempt 1] unknown_import: Unexpected import: sys
+[2026-06-18 21:04:59] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0012_prompt.txt
+[2026-06-18 21:05:05] [openrouter attempt 1/6] status=200
+[2026-06-18 21:05:05] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805900-lHAjnwqEpCL9fKRy1PV1","object":"chat.completion","created":1781805900,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import cocoex\\nfrom opytimizer import O'
+[2026-06-18 21:05:05] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1092 completion_tokens=269 total_tokens=1361
+[2026-06-18 21:05:05] [generate_candidate] solution_0011.py validation=ok ok=True
+[2026-06-18 21:05:05] [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0011.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:05:05] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0013_test_failure_solution_0011.txt
+[2026-06-18 21:05:05] [runtime fix attempt 1] [test 1] runtime failure for solution_0011.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0011.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:05:05] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0014_prompt.txt
+[2026-06-18 21:05:10] [openrouter attempt 1/6] status=200
+[2026-06-18 21:05:10] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805906-241Z9smZn78wbbgjcjte","object":"chat.completion","created":1781805906,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import sys\\nimport random\\nfrom opytimizer import Opytimizer\\nfrom opytimizer.core '
+[2026-06-18 21:05:10] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1183 completion_tokens=254 total_tokens=1437
+[2026-06-18 21:05:10] [generate_candidate] solution_0012.py validation=unknown_import ok=False
+[2026-06-18 21:05:10] [runtime fix attempt 1] invalid fix: unknown_import: Unexpected import: sys
+[2026-06-18 21:05:10] [runtime fix attempt 2] unknown_import: Unexpected import: sys
+[2026-06-18 21:05:10] Prompt saved to results/agent_bbob/smoke_agent_fixed_v2/debug/0015_prompt.txt
+[2026-06-18 21:05:16] [openrouter attempt 1/6] status=200
+[2026-06-18 21:05:16] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781805910-otwTDST7tHQPYPR8fWUT","object":"chat.completion","created":1781805910,"model":"openai/gpt-4o-mini","provider":"Azure","system_fingerprint":"fp_4dcfea0a44","service_tier":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"import cocoex\\nfrom opytimizer import Opytimizer\\n'
+[2026-06-18 21:05:16] [openrouter] model=openai/gpt-4o-mini prompt_tokens=1074 completion_tokens=269 total_tokens=1343
+[2026-06-18 21:05:16] [generate_candidate] solution_0013.py validation=ok ok=True
+[2026-06-18 21:05:16] [test 1] runtime failure for solution_0013.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0013.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+[2026-06-18 21:05:16] Saved test failure details to results/agent_bbob/smoke_agent_fixed_v2/debug/0016_test_failure_solution_0013.txt

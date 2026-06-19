@@ -1,0 +1,66 @@
+
+================================================================================
+ts=1781805854.507949
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 336, in main
+    agent.run(0)
+    ~~~~~~~~~^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 289, in run
+    solution = self.get_tested_solution(prompt, initial_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: unknown_import: Unexpected import: sys
+
+
+================================================================================
+ts=1781805882.264931
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 348, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0008.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0008.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+
+
+================================================================================
+ts=1781805916.3317509
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/experiments/run_agent_bbob.py", line 348, in main
+    agent.run(1)
+    ~~~~~~~~~^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 299, in run
+    candidate = self.get_tested_solution(prompt, gen_path, "generated")
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 270, in get_tested_solution
+    return self.repair_runtime_failures(candidate, smoke_issue)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/agent/agent.py", line 263, in repair_runtime_failures
+    raise RuntimeError(f"Could not repair runtime failure. Last issue: {last_issue}")
+RuntimeError: Could not repair runtime failure. Last issue: [test 1] runtime failure for solution_0013.py
+returncode=1
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v2/solutions/solution_0013.py", line 1, in <module>
+    import cocoex
+ModuleNotFoundError: No module named 'cocoex'
+
+

@@ -218,11 +218,22 @@ uv run -m experiments.run_agent_bbob \
   --model openai/gpt-oss-120b:free
 ```
 
+If you want the script to prefer a free OpenRouter model, add `--prefer-free`.
+When this flag is set:
+
+- an explicit free model ID ending in `:free` is preserved
+- otherwise the script uses `OPENROUTER_FREE_MODEL` if set
+- and falls back to `cohere/north-mini-code:free` by default
+
+If `--model` is missing, empty, or still set to the default Ollama placeholder
+`qwen2.5-coder:14b`, the script will instead use `OPENROUTER_DEFAULT_MODEL` if set,
+or `openai/gpt-oss-120b:free` by default.
+
 Notes:
 
 - `--provider openrouter` is required
 - `OPENROUTER_API_KEY` must be set
-- `--model` must be a valid OpenRouter model id
+- `--model` must be a valid OpenRouter model id unless `--prefer-free` is used
 
 ---
 

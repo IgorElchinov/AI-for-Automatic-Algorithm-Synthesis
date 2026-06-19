@@ -201,6 +201,14 @@ def validate_python_file(solution: Solution) -> ValidationResult:
     except SyntaxError as exc:
         return ValidationResult(False, "syntax", str(exc))
 
+    validation_result = validate_imports(text)
+    if validation_result is not None:
+        return validation_result
+
+    validation_result = validate_opytimizer_usage(text)
+    if validation_result is not None:
+        return validation_result
+
     result = subprocess.run(
         ["python3", "-m", "py_compile", str(solution.path)],
         capture_output=True,

@@ -1,0 +1,32 @@
+[test 1] runtime failure for solution_0072.py
+returncode=1
+stdout:
+2026-06-19 11:59:34,067 - opytimizer.core.function — INFO — Creating class: Function.
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/results/agent_bbob/smoke_agent_fixed_v3/solutions/solution_0072.py", line 26, in <module>
+    function = Function(problem)
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/core/function.py", line 34, in __init__
+    self.pointer = pointer
+    ^^^^^^^^^^^^
+  File "/Users/igor/Documents/ML/algorithm_synthesis/AI-for-Automatic-Algorithm-Synthesis/experiment/.venv/lib/python3.13/site-packages/opytimizer/core/function.py", line 72, in pointer
+    if len(signature(pointer).parameters) > 1:
+           ~~~~~~~~~^^^^^^^^^
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 3375, in signature
+    return Signature.from_callable(obj, follow_wrapped=follow_wrapped,
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                   globals=globals, locals=locals, eval_str=eval_str)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 3098, in from_callable
+    return _signature_from_callable(obj, sigcls=cls,
+                                    follow_wrapper_chains=follow_wrapped,
+                                    globals=globals, locals=locals, eval_str=eval_str)
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 2685, in _signature_from_callable
+    return _get_signature_of(call)
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 2592, in _signature_from_callable
+    return _signature_from_builtin(sigcls, obj,
+                                   skip_bound_arg=skip_bound_arg)
+  File "/Users/igor/.local/share/uv/python/cpython-3.13.7-macos-x86_64-none/lib/python3.13/inspect.py", line 2378, in _signature_from_builtin
+    raise ValueError("no signature found for builtin {!r}".format(func))
+ValueError: no signature found for builtin <method-wrapper '__call__' of cocoex.interface.Problem object at 0x10dad1010>

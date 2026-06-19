@@ -103,6 +103,33 @@ Important API details:
     )
     problem = next(iter(suite))
 
+Current Opytimizer API:
+- from opytimizer import Opytimizer
+- from opytimizer.core import Function
+- from opytimizer.spaces import SearchSpace
+- from opytimizer.optimizers.single_objective.swarm import PSO
+
+Do not use deprecated import paths such as:
+- from opytimizer.optimizers.swarm import PSO
+- from opytimizer.optimizers.population import GWO
+- from opytimizer.optimizers.evolutionary import DE
+
+A minimal Opytimizer pattern is:
+
+    function = Function(problem)
+    search_space = SearchSpace(
+        n_agents=20,
+        n_variables=dimension,
+        n_objectives=1,
+        lower_bound=problem.lower_bounds,
+        upper_bound=problem.upper_bounds,
+    )
+    optimizer = PSO()
+    opt = Opytimizer(search_space, optimizer, function)
+    opt.start(n_iterations=max(1, evaluation_budget // 20))
+    best_agent = search_space.best_agent
+    best_position = best_agent.position
+
 """ + \
 LIBRARY_RESTRICTIONS + \
 """
