@@ -1,0 +1,10 @@
+{
+  "missing_specs": [
+    {
+      "name": "woa",
+      "module_path": "opytimizer.optimizers.single_objective.population",
+      "class_name": "WOA",
+      "error": "module 'opytimizer.optimizers.single_objective.population' has no attribute 'WOA'"
+    }
+  ]
+}

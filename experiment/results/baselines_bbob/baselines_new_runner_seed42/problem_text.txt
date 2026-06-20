@@ -1,0 +1,44 @@
+Write Python 3 code that defines exactly one function:
+
+def optimize(objective, lower_bounds, upper_bounds, dimension, budget, seed):
+    ...
+
+The function receives:
+- objective: callable objective(x) -> float
+- lower_bounds: sequence of floats of length dimension
+- upper_bounds: sequence of floats of length dimension
+- dimension: integer
+- budget: maximum allowed number of objective evaluations
+- seed: integer random seed
+
+The function must:
+- return a list or tuple of exactly `dimension` finite floats
+- keep all coordinates inside [lower_bounds[i], upper_bounds[i]]
+- not read from stdin
+- not print anything
+- not import or use cocoex
+- not reconstruct the COCO problem
+- not call objective more than `budget` times
+
+Library restrictions:
+- you may use Python standard library
+- you may use numpy
+- for optimization primitives, use only Opytimizer
+- do NOT use scipy, nevergrad, pymoo, sklearn, torch, tensorflow
+
+Current Opytimizer API:
+- from opytimizer import Opytimizer
+- from opytimizer.core import Function
+- from opytimizer.spaces import SearchSpace
+- from opytimizer.optimizers.single_objective.swarm import PSO
+
+Do not use deprecated import paths such as:
+- from opytimizer.optimizers.swarm import PSO
+- from opytimizer.optimizers.population import GWO
+- from opytimizer.optimizers.evolutionary import DE
+
+Important:
+- return only Python code
+- do not include markdown
+- do not include explanations
+- a simple robust optimizer is better than a fancy broken one

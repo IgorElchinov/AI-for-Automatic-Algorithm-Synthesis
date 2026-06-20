@@ -8,6 +8,9 @@ from pathlib import Path
 
 from tasks.coco_bbob import BudgetedObjective, make_bbob_problem
 
+# import logging
+# logging.getLogger("opytimizer").setLevel(logging.ERROR)
+
 
 def fail(message: str) -> None:
     print(json.dumps({"ok": False, "error": message}))

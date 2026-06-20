@@ -1,0 +1,37 @@
+{
+  "algorithms": {
+    "pso": {
+      "n_runs": 480,
+      "mean_score": 0.3202423854373449,
+      "median_score": 0.5623596238682783,
+      "std_score": 3.8293426797623895,
+      "success_rate": 1.0,
+      "mean_used_evaluations": 100.0
+    },
+    "de": {
+      "n_runs": 480,
+      "mean_score": -1.6907817484776084,
+      "median_score": 0.39042051344959294,
+      "std_score": 19.27378708396554,
+      "success_rate": 1.0,
+      "mean_used_evaluations": 100.0
+    },
+    "gwo": {
+      "n_runs": 480,
+      "mean_score": 0.4027474755045027,
+      "median_score": 0.55546491929594,
+      "std_score": 3.650985347729392,
+      "success_rate": 1.0,
+      "mean_used_evaluations": 100.0
+    },
+    "sa": {
+      "n_runs": 480,
+      "mean_score": -23.04286570965775,
+      "median_score": -0.09580575475320591,
+      "std_score": 190.9046566089211,
+      "success_rate": 1.0,
+      "mean_used_evaluations": 100.0
+    }
+  },
+  "n_results": 1920
+}
