@@ -1,0 +1,15 @@
+{
+  "run_name": "candidate_v3_final_stats",
+  "solution": "results/agent_bbob/agent_representative_inner_v3/solutions/solution_0000.py",
+  "test_set": "final",
+  "n_tests": 480,
+  "n_success": 480,
+  "success_rate": 1.0,
+  "mean_score": -1.3713155886939985,
+  "median_score": 0.4697465086455996,
+  "std_score": 21.111817544592107,
+  "trimmed_mean_5pct": 0.4851787074349445,
+  "q25": 0.08015176129631378,
+  "q75": 0.9572317690026293,
+  "positive_score_rate": 0.86875
+}

@@ -1,0 +1,17 @@
+{
+  "run_name": "agent_representative_inner_v2",
+  "status": "completed",
+  "initialized": true,
+  "completed_iterations": 0,
+  "consecutive_failures": 0,
+  "total_failures": 0,
+  "pause_cycles": 0,
+  "best_solution_path": "results/agent_bbob/agent_representative_inner_v2/solutions/solution_0000.py",
+  "best_score_total_inner_loop": -9.1948257847796,
+  "best_score_mean_inner_loop": -0.3831177410324833,
+  "last_error": null,
+  "final_holdout_total_score": -658.2314825731199,
+  "final_holdout_mean_score": -1.3713155886939998,
+  "final_holdout_issue": "OK",
+  "last_update_ts": 1781947747.382344
+}

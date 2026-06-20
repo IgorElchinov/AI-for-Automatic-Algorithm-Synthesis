@@ -99,6 +99,7 @@ class FunctionRunner:
         solution_path: Path,
         input_text: str,
         timeout: int,
+        candidate_seed_offset: int = 0,
     ) -> ExecutionResult:
         started_at = time.perf_counter()
 
@@ -129,6 +130,7 @@ class FunctionRunner:
                 "instance": instance,
                 "budget": budget,
                 "seed": seed,
+                "candidate_seed_offset": candidate_seed_offset,
             }
 
             completed = subprocess.run(

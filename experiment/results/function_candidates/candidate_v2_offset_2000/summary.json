@@ -1,0 +1,15 @@
+{
+  "run_name": "candidate_v2_offset_2000",
+  "solution": "results/agent_bbob/agent_representative_inner_v2/solutions/solution_0000.py",
+  "test_set": "final",
+  "n_tests": 480,
+  "n_success": 480,
+  "success_rate": 1.0,
+  "mean_score": -0.6441686139628074,
+  "median_score": 0.44361693628335985,
+  "std_score": 13.56811462721777,
+  "trimmed_mean_5pct": 0.48893787314289966,
+  "q25": 0.07179790512472924,
+  "q75": 0.9626829512717655,
+  "positive_score_rate": 0.8583333333333333
+}

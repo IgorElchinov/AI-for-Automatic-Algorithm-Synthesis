@@ -26,7 +26,7 @@ def main() -> None:
         dimension = int(payload["dimension"])
         instance = int(payload["instance"])
         budget = int(payload["budget"])
-        seed = int(payload["seed"])
+        seed = int(payload["seed"]) + int(payload.get("candidate_seed_offset", 0))
         suite_name = payload["suite_name"]
         # budget_multiplier = int(payload["budget_multiplier"])
 
