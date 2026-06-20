@@ -91,32 +91,48 @@ class BudgetedObjective:
 
 
 class FunctionRunner:
+    def __init__(self, python_executable: str | None = None) -> None:
+        self.python_executable = python_executable or sys.executable
+
     def run(
         self,
         solution_path: Path,
-        function_index: int,
-        dimension: int,
-        instance: int,
-        budget: int,
-        seed: int,
-        budget_multiplier: int,
+        input_text: str,
         timeout: int,
     ) -> ExecutionResult:
         started_at = time.perf_counter()
 
-        payload = {
-            "solution_path": str(solution_path.resolve()),
-            "function_index": function_index,
-            "dimension": dimension,
-            "instance": instance,
-            "budget": budget,
-            "seed": seed,
-            "budget_multiplier": budget_multiplier,
-        }
-
         try:
+            lines = [
+                line.strip()
+                for line in input_text.strip().splitlines()
+                if line.strip()
+            ]
+
+            if len(lines) != 6:
+                raise ValueError(
+                    f"Expected 6 BBOB input lines, got {len(lines)}"
+                )
+
+            suite_name = lines[0]
+            function_index = int(lines[1])
+            dimension = int(lines[2])
+            instance = int(lines[3])
+            budget = int(lines[4])
+            seed = int(lines[5])
+
+            payload = {
+                "solution_path": str(solution_path.resolve()),
+                "suite_name": suite_name,
+                "function_index": function_index,
+                "dimension": dimension,
+                "instance": instance,
+                "budget": budget,
+                "seed": seed,
+            }
+
             completed = subprocess.run(
-                [sys.executable, "-m", "agent.function_worker"],
+                [self.python_executable, "-m", "agent.function_worker"],
                 input=json.dumps(payload),
                 text=True,
                 capture_output=True,
@@ -133,13 +149,22 @@ class FunctionRunner:
                 duration_sec=time.perf_counter() - started_at,
             )
 
+        except Exception as exc:
+            return ExecutionResult(
+                ok=False,
+                stdout="",
+                stderr=f"{type(exc).__name__}: {exc}",
+                returncode=1,
+                duration_sec=time.perf_counter() - started_at,
+            )
+
         duration_sec = time.perf_counter() - started_at
 
         if completed.returncode != 0:
             return ExecutionResult(
                 ok=False,
                 stdout="",
-                stderr=completed.stderr or completed.stdout,
+                stderr=(completed.stderr or completed.stdout).strip(),
                 returncode=completed.returncode,
                 duration_sec=duration_sec,
             )
@@ -151,8 +176,8 @@ class FunctionRunner:
                 ok=False,
                 stdout="",
                 stderr=(
-                    f"Invalid worker JSON: {exc}. "
-                    f"Worker output: {completed.stdout[:500]}"
+                    f"Invalid worker JSON: {exc}; "
+                    f"worker output: {completed.stdout[:500]}"
                 ),
                 returncode=completed.returncode,
                 duration_sec=duration_sec,
@@ -162,9 +187,9 @@ class FunctionRunner:
             return ExecutionResult(
                 ok=False,
                 stdout="",
-                stderr=result.get("error", "Unknown worker error"),
+                stderr=str(result.get("error", "Unknown worker error")),
                 returncode=completed.returncode,
-                duration_sec=duration_sec,
+                duration_sec=completed.returncode,
             )
 
         x = result["x"]

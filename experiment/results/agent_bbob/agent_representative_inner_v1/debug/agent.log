@@ -1,0 +1,45 @@
+[2026-06-20 12:00:55] Agent initialized
+[2026-06-20 12:00:55] Prompt saved to results/agent_bbob/agent_representative_inner_v1/debug/0001_prompt.txt
+[2026-06-20 12:01:22] [openrouter attempt 1/6] status=200
+[2026-06-20 12:01:22] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-06-20 12:01:22] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=591 completion_tokens=444 total_tokens=1035
+[2026-06-20 12:01:22] [generate_candidate] solution_0000.py validation=ok ok=True
+[2026-06-20 12:01:22] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+2026-06-20 12:01:22,740 - opytimizer.core.function — INFO — Creating class: Function.
+2026-06-20 12:01:22,741 - opytimizer.core.function — DEBUG — Function: _wrapped | Built: True.
+2026-06-20 12:01:22,741 - opytimizer.core.function — INFO — Class created.
+{"ok": false, "error": "TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'"}
+[2026-06-20 12:01:22] Saved test failure details to results/agent_bbob/agent_representative_inner_v1/debug/0002_test_failure_solution_0000.txt
+[2026-06-20 12:01:22] [runtime fix attempt 1] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+2026-06-20 12:01:22,740 - opytimizer.core.function — INFO — Creating class: Function.
+2026-06-20 12:01:22,741 - opytimizer.core.function — DEBUG — Function: _wrapped | Built: True.
+2026-06-20 12:01:22,741 - opytimizer.core.function — INFO — Class created.
+{"ok": false, "error": "TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'"}
+[2026-06-20 12:01:22] Prompt saved to results/agent_bbob/agent_representative_inner_v1/debug/0003_prompt.txt
+[2026-06-20 12:01:45] [openrouter attempt 1/6] status=200
+[2026-06-20 12:01:45] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-06-20 12:01:45] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=1112 completion_tokens=323 total_tokens=1435
+[2026-06-20 12:01:45] [generate_candidate] solution_0001.py validation=ok ok=True
+[2026-06-20 12:01:45] [tests] solution_0001.py score=0.000000 time=0.29s issue=OK
+[2026-06-20 12:01:52] [tests] solution_0001.py score=11.986224 time=6.30s issue=OK
+[2026-06-20 12:01:52] Agent initialized
+[2026-06-20 12:01:52] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+2026-06-20 12:01:52,426 - opytimizer.core.function — INFO — Creating class: Function.
+2026-06-20 12:01:52,426 - opytimizer.core.function — DEBUG — Function: _wrapped | Built: True.
+2026-06-20 12:01:52,426 - opytimizer.core.function — INFO — Class created.
+{"ok": false, "error": "TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'"}
+[2026-06-20 12:01:52] Saved test failure details to results/agent_bbob/agent_representative_inner_v1/debug/0001_test_failure_solution_0000.txt
+[2026-06-20 12:01:58] [tests] solution_0001.py score=11.986224 time=6.39s issue=OK
+[2026-06-20 12:04:17] [tests] solution_0001.py score=285.100360 time=138.55s issue=OK

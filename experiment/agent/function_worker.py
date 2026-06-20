@@ -6,8 +6,7 @@ import math
 import sys
 from pathlib import Path
 
-from agent.runner import BudgetedObjective
-from tasks.coco_bbob import CocoBbobAdapter
+from tasks.coco_bbob import BudgetedObjective, make_bbob_problem
 
 
 def fail(message: str) -> None:
@@ -25,15 +24,15 @@ def main() -> None:
         instance = int(payload["instance"])
         budget = int(payload["budget"])
         seed = int(payload["seed"])
-        budget_multiplier = int(payload["budget_multiplier"])
+        suite_name = payload["suite_name"]
+        # budget_multiplier = int(payload["budget_multiplier"])
 
-        adapter = CocoBbobAdapter(
-            budget_multiplier=budget_multiplier,
-        )
-        problem = adapter._get_problem(
-            function_index,
-            dimension,
-            instance,
+        # adapter = CocoBbobAdapter()
+        problem = make_bbob_problem(
+            function_index=function_index,
+            dimension=dimension,
+            instance=instance,
+            suite_name=suite_name,
         )
 
         objective = BudgetedObjective(problem, budget)

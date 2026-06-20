@@ -1,0 +1,58 @@
+[2026-06-20 11:50:51] Agent initialized
+[2026-06-20 11:50:51] Prompt saved to results/agent_bbob/agent_new_runner_smoke/debug/0001_prompt.txt
+[2026-06-20 11:51:12] [openrouter attempt 1/6] status=200
+[2026-06-20 11:51:12] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n    '
+[2026-06-20 11:51:12] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=591 completion_tokens=454 total_tokens=1045
+[2026-06-20 11:51:12] [generate_candidate] solution_0000.py validation=ok ok=True
+[2026-06-20 11:51:13] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+2026-06-20 11:51:13,601 - opytimizer.core.function — INFO — Creating class: Function.
+2026-06-20 11:51:13,602 - opytimizer.core.function — DEBUG — Function: _wrapped | Built: True.
+2026-06-20 11:51:13,602 - opytimizer.core.function — INFO — Class created.
+{"ok": false, "error": "TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'"}
+[2026-06-20 11:51:13] Saved test failure details to results/agent_bbob/agent_new_runner_smoke/debug/0002_test_failure_solution_0000.txt
+[2026-06-20 11:51:13] [runtime fix attempt 1] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+2026-06-20 11:51:13,601 - opytimizer.core.function — INFO — Creating class: Function.
+2026-06-20 11:51:13,602 - opytimizer.core.function — DEBUG — Function: _wrapped | Built: True.
+2026-06-20 11:51:13,602 - opytimizer.core.function — INFO — Class created.
+{"ok": false, "error": "TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'"}
+[2026-06-20 11:51:13] Prompt saved to results/agent_bbob/agent_new_runner_smoke/debug/0003_prompt.txt
+[2026-06-20 11:51:30] [openrouter attempt 1/6] status=200
+[2026-06-20 11:51:30] [openrouter attempt 1/6] raw head='\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{"id":"gen-1781945476-GkxhVlAEihMBezmygLPM","object":"chat.completion","created":1781945476,"model":"openai/gpt-oss'
+[2026-06-20 11:51:30] [openrouter] model=openai/gpt-oss-120b:free prompt_tokens=1124 completion_tokens=337 total_tokens=1461
+[2026-06-20 11:51:30] [generate_candidate] solution_0001.py validation=ok ok=True
+[2026-06-20 11:51:31] [tests] solution_0001.py score=0.007926 time=0.29s issue=OK
+[2026-06-20 11:51:43] [tests] solution_0001.py score=24.628569 time=12.45s issue=OK
+[2026-06-20 11:51:43] Agent initialized
+[2026-06-20 11:51:44] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+2026-06-20 11:51:44,133 - opytimizer.core.function — INFO — Creating class: Function.
+2026-06-20 11:51:44,133 - opytimizer.core.function — DEBUG — Function: _wrapped | Built: True.
+2026-06-20 11:51:44,133 - opytimizer.core.function — INFO — Class created.
+{"ok": false, "error": "TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'"}
+[2026-06-20 11:51:44] Saved test failure details to results/agent_bbob/agent_new_runner_smoke/debug/0001_test_failure_solution_0000.txt
+[2026-06-20 11:51:57] [tests] solution_0001.py score=24.628569 time=13.17s issue=OK
+[2026-06-20 11:54:00] [tests] solution_0001.py score=-466.989613 time=123.08s issue=OK
+[2026-06-20 11:56:05] Agent initialized
+[2026-06-20 11:56:05] [test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+2026-06-20 11:56:05,674 - opytimizer.core.function — INFO — Creating class: Function.
+2026-06-20 11:56:05,674 - opytimizer.core.function — DEBUG — Function: _wrapped | Built: True.
+2026-06-20 11:56:05,674 - opytimizer.core.function — INFO — Class created.
+{"ok": false, "error": "TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'"}
+[2026-06-20 11:56:05] Saved test failure details to results/agent_bbob/agent_new_runner_smoke/debug/0001_test_failure_solution_0000.txt
+[2026-06-20 11:56:20] [tests] solution_0001.py score=24.628569 time=14.65s issue=OK
+[2026-06-20 11:58:35] [tests] solution_0001.py score=-466.989613 time=134.78s issue=OK

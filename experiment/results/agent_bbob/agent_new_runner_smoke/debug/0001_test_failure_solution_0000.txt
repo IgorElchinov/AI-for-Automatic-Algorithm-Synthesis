@@ -1,0 +1,9 @@
+[test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+2026-06-20 11:56:05,674 - opytimizer.core.function — INFO — Creating class: Function.
+2026-06-20 11:56:05,674 - opytimizer.core.function — DEBUG — Function: _wrapped | Built: True.
+2026-06-20 11:56:05,674 - opytimizer.core.function — INFO — Class created.
+{"ok": false, "error": "TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'"}

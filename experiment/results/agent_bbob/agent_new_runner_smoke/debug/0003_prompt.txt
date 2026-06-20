@@ -1,0 +1,131 @@
+/no_think
+Return only valid Python 3 code.
+No explanations.
+Do not output triple backticks.
+Do not output markdown.
+If you cannot solve the task, still output a valid Python program.
+
+### Instruction
+You are given a candidate optimizer module which is incorrect.
+Fix it while preserving the required optimize(...) interface.
+Return only valid Python 3 code.
+
+### Output requirements
+Return only valid Python 3 code.
+Do not include markdown fences.
+Do not read from stdin.
+Do not print anything.
+Define exactly one function:
+
+def optimize(objective, lower_bounds, upper_bounds, dimension, budget, seed):
+    ...
+
+The function must return a list or tuple of exactly `dimension` finite floats.
+The function must not call objective more than `budget` times.
+The function must not import cocoex or reconstruct the benchmark.
+Use the provided objective callable only.
+
+### Task
+Write Python 3 code that defines exactly one function:
+
+def optimize(objective, lower_bounds, upper_bounds, dimension, budget, seed):
+    ...
+
+The function receives:
+- objective: callable objective(x) -> float
+- lower_bounds: sequence of floats of length dimension
+- upper_bounds: sequence of floats of length dimension
+- dimension: integer
+- budget: maximum allowed number of objective evaluations
+- seed: integer random seed
+
+The function must:
+- return a list or tuple of exactly `dimension` finite floats
+- keep all coordinates inside [lower_bounds[i], upper_bounds[i]]
+- not read from stdin
+- not print anything
+- not import or use cocoex
+- not reconstruct the COCO problem
+- not call objective more than `budget` times
+
+Library restrictions:
+- you may use Python standard library
+- you may use numpy
+- for optimization primitives, use only Opytimizer
+- do NOT use scipy, nevergrad, pymoo, sklearn, torch, tensorflow
+
+Current Opytimizer API:
+- from opytimizer import Opytimizer
+- from opytimizer.core import Function
+- from opytimizer.spaces import SearchSpace
+- from opytimizer.optimizers.single_objective.swarm import PSO
+
+Do not use deprecated import paths such as:
+- from opytimizer.optimizers.swarm import PSO
+- from opytimizer.optimizers.population import GWO
+- from opytimizer.optimizers.evolutionary import DE
+
+Important:
+- return only Python code
+- do not include markdown
+- do not include explanations
+- a simple robust optimizer is better than a fancy broken one
+
+### Candidate solution
+import numpy as np
+from opytimizer import Opytimizer
+from opytimizer.core import Function
+from opytimizer.spaces import SearchSpace
+from opytimizer.optimizers.single_objective.swarm import PSO
+
+def optimize(objective, lower_bounds, upper_bounds, dimension, budget, seed):
+    rng = np.random.default_rng(seed)
+    # Ensure bounds are arrays
+    lb = np.asarray(lower_bounds, dtype=float)
+    ub = np.asarray(upper_bounds, dtype=float)
+
+    # Simple handling for zero budget
+    if budget <= 0:
+        return list((lb + ub) / 2.0)
+
+    # Determine population size (at least 2, not exceeding budget)
+    pop_size = min(max(2, dimension * 2), budget)
+    # Determine number of iterations (each iteration evaluates pop_size individuals)
+    max_iter = max(1, budget // pop_size)
+
+    # Wrap objective for Opytimizer
+    def _wrapped(x):
+        return float(objective(x.tolist()))
+
+    func = Function(_wrapped)
+
+    # Create search space
+    space = SearchSpace(n_agents=pop_size, n_variables=dimension, lower_bound=lb, upper_bound=ub)
+
+    # Initialize optimizer
+    optimizer = PSO()
+    optimizer.n_iterations = max_iter
+
+    # Run optimization
+    opt = Opytimizer(space, func, optimizer, seed=seed)
+    opt.start()
+
+    # Retrieve best solution found
+    best_position = opt.space.best_agent.position
+    # Clip to bounds and ensure finite
+    best_position = np.clip(best_position, lb, ub)
+    if not np.all(np.isfinite(best_position)):
+        best_position = np.where(np.isfinite(best_position), best_position, (lb + ub) / 2.0)
+
+    return best_position.tolist()
+
+### Issue
+[test 1] runtime failure for solution_0000.py
+returncode=1
+stdout:
+
+stderr:
+2026-06-20 11:51:13,601 - opytimizer.core.function — INFO — Creating class: Function.
+2026-06-20 11:51:13,602 - opytimizer.core.function — DEBUG — Function: _wrapped | Built: True.
+2026-06-20 11:51:13,602 - opytimizer.core.function — INFO — Class created.
+{"ok": false, "error": "TypeError: SearchSpace.__init__() missing 1 required positional argument: 'n_objectives'"}

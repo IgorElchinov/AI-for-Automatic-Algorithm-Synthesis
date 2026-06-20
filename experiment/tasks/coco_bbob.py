@@ -123,12 +123,16 @@ def default_smoke_specs() -> tuple[tuple[int, int, int], ...]:
 
 
 def default_full_specs() -> tuple[tuple[int, int, int], ...]:
-    specs: list[tuple[int, int, int]] = []
-    for function_index in range(1, 25):
-        for dimension in (2, 5):
-            for instance in (1,):
-                specs.append((function_index, dimension, instance))
-    return tuple(specs)
+    functions = (1, 5, 9, 13, 17, 21)
+    dimensions = (2, 5)
+    instances = (1, 3)
+
+    return tuple(
+        (function_index, dimension, instance)
+        for function_index in functions
+        for dimension in dimensions
+        for instance in instances
+    )
 
 
 def default_final_specs() -> tuple[tuple[int, int, int], ...]:
