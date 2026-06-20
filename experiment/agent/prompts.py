@@ -5,19 +5,23 @@ class DefaultPromptStrategy:
     code_format_instruction = """
 Return only valid Python 3 code.
 Do not include markdown fences.
-The program must read from stdin and print to stdout using the format from the task.
-A simple fast heuristic is acceptable.
-Use the current Opytimizer API:
-from opytimizer import Opytimizer
-from opytimizer.core import Function
-from opytimizer.spaces import SearchSpace
-from opytimizer.optimizers.single_objective.swarm import PSO
-Do not use deprecated import paths such as opytimizer.optimizers.swarm.
+Do not read from stdin.
+Do not print anything.
+Define exactly one function:
+
+def optimize(objective, lower_bounds, upper_bounds, dimension, budget, seed):
+    ...
+
+The function must return a list or tuple of exactly `dimension` finite floats.
+The function must not call objective more than `budget` times.
+The function must not import cocoex or reconstruct the benchmark.
+Use the provided objective callable only.
 """.strip()
 
     gen_instruction = """
-You are writing a Python program for an optimization problem.
-Generate a complete solution from scratch using the current Opytimizer API.
+You are writing a budget-limited black-box optimizer.
+Generate a complete Python module that defines optimize(...).
+Prefer simple robust logic over fragile complex code.
 """.strip()
 
     combine_instruction = """
@@ -31,8 +35,8 @@ Improve the solution while keeping it correct and reasonably fast.
 """.strip()
 
     fix_instruction = """
-You are given a problem and one candidate solution which is incorrect.
-Fix the solution while keeping it correct and reasonably fast.
+You are given a candidate optimizer module which is incorrect.
+Fix it while preserving the required optimize(...) interface.
 Return only valid Python 3 code.
 """.strip()
 

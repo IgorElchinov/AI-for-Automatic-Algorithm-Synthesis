@@ -14,6 +14,7 @@ from typing import Callable
 from agent.agent import Agent
 from agent.interfaces import ModelClient
 from agent.models import OllamaClient, OpenRouterClient
+from agent.runner import FunctionRunner
 from agent.types import BAD_SCORE
 from tasks.coco_bbob import CocoBbobAdapter, DEFAULT_BBOB_PROBLEM_TEXT
 
@@ -224,6 +225,7 @@ def build_agent(config: RunConfig, adapter: CocoBbobAdapter, run_dir: Path, solu
     agent = Agent(
         problem=adapter,
         model_client=client,
+        runner=FunctionRunner(),
         k=config.k,
         timeout_per_test=config.timeout_per_test,
         retry_initial_generation=config.retry_initial_generation,

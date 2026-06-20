@@ -4,6 +4,7 @@
 # Temporary directories
 # */solutions*
 # */debug*
+*/TODO.md
 
 # Pycaches
 *.pyc

@@ -63,11 +63,11 @@ ALLOWED_TOP_LEVEL_IMPORTS = {
     "json",
     "re",
     "numpy",
-    "cocoex",
     "opytimizer",
 }
 
 FORBIDDEN_PREFIXES = (
+    "cocoex",
     "scipy",
     "nevergrad",
     "pymoo",
@@ -83,7 +83,7 @@ BAD_IMPORT_PREFIXES = (
     "opytimizer.optimizers.science",
 )
 
-def validate_imports(text: str) -> ValidationResult | None:                 # TODO: Use this
+def validate_imports(text: str) -> ValidationResult | None:
     try:
         tree = ast.parse(text)
     except SyntaxError:
@@ -150,6 +150,16 @@ REQUIRED_OPY_SYMBOLS = {
     "SearchSpace",
 }
 
+REQUIRED_OPTIMIZE_ARGS = [
+    "objective",
+    "lower_bounds",
+    "upper_bounds",
+    "dimension",
+    "budget",
+    "seed",
+]
+
+
 def validate_opytimizer_usage(text: str) -> ValidationResult | None:                 # TODO: Use this
     try:
         tree = ast.parse(text)
@@ -183,6 +193,44 @@ def validate_opytimizer_usage(text: str) -> ValidationResult | None:            
     return None
 
 
+def validate_optimize_signature(text: str) -> ValidationResult | None:
+    try:
+        tree = ast.parse(text)
+    except SyntaxError:
+        return None
+
+    optimize_defs = [
+        node for node in tree.body
+        if isinstance(node, ast.FunctionDef) and node.name == "optimize"
+    ]
+
+    if not optimize_defs:
+        return ValidationResult(
+            False,
+            "missing_optimize",
+            "Candidate must define optimize(objective, lower_bounds, upper_bounds, dimension, budget, seed)",
+        )
+
+    if len(optimize_defs) > 1:
+        return ValidationResult(
+            False,
+            "multiple_optimize",
+            "Candidate must define exactly one optimize function",
+        )
+
+    fn = optimize_defs[0]
+    arg_names = [arg.arg for arg in fn.args.args]
+
+    if arg_names != REQUIRED_OPTIMIZE_ARGS:
+        return ValidationResult(
+            False,
+            "bad_optimize_signature",
+            f"Expected optimize arguments {REQUIRED_OPTIMIZE_ARGS}, got {arg_names}",
+        )
+
+    return None
+
+
 def validate_python_file(solution: Solution) -> ValidationResult:
     try:
         text = solution.text()
@@ -201,13 +249,18 @@ def validate_python_file(solution: Solution) -> ValidationResult:
     except SyntaxError as exc:
         return ValidationResult(False, "syntax", str(exc))
 
+    validation_result = validate_optimize_signature(text)
+    if validation_result is not None:
+        return validation_result
+
     validation_result = validate_imports(text)
     if validation_result is not None:
         return validation_result
 
-    validation_result = validate_opytimizer_usage(text)
-    if validation_result is not None:
-        return validation_result
+    # Opytimizer usage is allowed but not required.
+    # validation_result = validate_opytimizer_usage(text)
+    # if validation_result is not None:
+    #     return validation_result
 
     result = subprocess.run(
         ["python3", "-m", "py_compile", str(solution.path)],

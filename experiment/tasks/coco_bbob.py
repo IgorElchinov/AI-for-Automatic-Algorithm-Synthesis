@@ -3,8 +3,6 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import math
 
-import cocoex
-
 from agent.types import TestCase
 
 
@@ -69,39 +67,33 @@ Library restrictions:
 
 
 DEFAULT_BBOB_PROBLEM_TEXT = """
-Write a complete Python 3 program.
+Write Python 3 code that defines exactly one function:
 
-The program reads from stdin exactly 6 lines:
-1) suite name (always "bbob")
-2) function index (integer)
-3) dimension (integer)
-4) instance index (integer)
-5) evaluation budget (integer)
-6) random seed (integer)
+def optimize(objective, lower_bounds, upper_bounds, dimension, budget, seed):
+    ...
 
-The program must:
-- import cocoex
-- reconstruct exactly the requested COCO BBOB problem
-- optimize the black-box function under the given evaluation budget
-- print exactly `dimension` floating-point numbers separated by spaces:
-  these numbers are the final candidate solution vector x
+The function receives:
+- objective: callable objective(x) -> float
+- lower_bounds: sequence of floats of length dimension
+- upper_bounds: sequence of floats of length dimension
+- dimension: integer
+- budget: maximum allowed number of objective evaluations
+- seed: integer random seed
 
-Important API details:
-- suite_instance is a fixed string: "year: 2009"
-- instance is an integer index and must be used only inside suite_options
-- DO NOT pass the integer instance as suite_instance
-- reconstruct the problem exactly like this:
+The function must:
+- return a list or tuple of exactly `dimension` finite floats
+- keep all coordinates inside [lower_bounds[i], upper_bounds[i]]
+- not read from stdin
+- not print anything
+- not import or use cocoex
+- not reconstruct the COCO problem
+- not call objective more than `budget` times
 
-    suite = cocoex.Suite(
-        suite_name=suite_name,
-        suite_instance="year: 2009",
-        suite_options=(
-            f"function_indices: {function_index} "
-            f"instance_indices: {instance} "
-            f"dimensions: {dimension}"
-        ),
-    )
-    problem = next(iter(suite))
+Library restrictions:
+- you may use Python standard library
+- you may use numpy
+- for optimization primitives, use only Opytimizer
+- do NOT use scipy, nevergrad, pymoo, sklearn, torch, tensorflow
 
 Current Opytimizer API:
 - from opytimizer import Opytimizer
@@ -114,40 +106,11 @@ Do not use deprecated import paths such as:
 - from opytimizer.optimizers.population import GWO
 - from opytimizer.optimizers.evolutionary import DE
 
-A minimal Opytimizer pattern is:
-
-    function = Function(problem)
-    search_space = SearchSpace(
-        n_agents=20,
-        n_variables=dimension,
-        n_objectives=1,
-        lower_bound=problem.lower_bounds,
-        upper_bound=problem.upper_bounds,
-    )
-    optimizer = PSO()
-    opt = Opytimizer(search_space, optimizer, function)
-    opt.start(n_iterations=max(1, evaluation_budget // 20))
-    best_agent = search_space.best_agent
-    best_position = best_agent.position
-
-""" + \
-LIBRARY_RESTRICTIONS + \
-"""
-
 Important:
-- Do not invent module paths.
-- Do not invent class names.
-- If unsure, use only the verified PSO pattern above.
-
-Output requirements:
-- output only the numbers, nothing else
-- do not print explanations
-- do not print markdown
-- the code must be executable Python 3
-- respect the evaluation budget
-- a simple robust optimizer built with Opytimizer is better than a fancy broken one
-
-Your answer must be only Python code.
+- return only Python code
+- do not include markdown
+- do not include explanations
+- a simple robust optimizer is better than a fancy broken one
 """.strip()
 
 
@@ -177,6 +140,25 @@ def default_final_specs() -> tuple[tuple[int, int, int], ...]:
     return tuple(specs)
 
 
+class BudgetExceededError(RuntimeError):
+    pass
+
+
+class BudgetedObjective:
+    def __init__(self, problem, budget: int):
+        self.problem = problem
+        self.budget = int(budget)
+        self.calls = 0
+
+    def __call__(self, x):
+        if self.calls >= self.budget:
+            raise BudgetExceededError(
+                f"Evaluation budget exceeded: {self.calls + 1} > {self.budget}"
+            )
+        self.calls += 1
+        return float(self.problem(x))
+
+
 def make_bbob_problem(
     function_index: int,
     dimension: int,
@@ -184,6 +166,8 @@ def make_bbob_problem(
     suite_name: str = "bbob",
     suite_instance: str = "year: 2009",
 ):
+    import cocoex
+
     suite = cocoex.Suite(
         suite_name=suite_name,
         suite_instance=suite_instance,
@@ -302,6 +286,15 @@ class CocoBbobAdapter:
             raise ValueError("Output contains non-finite values")
 
         problem = self._get_problem(function_index, dimension, instance)
+        lower_bounds = problem.lower_bounds
+        upper_bounds = problem.upper_bounds
+        for i, value in enumerate(x):
+            if value < lower_bounds[i] or value > upper_bounds[i]:
+                raise ValueError(
+                    f"Coordinate {i}={value} is outside bounds "
+                    f"[{lower_bounds[i]}, {upper_bounds[i]}]"
+                )
+
         fx = float(problem(x))
 
         denom = max(1.0, abs(baseline_value))
