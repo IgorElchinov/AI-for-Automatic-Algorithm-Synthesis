@@ -8,6 +8,7 @@ import importlib.util
 import math
 
 from .types import ExecutionResult
+import json
 
 
 class PythonRunner:
@@ -68,110 +69,113 @@ class CommandRunner:
         )
 
 
+class BudgetExceededError(RuntimeError):
+    pass
+
+
+class BudgetedObjective:
+    def __init__(self, problem, budget: int) -> None:
+        self.problem = problem
+        self.budget = int(budget)
+        self.calls = 0
+
+    def __call__(self, x) -> float:
+        if self.calls >= self.budget:
+            raise BudgetExceededError(
+                f"Evaluation budget exceeded: attempted call "
+                f"{self.calls + 1}, budget={self.budget}"
+            )
+
+        self.calls += 1
+        return float(self.problem(x))
+
+
 class FunctionRunner:
-    def run_function(
+    def run(
         self,
         solution_path: Path,
-        objective,
-        lower_bounds,
-        upper_bounds,
+        function_index: int,
         dimension: int,
+        instance: int,
         budget: int,
         seed: int,
+        budget_multiplier: int,
         timeout: int,
     ) -> ExecutionResult:
         started_at = time.perf_counter()
 
+        payload = {
+            "solution_path": str(solution_path.resolve()),
+            "function_index": function_index,
+            "dimension": dimension,
+            "instance": instance,
+            "budget": budget,
+            "seed": seed,
+            "budget_multiplier": budget_multiplier,
+        }
+
         try:
-            module_name = f"candidate_{abs(hash(solution_path))}"
-            spec = importlib.util.spec_from_file_location(module_name, solution_path)
-            if spec is None or spec.loader is None:
-                raise RuntimeError("Cannot load candidate module")
-
-            module = importlib.util.module_from_spec(spec)
-            sys.modules[module_name] = module
-            spec.loader.exec_module(module)
-
-            if not hasattr(module, "optimize"):
-                raise RuntimeError("Candidate must define optimize(...)")
-
-            result = module.optimize(
-                objective,
-                lower_bounds,
-                upper_bounds,
-                dimension,
-                budget,
-                seed,
-            )
-
-            if not isinstance(result, (list, tuple)):
-                raise RuntimeError("optimize(...) must return a list or tuple")
-
-            if len(result) != dimension:
-                raise RuntimeError(f"Expected {dimension} values, got {len(result)}")
-
-            x = [float(v) for v in result]
-
-            if any(not math.isfinite(v) for v in x):
-                raise RuntimeError("Returned vector contains non-finite values")
-
-            stdout = " ".join(map(str, x))
-
-            return ExecutionResult(
-                ok=True,
-                stdout=stdout,
-                stderr="",
-                returncode=0,
-                duration_sec=time.perf_counter() - started_at,
-            )
-
-        except Exception as exc:
-            return ExecutionResult(
-                ok=False,
-                stdout="",
-                stderr=str(exc),
-                returncode=1,
-                duration_sec=time.perf_counter() - started_at,
-            )
-
-    def run(self, solution_path: Path, input_text: str, timeout: int) -> ExecutionResult:
-        try:
-            from tasks.coco_bbob import BudgetedObjective, make_bbob_problem
-
-            lines = [line.strip() for line in input_text.strip().splitlines() if line.strip()]
-            if len(lines) != 6:
-                raise ValueError(f"Expected 6 lines of BBOB parameters, got {len(lines)}")
-
-            suite_name = lines[0]
-            function_index = int(lines[1])
-            dimension = int(lines[2])
-            instance = int(lines[3])
-            budget = int(lines[4])
-            seed = int(lines[5])
-
-            problem = make_bbob_problem(
-                function_index=function_index,
-                dimension=dimension,
-                instance=instance,
-                suite_name=suite_name,
-            )
-            objective = BudgetedObjective(problem, budget)
-
-            return self.run_function(
-                solution_path=solution_path,
-                objective=objective,
-                lower_bounds=problem.lower_bounds,
-                upper_bounds=problem.upper_bounds,
-                dimension=dimension,
-                budget=budget,
-                seed=seed,
+            completed = subprocess.run(
+                [sys.executable, "-m", "agent.function_worker"],
+                input=json.dumps(payload),
+                text=True,
+                capture_output=True,
                 timeout=timeout,
+                check=False,
             )
-        except Exception as exc:
+
+        except subprocess.TimeoutExpired:
             return ExecutionResult(
                 ok=False,
                 stdout="",
-                stderr=str(exc),
-                returncode=1,
-                duration_sec=0.0,
+                stderr=f"TimeoutExpired: exceeded {timeout} seconds",
+                returncode=-1,
+                duration_sec=time.perf_counter() - started_at,
             )
+
+        duration_sec = time.perf_counter() - started_at
+
+        if completed.returncode != 0:
+            return ExecutionResult(
+                ok=False,
+                stdout="",
+                stderr=completed.stderr or completed.stdout,
+                returncode=completed.returncode,
+                duration_sec=duration_sec,
+            )
+
+        try:
+            result = json.loads(completed.stdout)
+        except json.JSONDecodeError as exc:
+            return ExecutionResult(
+                ok=False,
+                stdout="",
+                stderr=(
+                    f"Invalid worker JSON: {exc}. "
+                    f"Worker output: {completed.stdout[:500]}"
+                ),
+                returncode=completed.returncode,
+                duration_sec=duration_sec,
+            )
+
+        if not result.get("ok"):
+            return ExecutionResult(
+                ok=False,
+                stdout="",
+                stderr=result.get("error", "Unknown worker error"),
+                returncode=completed.returncode,
+                duration_sec=duration_sec,
+            )
+
+        x = result["x"]
+
+        return ExecutionResult(
+            ok=True,
+            stdout=" ".join(map(str, x)),
+            stderr=(
+                f"objective_calls={result['objective_calls']}/"
+                f"{result['budget']}"
+            ),
+            returncode=0,
+            duration_sec=duration_sec,
+        )
